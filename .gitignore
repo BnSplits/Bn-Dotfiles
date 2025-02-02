@@ -9,6 +9,7 @@ backup_latest/home/bnsplit/Obsidian/
 backup_latest/home/bnsplit/.zen/
 backup_latest/home/bnsplit/.tmux/plugins/
 backup_latest/home/bnsplit/.local/share/
+backup_latest/home/bnsplit/.cache/
 backup_latest/home/bnsplit/.config/*.bak
 backup_latest/home/bnsplit/.config/ags/
 backup_latest/home/bnsplit/.config/bnsplit/libvirt-vms/

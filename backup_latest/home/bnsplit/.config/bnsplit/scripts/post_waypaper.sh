@@ -1,6 +1,9 @@
 #!/bin/bash
 set -euo pipefail
 
+# Redirect all script output (stdout & stderr) to Zenity progress dialog
+# exec > >(zenity --progress --no-cancel --auto-close --pulsate --text " " --title "   Colorscheme application ..." --percentage=0) 2>&1
+
 # ------------------------------
 # Configuration
 # ------------------------------
@@ -83,7 +86,7 @@ process_image() {
     # Generate a 1920x1080, metadata-stripped PNG and a blurred version in one command.
     magick "$img" -strip -resize 1920x1080^ -gravity center -extent 1920x1080 \
       \( +clone -write mpr:png +delete \) \
-      \( mpr:png -blur 0x40 -write "$CACHE_WALLPAPER_BLUR" +delete \) \
+      \( mpr:png -blur 0x25 -write "$CACHE_WALLPAPER_BLUR" +delete \) \
       PNG32:"$CACHE_WALLPAPER_PNG"
     cp "$CACHE_WALLPAPER_PNG" "$WALL_PNG_DIR/$WALL_HASH"
     cp "$CACHE_WALLPAPER_BLUR" "$BLUR_DIR/$WALL_HASH"
@@ -125,4 +128,6 @@ fi
 # Wait for All Background Tasks to Finish
 # ------------------------------
 wait
+echo 100
 exit 0
+

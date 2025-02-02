@@ -36,6 +36,9 @@ LATEST_BACKUP_DIR="$HOME/Dotfiles/backup_latest"
 
 # Folders and files to backup
 items_to_backup=(
+  "$HOME/.cache/blured-square-600-x50y50/"
+  "$HOME/.cache/blured-walls/"
+  "$HOME/.cache/wall-png/"
   "$HOME/.config/ags"
   "$HOME/.config/bnsplit"
   "$HOME/.config/cava"
