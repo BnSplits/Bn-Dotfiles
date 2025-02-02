@@ -1,0 +1,121 @@
+@import "../bnsplit/colors/colors.css";
+
+* {
+  border: none;
+  font-family: sans-serif;
+  font-style: italic;
+  font-weight: 900;
+  animation-timing-function: steps(12);
+  animation-duration: 0s;
+}
+
+window#waybar {
+  background: @x-background;
+  font-size: 16px;
+}
+
+#window {
+  border: none;
+}
+
+.group-other .module {
+  background: transparent;
+  border: none;
+  color: @s-on-primary-container;
+}
+
+.module {
+  border: none;
+  margin: 0px;
+  padding: 2px 3px;
+  background: transparent;
+  color: @s-on-primary-container;
+}
+
+tooltip {
+  border: 2px solid;
+  font-style: normal;
+  background: @s-background;
+  border-color: @s-outline;
+}
+
+tooltip label {
+  color: @s-on-primary-container;
+  font-style: normal;
+}
+
+#clock {
+  padding: 0;
+  margin: 0;
+  font-style: italic;
+  font-weight: 900;
+  padding-left: 4px;
+  padding-right: 4px;
+  color: @s-tertiary;
+  margin: 1px;
+  border-radius: 3px;
+  font-size: 17px;
+}
+
+#custom-center {
+  padding: 0;
+  margin: 0;
+  font-style: italic;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+#custom-power_mode,
+#custom-swaync {
+  font-size: 18px;
+}
+
+#battery.warning {
+  color: red;
+  font-weight: bold;
+}
+
+#workspaces {
+  padding: 0;
+}
+
+#workspaces button {
+  margin: 0px;
+  padding: 1px 10px;
+  color: @x-secondary;
+  border-radius: 3px;
+  font-weight: 900;
+  font-size: 13px;
+  font-style: normal;
+  background: transparent;
+  transition: font-size 0.1s ease-in;
+}
+
+#workspaces button.active {
+  color: @s-primary;
+  font-weight: 900;
+  font-size: 22px;
+}
+
+#workspaces button:hover {
+  color: @s-primary;
+  font-weight: 900;
+  font-size: 16px;
+}
+
+#tray {
+  padding: 0;
+  margin: 0;
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 900;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin: 1px 1px;
+  border-radius: 5px;
+  color: @s-on-primary-container;
+}
+
+#mpris {
+  font-size: 14px;
+}

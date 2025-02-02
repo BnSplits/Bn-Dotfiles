@@ -1,0 +1,35 @@
+{
+    "label" : "lock",
+    "action" : "~/.config/bnsplit/scripts/power.sh lock",
+    "text" : "[L]ock",
+    "keybind" : "l"
+}
+{
+    "label" : "hibernate",
+    "action" : "~/.config/bnsplit/scripts/power.sh hibernate",
+    "text" : "[H]ibernate",
+}
+{
+    "label" : "logout",
+    "action" : "~/.config/bnsplit/scripts/power.sh exit",
+    "text" : "[E]xit",
+    "keybind" : "e"
+}
+{
+    "label" : "shutdown",
+    "action" : "~/.config/bnsplit/scripts/power.sh shutdown",
+    "text" : "[S]hutdown",
+    "keybind" : "s"
+}
+{
+    "label" : "suspend",
+    "action" : "~/.config/bnsplit/scripts/power.sh suspend",
+    "text" : "S[u]spend",
+    "keybind" : "u"
+}
+{
+    "label" : "reboot",
+    "action" : "~/.config/bnsplit/scripts/power.sh reboot",
+    "text" : "[R]eboot",
+    "keybind" : "r"
+}

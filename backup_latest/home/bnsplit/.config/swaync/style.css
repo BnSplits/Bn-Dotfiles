@@ -1,0 +1,194 @@
+@import url("../bnsplit/colors/colors.css");
+
+/* Color Definitions */
+@define-color cc-bg @x-background;
+@define-color noti-border-color @s-primary;
+@define-color noti-bg @x-on-primary-fixed;
+@define-color noti-bg-opaque @s-on-primary-fixed;
+@define-color noti-bg-darker @x-on-primary-fixed;
+@define-color noti-bg-hover @s-on-primary;
+@define-color noti-bg-hover-opaque @s-on-primary;
+@define-color noti-bg-focus @s-inverse-on-surface;
+@define-color noti-close-bg @s-inverse-primary;
+@define-color noti-close-bg-hover @s-on-secondary;
+@define-color text-color @s-on-surface;
+@define-color text-color-disabled @s-on-surface-variant;
+@define-color bg-selected @on-tertiary;
+
+/* General Reset */
+* {
+  outline: none;
+}
+
+/* Notifications */
+.notification-row .notification-background .notification {
+  border-radius: 11px;
+  margin: 6px 0px;
+  border: 2px solid @noti-border-color;
+  transition: background 0.15s ease-in-out;
+}
+
+.notification-row
+  .notification-background
+  .notification
+  .notification-default-action
+  .notification-content
+  .text-box
+  .body,
+.notification-row
+  .notification-background
+  .notification
+  .notification-default-action
+  .notification-content
+  .text-box
+  .summary {
+  font-style: italic;
+}
+
+.notification-row
+  .notification-background
+  .notification
+  .notification-default-action
+  .notification-content
+  .inline-reply {
+  margin: 6px;
+}
+
+.notification-row
+  .notification-background
+  .notification
+  .notification-default-action
+  .notification-content
+  .inline-reply
+  .inline-reply-entry,
+.notification-row
+  .notification-background
+  .notification
+  .notification-default-action
+  .notification-content
+  .inline-reply
+  .inline-reply-button {
+  border-radius: 5px;
+}
+
+.notification-row .notification-background .close-button {
+  margin-top: 12px;
+  margin-right: 4px;
+}
+
+.notification-group {
+  padding: 0;
+  margin: 0;
+}
+
+/* Control Center */
+.control-center {
+  border: 3px solid @noti-border-color;
+  border-radius: 8px;
+  margin: 12px;
+}
+
+/* MPRIS Widget */
+.widget-mpris > box > button {
+  padding: 0;
+}
+
+.widget-mpris .widget-mpris-player {
+  background-color: @mpris-album-art-overlay;
+  border-radius: 14px;
+}
+
+.widget-mpris .widget-mpris-player .widget-mpris-title,
+.widget-mpris .widget-mpris-player .widget-mpris-subtitle {
+  font-style: italic;
+}
+
+.widget-mpris .widget-mpris-player .widget-mpris-album-art {
+  border-radius: 14px;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Title widget */
+.widget-title {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+.widget-title > button {
+  background: @s-on-primary;
+  border-radius: 5px;
+}
+
+.widget-title > button:hover {
+  background: @s-inverse-primary;
+}
+
+/* DND widget */
+.widget-dnd {
+  color: @s-on-background;
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.widget-dnd > switch {
+  border-radius: 5px;
+  background: @s-on-primary;
+}
+
+.widget-dnd > switch:checked {
+  background: @s-inverse-primary;
+}
+
+.widget-dnd > switch slider {
+  background: @s-primary;
+  border-radius: 5px;
+}
+
+/* Buttons Grid Widget */
+.widget-buttons-grid {
+  font-size: 32px;
+  border: 1px solid @on-background;
+  border-radius: 5px;
+  background: @s-on-primary;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button {
+  color: @text-box;
+  background: none;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button:hover {
+  color: @text-color-disabled;
+  transition: color 0.15s ease-in-out;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button.toggle {
+  color: @noti-bg-darker;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button.toggle:checked {
+  color: @text-color;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button.toggle:hover {
+  color: @noti-close-bg;
+  transition: color 0.15s ease-in-out;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button.toggle:checked:hover {
+  color: @s-inverse-primary;
+  transition: color 0.15s ease-in-out;
+}
+
+/* Volume and Backlight Widgets */
+.widget-volume,
+.widget-backlight {
+  background: @x-on-secondary-fixed;
+  font-size: 32px;
+  border-radius: 5px;
+  border: 2px solid @x-on-background;
+}

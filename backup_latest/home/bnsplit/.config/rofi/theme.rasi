@@ -1,0 +1,167 @@
+@import "~/.config/bnsplit/colors/colors-rofi.rasi"
+
+
+* {
+    font: "JetBrains Mono Italic Bold 16";
+}
+
+window {
+    border: 1px;
+    border-color: @s-on-surface;
+    border-radius: 5px;
+    width: 1000px;
+    height: 600px;
+    background-color: @x-surface;
+}
+
+mainbox {
+    padding: 0;
+    border-radius: 5px;
+    border: 0px;
+    border-color: @x-surface;
+    background-color: transparent;
+    spacing: 10px;
+    children: [ "inputbar", "message", "listview", "mode-switcher" ];
+}
+
+listview {
+    padding: 10px;
+    background-color: transparent;
+    scrollbar: false;
+    spacing: 12px;
+    border: none;
+}
+
+inputbar {
+    padding: 12px;
+    spacing: 0px;
+    background-color: transparent;
+    children: [ "prompt", "entry", "num-filtered-rows", "textbox-num-sep", "num-rows" ];
+}
+
+num-filtered-rows,
+num-rows,
+textbox-num-sep {
+    background-color: transparent;
+    text-color: @s-on-surface;
+}
+
+textbox-num-sep {
+    expand: false;
+    str: "/";
+}
+
+prompt {
+    spacing: 0;
+    background-color: transparent;
+    text-color: @s-primary;
+}
+
+textbox-prompt-colon {
+    str: ":";
+    background-color: transparent;
+    text-color: @x-on-surface;
+}
+
+entry {
+    placeholder: "...";
+    background-color: transparent;
+    placeholder-color: @s-primary;
+    text-color: @s-on-surface;
+}
+
+message {
+    padding: 1px;
+    background-color: @s-on-primary-fixed;
+    border-color: @x-on-surface;
+    border: 1px;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 8px;
+    children: [ textbox ];
+}
+
+textbox {
+    vertical-align: 0.5;
+    horizontal-align: 0;
+    background-color: transparent;
+    font: "JetBrains Mono Italic Bold 12";
+    text-color: @s-primary;
+}
+
+element {
+    padding: 4.5px;
+    background-color: transparent;
+    children: [ element-text, element-icon ];
+    border: 0px;
+    border-color: @x-on-surface;
+    text-color: @s-on-surface;
+    border-radius: 5px;
+}
+
+element.normal.normal {
+    background-color: @x-surface-container-low;
+    background-color: @x-shadow;
+}
+
+element.normal.active {
+    background-color: @s-on-primary;
+    text-color: @s-on-surface;
+}
+
+element.alternate.active {
+    background-color: @s-on-primary;
+    text-color: @s-on-surface;
+}
+
+element.selected.normal {
+    background-color: @s-inverse-primary;
+    text-color: @s-on-surface;
+}
+
+element.selected.active {
+    background-color: @s-inverse-primary;
+    text-color: @s-on-surface;
+}
+
+element.alternate.normal {
+    background-color: @x-surface-container-low;
+    background-color: @x-shadow;
+}
+
+mode-switcher {
+    enabled: true;
+    margin: 0 16px 16px 16px;
+    spacing: 24px;
+    background-color: transparent;
+}
+
+button {
+    margin: 0 10px;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px;
+    background-color: @s-on-primary;
+    border-color: @x-on-surface;
+    text-color: @x-primary;
+}
+
+button.selected {
+    cursor: pointer;
+    background-color: @s-inverse-primary;
+    text-color: @s-on-surface;
+}
+
+element-icon {
+    size: 1.13em;
+    background-color: transparent;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: @s-on-surface;
+    vertical-align: 0.5;
+    horizontal-align: 0;
+    font: "JetBrains Mono Italic Bold 12";
+}

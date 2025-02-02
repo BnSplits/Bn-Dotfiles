@@ -1,0 +1,116 @@
+// Inspired by Catnap
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": "none",
+  "display": {
+    "separator": " ",
+  },
+  "modules": [
+    {
+      "key": "{#31}",
+      "text": "echo -e '\n' \"\\033[31m$(uname -n | figlet -f 'DOS Rebel')\\033[0m\"",
+      // Other fonts in /usr/share/figlet/fonts/
+      "type": "command",
+    },
+    {
+      "key": "╭───────────╮",
+      "type": "custom",
+    },
+    {
+      "key": "│ {#31} user    {#keys}│",
+      "type": "title",
+      "format": "{user-name}",
+    },
+    // {
+    //    "key": "│ {#32}󰇅 hname   {#keys}│",
+    //    "type": "title",
+    //    "format": "{host-name}"
+    // },
+    {
+      "type": "packages",
+      "key": "│ {#33}󰏖 packages{#keys}│",
+    },
+    // {
+    //    "key": "│ {#34}󰅐 uptime  {#keys}│",
+    //    "type": "uptime"
+    // },
+    {
+      "key": "│ {#35}󰅐 age     {#keys}│",
+      "text": "~/.config/bnsplit/scripts/os_age.sh",
+      "type": "command",
+    },
+    {
+      "key": "│ {#36}{icon} distro  {#keys}│",
+      "type": "os",
+    },
+    {
+      "key": "│ {#31} kernel  {#keys}│",
+      "type": "kernel",
+    },
+    {
+      "key": "│ {#32}󰇄 desktop {#keys}│",
+      "type": "de",
+    },
+    {
+      "key": "│ {#32}󰇄 wm      {#keys}│",
+      "type": "wm",
+    },
+    {
+      "key": "│ {#33} term    {#keys}│",
+      "type": "terminal",
+    },
+    {
+      "key": "│ {#34} shell   {#keys}│",
+      "type": "shell",
+    },
+    {
+      "key": "│ {#35}󰍛 cpu     {#keys}│",
+      "type": "cpu",
+      "showPeCoreCount": true,
+      "temp": true,
+    },
+    // {
+    //    "key": "│ {#36}󰉉 disk    {#keys}│",
+    //    "type": "disk"
+    //    // "folders": "/"
+    // },
+    {
+      "key": "│ {#31}󰉉 home    {#keys}│",
+      "type": "disk",
+      "folders": "/home",
+    },
+    {
+      "key": "│ {#32} memory  {#keys}│",
+      "type": "memory",
+    },
+    // {
+    //    "type": "swap",
+    //    "key": "│ {#33}󰓡 swap    {#keys}│"
+    // },
+    {
+      "type": "display",
+      "key": "│ {#34}󰍹 display {#keys}│",
+    },
+    // {
+    //    "type": "sound",
+    //    "key": "│ {#35} sound   {#keys}│"
+    // },
+    // {
+    //    "type": "player",
+    //    "key": "│ {#36}󰥠 player  {#keys}│"
+    // },
+    {
+      "key": "├───────────┤",
+      "type": "custom",
+    },
+    {
+      "key": "│ {#39} colors  {#keys}│",
+      "type": "colors",
+      "symbol": "circle",
+    },
+    {
+      "key": "╰───────────╯",
+      "type": "custom",
+    },
+  ],
+}

@@ -1,0 +1,111 @@
+#!/bin/bash
+set -euo pipefail
+
+# ------------------------------
+# Configuration
+# ------------------------------
+CONFIG_DIR="$HOME/.config/bnsplit"
+ZEN_TABLISS_WAL="$HOME/.zen/cy6bohdq.Default (alpha)/storage/default/moz-extension+++23533115-4010-4a65-8652-8b7871386a09^userContextId=4294967295/idb/3647222921wleabcEoxlt-eengsairo.files"
+PAPIRUS_SCRIPT="$CONFIG_DIR/scripts/colors_name.sh"
+GTK_THEME_SCRIPT="$CONFIG_DIR/scripts/reload_gtk_theme.sh"
+CACHE_WALLPAPER="$CONFIG_DIR/cache/wallpaper"
+CACHE_WALLPAPER_PNG="$CONFIG_DIR/cache/wallpaper-png"
+CACHE_WALLPAPER_SQUARE_600="$CONFIG_DIR/cache/wallpaper-square-600"
+BLUR_SQUARE_DIR="$HOME/.cache/blured-squared"
+PAPIRUS_FOLDERS="$HOME/.local/bin/papirus-folders"
+
+# ------------------------------
+# Input Validation
+# ------------------------------
+if [[ $# -eq 0 ]]; then
+  echo "Usage: $0 <path_to_image>"
+  exit 1
+fi
+
+input_image="$1"
+
+# ------------------------------
+# Pre-create Necessary Directories
+# ------------------------------
+mkdir -p "$(dirname "$CACHE_WALLPAPER")" \
+         "$(dirname "$CACHE_WALLPAPER_PNG")" \
+         "$(dirname "$CACHE_WALLPAPER_SQUARE_600")" \
+         "$ZEN_TABLISS_WAL" \
+         "$BLUR_SQUARE_DIR"
+
+# ------------------------------
+# Copy Original Image to Cache Locations (in parallel)
+# ------------------------------
+cp "$input_image" "$CACHE_WALLPAPER" &
+cp "$input_image" "$ZEN_TABLISS_WAL/1" &
+wait
+
+# ------------------------------
+# Launch Independent Tasks in Parallel
+# ------------------------------
+# Generate colors (non-blocking)
+matugen -v image "$input_image"
+
+# Reload system notifications (non-blocking)
+swaync-client -R &
+swaync-client -rs &
+
+# Reload GTK theme (non-blocking)
+"$GTK_THEME_SCRIPT" &
+
+# ------------------------------
+# Determine MIME Type and Hash Using Input File
+# ------------------------------
+file_type=$(file --mime-type -b "$input_image")
+BLUR_WALL_HASH=$(sha256sum "$input_image" | awk '{print $1}')
+
+# ------------------------------
+# Function: Process and Cache Image
+# ------------------------------
+things() {
+  local img="$1"  # This can include [0] for GIF first frame
+
+  # Convert to PNG format
+  magick "$img" PNG32:"$CACHE_WALLPAPER_PNG"
+
+  # Use cached version if available
+  if [[ -f "$BLUR_SQUARE_DIR/$BLUR_WALL_HASH" ]]; then
+    cp "$BLUR_SQUARE_DIR/$BLUR_WALL_HASH" "$CACHE_WALLPAPER_SQUARE_600"
+  else
+    magick "$img" \
+      -resize 1920x1080^ -gravity center -extent 1920x1080 \
+      -gravity northwest -crop 600x600+50+50 +repage \
+      -blur 0x40 \
+      -fill "rgba(0,0,0,0.3)" -draw "rectangle 0,0 600,600" \
+      PNG32:"$CACHE_WALLPAPER_SQUARE_600"
+    cp "$CACHE_WALLPAPER_SQUARE_600" "$BLUR_SQUARE_DIR/$BLUR_WALL_HASH"
+  fi
+}
+
+# ------------------------------
+# Process Image Depending on its Type
+# ------------------------------
+if [[ "$file_type" == "image/gif" ]]; then
+  # Process only the first frame if GIF (avoid processing all frames)
+  things "${CACHE_WALLPAPER}[0]" &
+else
+  things "$CACHE_WALLPAPER" &
+fi
+
+# ------------------------------
+# Update Papirus Folder Colors (in parallel)
+# ------------------------------
+color_value=$("$PAPIRUS_SCRIPT")
+"$PAPIRUS_FOLDERS" -C "$color_value" --theme Papirus-Dark &
+
+# ------------------------------
+# Wait for All Background Tasks to Finish
+# ------------------------------
+wait
+exit 0
+
+
+
+
+
+

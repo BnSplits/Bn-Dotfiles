@@ -1,0 +1,48 @@
+[config.wallpaper]
+command = "true"
+
+
+[templates.colors-source]
+input_path = './templates/colors-source'
+output_path = '~/.config/bnsplit/colors/colors-source'
+
+
+[templates.colors-css]
+input_path = './templates/colors.css'
+output_path = '~/.config/bnsplit/colors/colors.css'
+
+
+[templates.gtk3-solid]
+input_path = './templates/gtk3-solid.css'
+output_path = '~/.themes/custom-adw/gtk-3.0/colors-solid.css'
+
+
+[templates.gtk3-xray]
+input_path = './templates/gtk3-xray.css'
+output_path = '~/.themes/custom-adw/gtk-3.0/colors-xray.css'
+
+
+[templates.gtk4-solid]
+input_path = './templates/gtk4-solid.css'
+output_path = '~/.themes/custom-adw/gtk-4.0/colors-solid.css'
+
+
+[templates.gtk4-xray]
+input_path = './templates/gtk4-xray.css'
+output_path = '~/.themes/custom-adw/gtk-4.0/colors-xray.css'
+
+
+[templates.hyprland]
+input_path = './templates/hyprland.conf'
+output_path = '~/.config/bnsplit/colors/colors-hypr.conf'
+
+
+[templates.kitty]
+input_path = './templates/kitty.conf'
+output_path = '~/.config/bnsplit/colors/colors-kitty.conf'
+post_hook = 'pkill -SIGUSR1 kitty'
+
+
+[templates.rofi]
+input_path = './templates/rofi.rasi'
+output_path = '~/.config/bnsplit/colors/colors-rofi.rasi'

@@ -1,0 +1,9 @@
+{
+  "ParallelDownloads": 5,
+  "DownloadLimit": 0,
+  "UseAria2": true,
+  "suppress_output": true,
+  "sortby": "name",
+  "confirm_upgrade": false,
+  "cleanmenu": true
+}

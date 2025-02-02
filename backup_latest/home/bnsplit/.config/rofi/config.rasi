@@ -1,0 +1,22 @@
+@theme "~/.config/rofi/theme.rasi"
+
+configuration {
+    font: "JetBrains Mono Italic 14";
+    show-icons: true;
+    icon-theme: "Papirus-Dark";
+	  drun-show-actions: false;
+	  combi-display-format: "{mode} => {text}";
+    combi {
+        display-name: "󰕰 ";
+      }
+    calc {
+        display-name: "󱖦 ";
+    }
+    filebrowser {
+        display-name: " ";
+        directories-first: true;
+        sorting-method: "name";
+        directory : "/home/bnsplit/";
+        show-hidden: true;
+    }
+}
