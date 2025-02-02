@@ -1,5 +1,6 @@
 scripts/vdhcoapp-2.0.19/
 scripts/git_config.sh
+scripts/google.provider
 grub-themes/
 backups/
 backup_latest/home/bnsplit/.tmux/
