@@ -66,7 +66,7 @@
     // "title-len": 20,
     "dynamic-order": ["title", "artist"],
     "dynamic-separator": " / ",
-    "ignored-players": ["firefox", "vlc", "zen-beta", "kdeconnect"],
+    "ignored-players": ["firefox", "vlc", "zen-beta","zen","plasma-browser-integration", "kdeconnect"],
   },
   "tray": {
     "icon-size": 16,
@@ -103,8 +103,9 @@
     "format-charging": " {capacity}%",
     "format-plugged": " {capacity}%",
     "tooltip-format": "{time}   / {health}% ",
-    "on-click": "source ~/.config/bnsplit/scripts/toggle_battery_save.sh",
-    "on-click-right": "kitty btop",
+    // "on-click": "source ~/.config/bnsplit/scripts/toggle_battery_save.sh",
+    // "on-click-right": "kitty btop",
+    // "on-click": "kitty btop",
     "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
   },
 

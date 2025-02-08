@@ -8,7 +8,6 @@ set -euo pipefail
 # Configuration
 # ------------------------------
 CONFIG_DIR="$HOME/.config/bnsplit"
-# (It appears ZEN_TABLISS_WAL is used as a cache folder for one copy.)
 ZEN_TABLISS_WAL="$HOME/.zen/cy6bohdq.Default (alpha)/storage/default/moz-extension+++23533115-4010-4a65-8652-8b7871386a09^userContextId=4294967295/idb/3647222921wleabcEoxlt-eengsairo.files"
 PAPIRUS_SCRIPT="$CONFIG_DIR/scripts/colors_name.sh"
 GTK_THEME_SCRIPT="$CONFIG_DIR/scripts/reload_gtk_theme.sh"
@@ -39,18 +38,18 @@ input_image="$1"
 # Pre-create Necessary Directories
 # ------------------------------
 mkdir -p "$(dirname "$CACHE_WALLPAPER")" \
-         "$(dirname "$CACHE_WALLPAPER_PNG")" \
-         "$(dirname "$CACHE_WALLPAPER_BLUR_PNG_SQUARE_600_X50Y50")" \
-         "$ZEN_TABLISS_WAL" \
-         "$BLUR_SQUARE_600_X50Y50_DIR" \
-         "$BLUR_DIR" \
-         "$WALL_PNG_DIR"
+  "$(dirname "$CACHE_WALLPAPER_PNG")" \
+  "$(dirname "$CACHE_WALLPAPER_BLUR_PNG_SQUARE_600_X50Y50")" \
+  "$ZEN_TABLISS_WAL" \
+  "$BLUR_SQUARE_600_X50Y50_DIR" \
+  "$BLUR_DIR" \
+  "$WALL_PNG_DIR"
 
 # ------------------------------
 # Copy Original Image to Cache Locations (in parallel)
 # ------------------------------
 cp "$input_image" "$CACHE_WALLPAPER" &
-cp "$input_image" "$ZEN_TABLISS_WAL/1" &
+# cp "$input_image" "$ZEN_TABLISS_WAL/1" &
 wait
 
 # ------------------------------
@@ -74,22 +73,46 @@ WALL_HASH=$(sha256sum "$input_image" | awk '{print $1}')
 # Function: Process and Cache Image Conversions
 # ------------------------------
 process_image() {
-  local img="$1"  # "$CACHE_WALLPAPER" or "$CACHE_WALLPAPER[0]" for GIFs
+  local img="$1" # "$CACHE_WALLPAPER" or "$CACHE_WALLPAPER[0]" for GIFs
+
+  # # ----------------------------
+  # # Combined PNG Wallpaper and Blurred Wallpaper Generation
+  # # ----------------------------
+  # if [[ -f "$WALL_PNG_DIR/$WALL_HASH" && -f "$BLUR_DIR/$WALL_HASH" ]]; then
+  #   cp "$WALL_PNG_DIR/$WALL_HASH" "$CACHE_WALLPAPER_PNG"
+  #   cp "$BLUR_DIR/$WALL_HASH" "$CACHE_WALLPAPER_BLUR"
+  # else
+  #   # Generate a 1920x1080, metadata-stripped PNG and a blurred version in one command.
+  #   magick "$img" -strip -resize 1920x1080^ -gravity center -extent 1920x1080 \
+  #     \( +clone -write mpr:png +delete \) \
+  #     \( mpr:png -blur 0x25 -write "$CACHE_WALLPAPER_BLUR" +delete \) \
+  #     PNG32:"$CACHE_WALLPAPER_PNG"
+  #   cp "$CACHE_WALLPAPER_PNG" "$WALL_PNG_DIR/$WALL_HASH"
+  #   cp "$CACHE_WALLPAPER_BLUR" "$BLUR_DIR/$WALL_HASH"
+  # fi
 
   # ----------------------------
-  # Combined PNG Wallpaper and Blurred Wallpaper Generation
+  # Blurred Wallpaper Generation
   # ----------------------------
-  if [[ -f "$WALL_PNG_DIR/$WALL_HASH" && -f "$BLUR_DIR/$WALL_HASH" ]]; then
-    cp "$WALL_PNG_DIR/$WALL_HASH" "$CACHE_WALLPAPER_PNG"
+  if [[ -f "$BLUR_DIR/$WALL_HASH" ]]; then
     cp "$BLUR_DIR/$WALL_HASH" "$CACHE_WALLPAPER_BLUR"
   else
-    # Generate a 1920x1080, metadata-stripped PNG and a blurred version in one command.
+    # Generate a 1920x1080 blurred version in one command.
     magick "$img" -strip -resize 1920x1080^ -gravity center -extent 1920x1080 \
-      \( +clone -write mpr:png +delete \) \
-      \( mpr:png -blur 0x25 -write "$CACHE_WALLPAPER_BLUR" +delete \) \
+      -blur 0x25 "$CACHE_WALLPAPER_BLUR"
+    cp "$CACHE_WALLPAPER_BLUR" "$BLUR_DIR/$WALL_HASH"
+  fi
+
+  # ----------------------------
+  # PNG Wallpaper Generation
+  # ----------------------------
+  if [[ -f "$WALL_PNG_DIR/$WALL_HASH" ]]; then
+    cp "$WALL_PNG_DIR/$WALL_HASH" "$CACHE_WALLPAPER_PNG"
+  else
+    # Generate a 1920x1080, metadata-stripped PNG in one command.
+    magick "$img" -strip -resize 1920x1080^ -gravity center -extent 1920x1080 \
       PNG32:"$CACHE_WALLPAPER_PNG"
     cp "$CACHE_WALLPAPER_PNG" "$WALL_PNG_DIR/$WALL_HASH"
-    cp "$CACHE_WALLPAPER_BLUR" "$BLUR_DIR/$WALL_HASH"
   fi
 
   # ----------------------------
@@ -117,17 +140,21 @@ else
 fi
 
 # ------------------------------
+# kde-material-you-colors
+# ------------------------------
+kde-material-you-colors --file ~/.config/bnsplit/cache/current-wallpaper &
+
+# ------------------------------
 # Update Papirus Folder Colors (in parallel)
 # ------------------------------
+# wait
 (
   color_value=$("$PAPIRUS_SCRIPT")
   "$PAPIRUS_FOLDERS" -C "$color_value" --theme Papirus-Dark
 ) &
-
+#
 # ------------------------------
 # Wait for All Background Tasks to Finish
 # ------------------------------
 wait
-echo 100
 exit 0
-

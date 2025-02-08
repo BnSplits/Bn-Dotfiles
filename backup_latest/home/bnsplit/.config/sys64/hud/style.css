@@ -16,6 +16,7 @@
 
 #syshud label {
 	/* color: @x-primary; */
+	color: rgba(230, 230, 230, .7);
   font-weight: 900;
 }
 
@@ -39,7 +40,7 @@
 /* 	color: alpha(#cdd6f4, 0.5); */
 /* } */
 /**/
-/* /* Horizontal layout */ */
+/* /* Horizontal layout */
 /* #syshud scale.horizontal { */
 /* 	padding: 0px; */
 /* 	min-height: 5px; */
@@ -64,7 +65,7 @@
 /* 	padding: 0px; */
 /* } */
 /**/
-/* /* Vertical layout */ */
+/* /* Vertical layout */
 /* #syshud scale.vertical { */
 /* 	padding: 0px; */
 /* 	min-width: 5px; */
@@ -90,7 +91,7 @@
 /* 	min-height: 50px; */
 /* } */
 /**/
-/* /* Levels */ */
+/* /* Levels */
 /* #syshud .muted { */
 /* } */
 /* #syshud .low { */

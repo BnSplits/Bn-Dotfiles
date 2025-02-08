@@ -59,7 +59,8 @@ while [[ true ]]; do
   WEATHER=${WEATHER_MAP[$WEATHER_CODE]:-"🌡 Unknown"}
 
   # Write output to the cache file
-  echo "$CITY: ${TEMP}° $WEATHER" >"$CACHE_FILE"
+  # echo "$CITY: ${TEMP}° $WEATHER" >"$CACHE_FILE"
+  echo "${TEMP}° $WEATHER" >"$CACHE_FILE"
 
   sleep 300
 done

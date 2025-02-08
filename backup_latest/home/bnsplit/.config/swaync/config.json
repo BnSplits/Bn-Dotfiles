@@ -121,7 +121,7 @@
         },
         {
           "label": " ",
-          "command": "sh -c 'swaync-client --close-panel && $(hyprpicker -a)'"
+          "command": "sh -c 'swaync-client --close-panel && sleep 0.2 && $(hyprpicker -a)'"
         },
         {
           "label": "",

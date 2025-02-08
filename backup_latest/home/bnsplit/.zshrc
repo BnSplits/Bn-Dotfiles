@@ -65,6 +65,7 @@ alias yo='yay -Rns $(yay -Qdtq)'
 alias yu='yay -Syu --noconfirm'
 alias rmdb='sudo rm /var/lib/pacman/db.lck'
 alias tk='tmux kill-session'
+alias tm='$HOME/.config/bnsplit/scripts/tmux_launch_main.sh'
 
 C() {
   clear &&
@@ -111,7 +112,6 @@ save () {
 
 # PATH
 export PATH="$HOME/.local/bin:$PATH"
-
 
 # Shell integration
 eval "$(fzf --zsh)"

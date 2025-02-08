@@ -12,6 +12,11 @@ input_path = './templates/colors.css'
 output_path = '~/.config/bnsplit/colors/colors.css'
 
 
+[templates.colors-scss]
+input_path = './templates/colors.scss'
+output_path = '~/.config/bnsplit/colors/colors.scss'
+
+
 [templates.gtk3-solid]
 input_path = './templates/gtk3-solid.css'
 output_path = '~/.themes/custom-adw/gtk-3.0/colors-solid.css'

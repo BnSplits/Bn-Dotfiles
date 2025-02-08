@@ -12,9 +12,9 @@ backup_latest/home/bnsplit/.local/share/
 backup_latest/home/bnsplit/.cache/
 backup_latest/home/bnsplit/.config/*.bak
 backup_latest/home/bnsplit/.config/ags/
-backup_latest/home/bnsplit/.config/bnsplit/libvirt-vms/
+backup_latest/home/bnsplit/.config/bnsplit/libvirt-vms
 backup_latest/home/bnsplit/.config/kdeconnect/
 backup_log.txt
-*.sd.tar.gz
+*.tar.gz
 *.knsv
 _Archives/

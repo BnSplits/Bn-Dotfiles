@@ -54,6 +54,11 @@
   margin: 6px;
 }
 
+.notification-row .notification-background .notification {
+  /* background: linear-gradient(40deg, @x-on-primary-fixed, @x-primary-container); */
+  background: linear-gradient(40deg, @x-primary-container, @x-on-primary-fixed);
+}
+
 .notification-row
   .notification-background
   .notification

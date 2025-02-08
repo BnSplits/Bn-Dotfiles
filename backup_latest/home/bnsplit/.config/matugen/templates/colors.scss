@@ -1,0 +1,13 @@
+/*
+* SCSS solid colors
+*/
+<* for name, value in colors *>
+$s-{{name | replace: "_", "-"}}: {{value.default.hex}};
+<* endfor *>
+
+/*
+* SCSS xray colors
+*/
+<* for name, value in colors *>
+$x-{{name | replace: "_", "-"}}: {{value.default.rgba | set_alpha: 0.8}};
+<* endfor *>

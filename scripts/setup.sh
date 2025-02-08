@@ -1,5 +1,8 @@
 clear
 # --- VARIABLES ---
+SCRIPT_DIR="$(dirname "$(realpath "$0")")"
+X=1
+X_MAX=22
 
 # Define colors
 RED='\033[0;31m'
@@ -16,15 +19,19 @@ echo_success() { echo -e "${GREEN}✓ $1${NC}"; }
 echo_warning() { echo -e "${YELLOW}⚠ $1${NC}"; }
 echo_error() { echo -e "${RED}✗ $1${NC}\n"; }
 print_separator() {
-  echo -e "\n${CYAN}##############################${NC}"
-  echo -e "${CYAN}# $1${NC}"
-  echo -e "${CYAN}##############################${NC}\n"
+  echo -e "\n${CYAN}══════════════════════════════════════════════════════════════════${NC}"
+  echo -e "${CYAN}($X/$X_MAX) -> $1${NC}"
+  echo -e "${CYAN}══════════════════════════════════════════════════════════════════${NC}\n"
+  X=$((X + 1))
 }
 
-# Startup info
-echo -e "${RED}╔══════════════════════════════════════════════════════════════════════════╗${NC}"
-echo -e "${RED}║Be sure to be in the same directory than the script before launching it ! ║"
-echo -e "${RED}╚══════════════════════════════════════════════════════════════════════════╝${NC}"
+# Script directory check
+if [[ "$PWD" != "$SCRIPT_DIR" ]]; then
+  echo -e "${RED}╔══════════════════════════════════════════════════════════════════════════╗${NC}"
+  echo -e "${RED}║Be sure to be in the same directory than the script before launching it ! ║"
+  echo -e "${RED}╚══════════════════════════════════════════════════════════════════════════╝${NC}"
+  exit 1
+fi
 
 # List of packages to uninstall
 uninstall=(
@@ -35,6 +42,7 @@ uninstall=(
 default_packages=(
   "amd-ucode"
   "appimagelauncher"
+  "archiso"
   "aria2"
   "bat"
   "bc"
@@ -61,6 +69,7 @@ default_packages=(
   "file-roller"
   "fish"
   "flatpak"
+  "fpc"
   "fzf"
   "gapless"
   "git"
@@ -70,6 +79,8 @@ default_packages=(
   "gwenview"
   "hollywood"
   "hplip"
+  "inkscape"
+  "inxi"
   "imagemagick"
   "lazygit"
   "kio"
@@ -79,8 +90,10 @@ default_packages=(
   "kdenlive"
   "jdk17-openjdk"
   "jq"
+  "libre-menu-editor"
   "libreoffice-still-fr"
   "lolcat"
+  "ly"
   "matugen-bin"
   "neovim"
   "nodejs-lts-iron"
@@ -92,13 +105,15 @@ default_packages=(
   "onlyoffice-bin"
   "os-prober"
   "p7zip"
+  "pavucontrol"
   "pipes.sh"
   "poppler"
   "power-profiles-daemon"
   "python-pynvim"
   "python-pyqt5"
-  # "python-pywalfox"
   "qalculate-gtk"
+  "reflector"
+  "reflector-simple"
   "resources"
   "ripgrep"
   "rustc"
@@ -178,7 +193,6 @@ hypr_packages=(
   "syshud"
   "waybar"
   "waypaper"
-  "wlogout"
   "xdg-desktop-portal-gtk"
   "xdg-desktop-portal-hyprland"
 )
@@ -257,7 +271,6 @@ uninstall_packages() {
       else
         echo_arrow "Uninstalling $pkg..."
 
-        # Uninstall the package and redirect output to /dev/null
         if yay -Rns --noconfirm "$pkg" >/dev/null 2>&1; then
           echo_success "$pkg uninstalled"
         else
@@ -268,10 +281,10 @@ uninstall_packages() {
   fi
 }
 
-# Install default packages
+# Install base packages
 install_default_packages() {
-  print_separator "Installing default packages"
-  if confirm "Do you want to install default packages?"; then
+  print_separator "Installing base packages"
+  if confirm "Do you want to install base packages?"; then
     for pkg in "${default_packages[@]}"; do
       echo_arrow "Checking $pkg..."
 
@@ -290,7 +303,7 @@ install_default_packages() {
 }
 
 # Special ways to install some packages
-special_installs() {
+G_special_installs() {
   print_separator "Special installation precess"
 
   # Tmux tpm
@@ -299,32 +312,25 @@ special_installs() {
     git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
   fi
 
-  # # EWW installation
-  # if confirm "Do you want to install EWW?"; then
-  #   git clone https://github.com/elkowar/eww /tmp/
-  #   (
-  #     cd /tmp/eww/
-  #     cargo build --release --no-default-features --features=wayland
-  #     cd target/release
-  #     chmod +x ./eww
-  #     cp ./eww ~/.local/bin/
-  #   )
-  # fi
-  #
+  # Spicetify
+  if confirm "Do you want to install Spicetify?"; then
+    echo_arrow "Installation of Spicetify..."
+    curl -fsSL https://raw.githubusercontent.com/spicetify/cli/main/install.sh | sh
+  fi
+
 }
 
-# Optional GNOME config function
-gnome_config() {
-  config_papirus() {
-    print_separator "Configuration of papirus icon theme"
-    if confirm "Do you want to configure papirus icon theme?"; then
-      wget -qO- https://git.io/papirus-icon-theme-install | env DESTDIR="$HOME/.icons" sh &&
-        wget -qO- https://git.io/papirus-folders-install | env PREFIX="$HOME/.local" sh &&
-        gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
-    fi
-  }
-  config_papirus
+# Papirus icons
+papirus() {
+  print_separator "Installation of papirus icon theme"
+  if confirm "Do you want to install papirus icon theme?"; then
+    wget -qO- https://git.io/papirus-icon-theme-install | env DESTDIR="$HOME/.icons" sh
+    wget -qO- https://git.io/papirus-folders-install | env PREFIX="$HOME/.local" sh
+  fi
+}
 
+# Optional Group of GNOME config functions
+G_gnome_config() {
   restore_gnome_config() {
     print_separator "Restoring GNOME config"
     if confirm "Do you want to restore the gnome config?"; then
@@ -333,23 +339,38 @@ gnome_config() {
   }
   restore_gnome_config
 
-  print_separator "Installing additional packages for GNOME"
-  if confirm "Do you want to install the listed packages for GNOME?"; then
-    for pkg in "${gnome_packages[@]}"; do
-      echo_arrow "Checking $pkg..."
+  gnome_packages_install() {
+    print_separator "Installing additional packages for GNOME"
+    if confirm "Do you want to install the listed packages for GNOME?"; then
+      for pkg in "${gnome_packages[@]}"; do
+        echo_arrow "Checking $pkg..."
 
-      if pacman -Q "$pkg" &>/dev/null; then
-        echo_success "$pkg is already installed"
-      else
-        echo_arrow "Installing $pkg..."
-
-        if yay -S --noconfirm --quiet "$pkg" >/dev/null 2>&1; then
-          echo_success "$pkg installed"
+        if pacman -Q "$pkg" &>/dev/null; then
+          echo_success "$pkg is already installed"
         else
-          echo_error "$pkg not installed"
+          echo_arrow "Installing $pkg..."
+
+          if yay -S --noconfirm --quiet "$pkg" >/dev/null 2>&1; then
+            echo_success "$pkg installed"
+          else
+            echo_error "$pkg not installed"
+          fi
         fi
-      fi
-    done
+      done
+    fi
+  }
+  gnome_packages_install
+}
+
+# Edit sudoers
+visudo() {
+  print_separator "Visudo"
+  if confirm "Do you want to edit your sudoers file?"; then
+    echo -e "${CYAN}You will edit your sudoers file !"
+    echo -e "${CYAN}Add a line like this : 'bnsplit ALL=(ALL) NOPASSWD: <the command that you wnant ot grant permissions>'"
+    echo -ne "${CYAN}Press any key to start.."
+    read c
+    sudo visudo
   fi
 }
 
@@ -513,9 +534,9 @@ configure_docker() {
   fi
 }
 
-# Manual fstab edit
+# Manual fstab editing
 fstab_edit() {
-  print_separator "Fstab manual edition"
+  print_separator "Manual fstab editing"
   if confirm "Do you want to manually edit your /etc/fstab file?"; then
     sudo vim /etc/fstab
   fi
@@ -563,27 +584,25 @@ restart() {
 }
 
 # --- MAIN EXECUTION ---
-main() {
-  check_prerequisite
-  config_clock
-  update_package_database
-  uninstall_packages
-  install_default_packages
-  special_installs
-  gnome_config
-  choose_shell
-  install_megasync
-  mounting_folders
-  fstab_edit
-  restore_backup
-  configure_printer
-  configure_git
-  configure_bluetooth
-  virtmanager
-  configure_docker
-  hypr_config
-  grub
-  restart
-}
-
-main
+check_prerequisite
+config_clock
+update_package_database
+uninstall_packages
+install_default_packages
+G_special_installs
+G_gnome_config
+choose_shell
+papirus
+install_megasync
+mounting_folders
+fstab_edit
+visudo
+restore_backup
+configure_printer
+configure_git
+configure_bluetooth
+virtmanager
+configure_docker
+hypr_config
+grub
+restart

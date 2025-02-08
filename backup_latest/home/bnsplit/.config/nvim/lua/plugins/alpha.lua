@@ -43,8 +43,9 @@ return {
       [[   \ \_\ \_\ \____\ \____/\ \___/  \ \_\ \_\ \_\ \_\]],
       [[    \/_/\/_/\/____/\/___/  \/__/    \/_/\/_/\/_/\/_/]],
     }
-    -- dashboard.section.header.val = vim.split(logo_3, "\n")
-    dashboard.section.header.val = logo_2
+    -- dashboard.section.header.val = logo_3
+    -- dashboard.section.header.val = logo_2
+    dashboard.section.header.val = logo_1
     -- stylua: ignore
     dashboard.section.buttons.val = {
       dashboard.button("f", " " .. " Find file",       "<cmd> lua LazyVim.pick()() <cr>"),
@@ -68,7 +69,7 @@ return {
     return dashboard
   end,
   config = function(_, dashboard)
-    -- close Lazy and re-open when the dashboard is ready
+    -- Close Lazy and re-open when the dashboard is ready
     if vim.o.filetype == "lazy" then
       vim.cmd.close()
       vim.api.nvim_create_autocmd("User", {

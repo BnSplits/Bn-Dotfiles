@@ -2,208 +2,208 @@
 * CSS solid colors
 */
 
-@define-color s-background #1a120e;
+@define-color s-background #1a1111;
 
 @define-color s-error #ffb4ab;
 
 @define-color s-error-container #93000a;
 
-@define-color s-inverse-on-surface #382e2a;
+@define-color s-inverse-on-surface #382e2d;
 
-@define-color s-inverse-primary #8e4d2d;
+@define-color s-inverse-primary #904a47;
 
-@define-color s-inverse-surface #f1dfd8;
+@define-color s-inverse-surface #f1dedd;
 
-@define-color s-on-background #f1dfd8;
+@define-color s-on-background #f1dedd;
 
 @define-color s-on-error #690005;
 
 @define-color s-on-error-container #ffdad6;
 
-@define-color s-on-primary #542104;
+@define-color s-on-primary #571d1c;
 
-@define-color s-on-primary-container #ffdbcc;
+@define-color s-on-primary-container #ffdad7;
 
-@define-color s-on-primary-fixed #351000;
+@define-color s-on-primary-fixed #3b0809;
 
-@define-color s-on-primary-fixed-variant #713718;
+@define-color s-on-primary-fixed-variant #733331;
 
-@define-color s-on-secondary #442a1f;
+@define-color s-on-secondary #442928;
 
-@define-color s-on-secondary-container #ffdbcc;
+@define-color s-on-secondary-container #ffdad7;
 
-@define-color s-on-secondary-fixed #2c160b;
+@define-color s-on-secondary-fixed #2c1514;
 
-@define-color s-on-secondary-fixed-variant #5c4033;
+@define-color s-on-secondary-fixed-variant #5d3f3d;
 
-@define-color s-on-surface #f1dfd8;
+@define-color s-on-surface #f1dedd;
 
-@define-color s-on-surface-variant #d7c2ba;
+@define-color s-on-surface-variant #d8c2c0;
 
-@define-color s-on-tertiary #363107;
+@define-color s-on-tertiary #402d04;
 
-@define-color s-on-tertiary-container #eee4a9;
+@define-color s-on-tertiary-container #ffdea7;
 
-@define-color s-on-tertiary-fixed #201c00;
+@define-color s-on-tertiary-fixed #271900;
 
-@define-color s-on-tertiary-fixed-variant #4d471b;
+@define-color s-on-tertiary-fixed-variant #594319;
 
-@define-color s-outline #a08d85;
+@define-color s-outline #a08c8b;
 
-@define-color s-outline-variant #52443d;
+@define-color s-outline-variant #534342;
 
-@define-color s-primary #ffb694;
+@define-color s-primary #ffb3ae;
 
-@define-color s-primary-container #713718;
+@define-color s-primary-container #733331;
 
-@define-color s-primary-fixed #ffdbcc;
+@define-color s-primary-fixed #ffdad7;
 
-@define-color s-primary-fixed-dim #ffb694;
+@define-color s-primary-fixed-dim #ffb3ae;
 
 @define-color s-scrim #000000;
 
-@define-color s-secondary #e6bead;
+@define-color s-secondary #e7bdb9;
 
-@define-color s-secondary-container #5c4033;
+@define-color s-secondary-container #5d3f3d;
 
-@define-color s-secondary-fixed #ffdbcc;
+@define-color s-secondary-fixed #ffdad7;
 
-@define-color s-secondary-fixed-dim #e6bead;
+@define-color s-secondary-fixed-dim #e7bdb9;
 
 @define-color s-shadow #000000;
 
-@define-color s-source-color #ec6c24;
+@define-color s-source-color #f0002a;
 
-@define-color s-surface #1a120e;
+@define-color s-surface #1a1111;
 
-@define-color s-surface-bright #423732;
+@define-color s-surface-bright #423736;
 
-@define-color s-surface-container #271e1a;
+@define-color s-surface-container #271d1d;
 
-@define-color s-surface-container-high #322824;
+@define-color s-surface-container-high #322827;
 
-@define-color s-surface-container-highest #3d332e;
+@define-color s-surface-container-highest #3d3231;
 
-@define-color s-surface-container-low #221a16;
+@define-color s-surface-container-low #231919;
 
-@define-color s-surface-container-lowest #140c09;
+@define-color s-surface-container-lowest #140c0c;
 
-@define-color s-surface-dim #1a120e;
+@define-color s-surface-dim #1a1111;
 
-@define-color s-surface-tint #ffb694;
+@define-color s-surface-tint #ffb3ae;
 
-@define-color s-surface-variant #52443d;
+@define-color s-surface-variant #534342;
 
-@define-color s-tertiary #d1c88f;
+@define-color s-tertiary #e2c28c;
 
-@define-color s-tertiary-container #4d471b;
+@define-color s-tertiary-container #594319;
 
-@define-color s-tertiary-fixed #eee4a9;
+@define-color s-tertiary-fixed #ffdea7;
 
-@define-color s-tertiary-fixed-dim #d1c88f;
+@define-color s-tertiary-fixed-dim #e2c28c;
 
 
 /*
 * CSS xray colors
 */
 
-@define-color x-background rgba(26, 18, 14, 0.8);
+@define-color x-background rgba(26, 17, 17, 0.8);
 
 @define-color x-error rgba(255, 180, 171, 0.8);
 
 @define-color x-error-container rgba(147, 0, 10, 0.8);
 
-@define-color x-inverse-on-surface rgba(56, 46, 42, 0.8);
+@define-color x-inverse-on-surface rgba(56, 46, 45, 0.8);
 
-@define-color x-inverse-primary rgba(142, 77, 45, 0.8);
+@define-color x-inverse-primary rgba(144, 74, 71, 0.8);
 
-@define-color x-inverse-surface rgba(241, 223, 216, 0.8);
+@define-color x-inverse-surface rgba(241, 222, 221, 0.8);
 
-@define-color x-on-background rgba(241, 223, 216, 0.8);
+@define-color x-on-background rgba(241, 222, 221, 0.8);
 
 @define-color x-on-error rgba(105, 0, 5, 0.8);
 
 @define-color x-on-error-container rgba(255, 218, 214, 0.8);
 
-@define-color x-on-primary rgba(84, 33, 4, 0.8);
+@define-color x-on-primary rgba(87, 29, 28, 0.8);
 
-@define-color x-on-primary-container rgba(255, 219, 204, 0.8);
+@define-color x-on-primary-container rgba(255, 218, 215, 0.8);
 
-@define-color x-on-primary-fixed rgba(53, 16, 0, 0.8);
+@define-color x-on-primary-fixed rgba(59, 8, 9, 0.8);
 
-@define-color x-on-primary-fixed-variant rgba(113, 55, 24, 0.8);
+@define-color x-on-primary-fixed-variant rgba(115, 51, 49, 0.8);
 
-@define-color x-on-secondary rgba(68, 42, 31, 0.8);
+@define-color x-on-secondary rgba(68, 41, 40, 0.8);
 
-@define-color x-on-secondary-container rgba(255, 219, 204, 0.8);
+@define-color x-on-secondary-container rgba(255, 218, 215, 0.8);
 
-@define-color x-on-secondary-fixed rgba(44, 22, 11, 0.8);
+@define-color x-on-secondary-fixed rgba(44, 21, 20, 0.8);
 
-@define-color x-on-secondary-fixed-variant rgba(92, 64, 51, 0.8);
+@define-color x-on-secondary-fixed-variant rgba(93, 63, 61, 0.8);
 
-@define-color x-on-surface rgba(241, 223, 216, 0.8);
+@define-color x-on-surface rgba(241, 222, 221, 0.8);
 
-@define-color x-on-surface-variant rgba(215, 194, 186, 0.8);
+@define-color x-on-surface-variant rgba(216, 194, 192, 0.8);
 
-@define-color x-on-tertiary rgba(54, 49, 7, 0.8);
+@define-color x-on-tertiary rgba(64, 45, 4, 0.8);
 
-@define-color x-on-tertiary-container rgba(238, 228, 169, 0.8);
+@define-color x-on-tertiary-container rgba(255, 222, 167, 0.8);
 
-@define-color x-on-tertiary-fixed rgba(32, 28, 0, 0.8);
+@define-color x-on-tertiary-fixed rgba(39, 25, 0, 0.8);
 
-@define-color x-on-tertiary-fixed-variant rgba(77, 71, 27, 0.8);
+@define-color x-on-tertiary-fixed-variant rgba(89, 67, 25, 0.8);
 
-@define-color x-outline rgba(160, 141, 133, 0.8);
+@define-color x-outline rgba(160, 140, 139, 0.8);
 
-@define-color x-outline-variant rgba(82, 68, 61, 0.8);
+@define-color x-outline-variant rgba(83, 67, 66, 0.8);
 
-@define-color x-primary rgba(255, 182, 148, 0.8);
+@define-color x-primary rgba(255, 179, 174, 0.8);
 
-@define-color x-primary-container rgba(113, 55, 24, 0.8);
+@define-color x-primary-container rgba(115, 51, 49, 0.8);
 
-@define-color x-primary-fixed rgba(255, 219, 204, 0.8);
+@define-color x-primary-fixed rgba(255, 218, 215, 0.8);
 
-@define-color x-primary-fixed-dim rgba(255, 182, 148, 0.8);
+@define-color x-primary-fixed-dim rgba(255, 179, 174, 0.8);
 
 @define-color x-scrim rgba(0, 0, 0, 0.8);
 
-@define-color x-secondary rgba(230, 190, 173, 0.8);
+@define-color x-secondary rgba(231, 189, 185, 0.8);
 
-@define-color x-secondary-container rgba(92, 64, 51, 0.8);
+@define-color x-secondary-container rgba(93, 63, 61, 0.8);
 
-@define-color x-secondary-fixed rgba(255, 219, 204, 0.8);
+@define-color x-secondary-fixed rgba(255, 218, 215, 0.8);
 
-@define-color x-secondary-fixed-dim rgba(230, 190, 173, 0.8);
+@define-color x-secondary-fixed-dim rgba(231, 189, 185, 0.8);
 
 @define-color x-shadow rgba(0, 0, 0, 0.8);
 
-@define-color x-source-color rgba(236, 108, 36, 0.8);
+@define-color x-source-color rgba(240, 0, 42, 0.8);
 
-@define-color x-surface rgba(26, 18, 14, 0.8);
+@define-color x-surface rgba(26, 17, 17, 0.8);
 
-@define-color x-surface-bright rgba(66, 55, 50, 0.8);
+@define-color x-surface-bright rgba(66, 55, 54, 0.8);
 
-@define-color x-surface-container rgba(39, 30, 26, 0.8);
+@define-color x-surface-container rgba(39, 29, 29, 0.8);
 
-@define-color x-surface-container-high rgba(50, 40, 36, 0.8);
+@define-color x-surface-container-high rgba(50, 40, 39, 0.8);
 
-@define-color x-surface-container-highest rgba(61, 51, 46, 0.8);
+@define-color x-surface-container-highest rgba(61, 50, 49, 0.8);
 
-@define-color x-surface-container-low rgba(34, 26, 22, 0.8);
+@define-color x-surface-container-low rgba(35, 25, 25, 0.8);
 
-@define-color x-surface-container-lowest rgba(20, 12, 9, 0.8);
+@define-color x-surface-container-lowest rgba(20, 12, 12, 0.8);
 
-@define-color x-surface-dim rgba(26, 18, 14, 0.8);
+@define-color x-surface-dim rgba(26, 17, 17, 0.8);
 
-@define-color x-surface-tint rgba(255, 182, 148, 0.8);
+@define-color x-surface-tint rgba(255, 179, 174, 0.8);
 
-@define-color x-surface-variant rgba(82, 68, 61, 0.8);
+@define-color x-surface-variant rgba(83, 67, 66, 0.8);
 
-@define-color x-tertiary rgba(209, 200, 143, 0.8);
+@define-color x-tertiary rgba(226, 194, 140, 0.8);
 
-@define-color x-tertiary-container rgba(77, 71, 27, 0.8);
+@define-color x-tertiary-container rgba(89, 67, 25, 0.8);
 
-@define-color x-tertiary-fixed rgba(238, 228, 169, 0.8);
+@define-color x-tertiary-fixed rgba(255, 222, 167, 0.8);
 
-@define-color x-tertiary-fixed-dim rgba(209, 200, 143, 0.8);
+@define-color x-tertiary-fixed-dim rgba(226, 194, 140, 0.8);
 

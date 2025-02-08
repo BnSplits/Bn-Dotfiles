@@ -73,6 +73,7 @@ tooltip label {
 #battery.warning {
   color: red;
   font-weight: bold;
+  transition: font-size 0.1s ease-in;
 }
 
 #workspaces {

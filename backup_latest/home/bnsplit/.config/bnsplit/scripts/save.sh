@@ -27,12 +27,18 @@ function log_message() {
   echo "$1" >>"$LOG_FILE"
 }
 
-# Directory where backup files will be stored
+# Directories
 BACKUPS_DIR="$HOME/Dotfiles/backups"
 LOG_FILE="$HOME/Dotfiles/backup_log.txt"
-DATE=$(date "+%Y-%b-%d %H:%M:%S")
+MEGA_DIR="$HOME/MEGA"
+DATE=$(date "+%Y-%b-%d_%H-%M-%S")
 CURRENT_BACKUP_DIR="$BACKUPS_DIR/$DATE"
 LATEST_BACKUP_DIR="$HOME/Dotfiles/backup_latest"
+# LATEST_ARCHIVE="$MEGA_DIR/backup_$DATE.tar.gz"
+LATEST_ARCHIVE="$HOME/Dotfiles/backup_$DATE.tar.gz"
+
+# Create necessary directories
+mkdir -p "$BACKUPS_DIR" "$MEGA_DIR"
 
 # Folders and files to backup
 items_to_backup=(
@@ -52,11 +58,11 @@ items_to_backup=(
   "$HOME/.config/nvim"
   "$HOME/.config/qt6ct"
   "$HOME/.config/rofi"
+  "$HOME/.config/spicetify"
   "$HOME/.config/swaync"
   "$HOME/.config/sys64"
   "$HOME/.config/waybar"
   "$HOME/.config/waypaper"
-  "$HOME/.config/wlogout"
   "$HOME/.config/yay"
   "$HOME/.config/yazi"
   "$HOME/.config/"*.bak
@@ -71,6 +77,7 @@ items_to_backup=(
   "$HOME/.zen"
 
   "/etc/makepkg.conf"
+  "/etc/ly/config.ini"
   "$HOME/.config/chrome-flags.conf"
   "$HOME/.config/code-flags.conf"
   "$HOME/.config/mimeapps.list"
@@ -80,6 +87,20 @@ items_to_backup=(
   "$HOME/.Xresources"
   "$HOME/.zshrc"
 )
+
+# Check how many backups exist
+existing_backups=$(ls -1 "$BACKUPS_DIR" | wc -l)
+MAX_BACKUPS=$((5 + 1))
+
+# If there are more than X backups, delete the oldest one
+if [ "$existing_backups" -ge "$MAX_BACKUPS" ]; then
+  oldest_backup=$(ls -1t "$BACKUPS_DIR" | tail -n 1) # Find the oldest backup
+  echo_arrow "Deleting oldest backup: $oldest_backup"
+  rm -rf "$BACKUPS_DIR/$oldest_backup" || {
+    echo_error "Failed to delete $oldest_backup"
+    exit 1
+  }
+fi
 
 # Save GNOME settings
 print_separator "Saving GNOME Settings"
@@ -113,20 +134,6 @@ function create_backup_dir() {
 
 create_backup_dir "$BACKUPS_DIR"
 create_backup_dir "$CURRENT_BACKUP_DIR"
-
-# Check how many backups exist
-existing_backups=$(ls -1 "$BACKUPS_DIR" | wc -l)
-MAX_BACKUPS=$((10 + 1))
-
-# If there are more than 5 backups, delete the oldest one
-if [ "$existing_backups" -ge "$MAX_BACKUPS" ]; then
-  oldest_backup=$(ls -1t "$BACKUPS_DIR" | tail -n 1) # Find the oldest backup
-  echo_arrow "Deleting oldest backup: $oldest_backup"
-  rm -rf "$BACKUPS_DIR/$oldest_backup" || {
-    echo_error "Failed to delete $oldest_backup"
-    exit 1
-  }
-fi
 
 # Log the backup start time
 log_message "Backup started at $(date)"
@@ -181,5 +188,18 @@ else
   exit 1
 fi
 
+# Compress latest backup (to MEGA folder)
+# print_separator "Compressing Latest Backup"
+# echo_arrow "Creating archive: $LATEST_ARCHIVE"
+#
+# tar -czf "$LATEST_ARCHIVE" -C "$LATEST_BACKUP_DIR" . && {
+#   echo_success "Backup successfully compressed to $LATEST_ARCHIVE"
+#   log_message "Backup compressed to $LATEST_ARCHIVE"
+# } || {
+#   echo_error "Failed to compress backup"
+#   log_message "Error: Failed to compress backup"
+#   exit 1
+# }
+
 echo -e "${CYAN} \n-------------------------------------------------------------------------------"
-echo_success "Backup completed at $(date)"
+echo_success "Backup process completed at $(date)"

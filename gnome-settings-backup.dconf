@@ -1,8 +1,8 @@
 [ca/desrt/dconf-editor]
-saved-pathbar-path='/org/gnome/desktop/interface/accent-color'
-saved-view='/org/gnome/desktop/interface/accent-color'
+saved-pathbar-path='/'
+saved-view='/'
 window-height=1001
-window-is-maximized=false
+window-is-maximized=true
 window-width=960
 
 [com/github/neithern/g4music]
@@ -18,6 +18,88 @@ width=960
 height=1045
 is-maximized=false
 width=960
+
+[io/github/realmazharhussain/GdmSettings]
+donation-dialog-shown=true
+never-applied=false
+
+[io/github/realmazharhussain/GdmSettings/accessibility]
+always-show-accessibility-menu=false
+
+[io/github/realmazharhussain/GdmSettings/appearance]
+accent-color='slate'
+background-image='/home/bnsplit/.cache/blured-walls/c61a5fbe90029386cda0d83696e7a17ffd5a50f2334490d9343bcc7ff25b05e7'
+background-type='default'
+cursor-theme='Bibata-Modern-Classic'
+icon-theme='Papirus-Dark'
+shell-theme=''
+
+[io/github/realmazharhussain/GdmSettings/fonts]
+antialiasing='grayscale'
+font='CaskaydiaCove Nerd Font Mono Semi-Bold Italic 10'
+hinting='slight'
+scaling-factor=1.0
+
+[io/github/realmazharhussain/GdmSettings/misc]
+disable-restart-buttons=false
+disable-user-list=false
+enable-logo=false
+enable-welcome-message=false
+logo='/usr/share/pixmaps/archlinux-logo.svg'
+welcome-message=''
+
+[io/github/realmazharhussain/GdmSettings/mouse]
+natural-scrolling=false
+pointer-acceleration='default'
+speed=0.0
+
+[io/github/realmazharhussain/GdmSettings/night-light]
+enabled=false
+end-hour=6
+end-minute=0
+schedule-automatic=true
+start-hour=20
+start-minute=0
+temperature=uint32 2700
+
+[io/github/realmazharhussain/GdmSettings/pointing]
+cursor-size=24
+
+[io/github/realmazharhussain/GdmSettings/power]
+auto-power-saver=true
+blank-screen=true
+dim-screen=true
+idle-delay=5.0
+power-button-action='suspend'
+suspend-on-ac=true
+suspend-on-ac-delay=30.0
+suspend-on-battery=true
+suspend-on-battery-delay=15.0
+
+[io/github/realmazharhussain/GdmSettings/sound]
+event-sounds=true
+feedback-sounds=false
+over-amplification=true
+theme='ocean'
+
+[io/github/realmazharhussain/GdmSettings/top-bar]
+show-battery-percentage=false
+show-date=true
+show-seconds=true
+show-weekday=true
+time-format='24h'
+
+[io/github/realmazharhussain/GdmSettings/touchpad]
+disable-on-external-mouse=false
+disable-while-typing=true
+enable=true
+natural-scrolling=true
+speed=0.0
+tap-to-click=true
+two-finger-scrolling=true
+
+[io/github/realmazharhussain/GdmSettings/window-state]
+last-visited-page='appearance'
 
 [io/github/vikdevelop/SaveDesktop]
 enable-encryption=false
@@ -46,7 +128,7 @@ window-width=1024
 window-properties=[536, 350, 0, 0]
 
 [org/blueman/plugins/recentconns]
-recent-connections=[{'adapter': '00:45:E2:87:76:4C', 'address': '68:23:A7:07:40:69', 'alias': 'JLab GO Air Sport', 'icon': 'audio-headset', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1738449223.6112893', 'device': '/org/bluez/hci0/dev_68_23_A7_07_40_69'}, {'adapter': '00:45:E2:87:76:4C', 'address': '90:61:AE:FF:14:D1', 'alias': 'EndeavourOs', 'icon': 'computer', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1736709520.9821274'}, {'adapter': '00:45:E2:87:76:4C', 'address': 'E4:A4:71:D9:8A:2C', 'alias': 'DESKTOP-SQEQEHN', 'icon': 'computer', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1737195356.7106144'}, {'adapter': '00:45:E2:87:76:4C', 'address': 'F4:8C:50:9C:08:96', 'alias': 'Dell', 'icon': 'computer', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1737195422.2176597', 'device': '/org/bluez/hci0/dev_F4_8C_50_9C_08_96'}]
+recent-connections=[{'adapter': '00:45:E2:87:76:4C', 'address': '68:23:A7:07:40:69', 'alias': 'JLab GO Air Sport', 'icon': 'audio-headset', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1738963064.1421027', 'device': '/org/bluez/hci0/dev_68_23_A7_07_40_69'}, {'adapter': '00:45:E2:87:76:4C', 'address': '90:61:AE:FF:14:D1', 'alias': 'EndeavourOs', 'icon': 'computer', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1736709520.9821274'}, {'adapter': '00:45:E2:87:76:4C', 'address': 'E4:A4:71:D9:8A:2C', 'alias': 'DESKTOP-SQEQEHN', 'icon': 'computer', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1737195356.7106144'}, {'adapter': '00:45:E2:87:76:4C', 'address': 'F4:8C:50:9C:08:96', 'alias': 'Dell', 'icon': 'computer', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1737195422.2176597', 'device': '/org/bluez/hci0/dev_F4_8C_50_9C_08_96'}]
 
 [org/erikreider/swaync]
 dnd-state=false
@@ -119,8 +201,11 @@ panel-id='stopwatch'
 size=(0, 0)
 
 [org/gnome/control-center]
-last-panel='keyboard'
+last-panel='system'
 window-state=(980, 640, false)
+
+[org/gnome/desktop/a11y/applications]
+screen-reader-enabled=false
 
 [org/gnome/desktop/app-folders]
 folder-children=['Utilities', 'YaST', 'Pardus']
@@ -149,11 +234,14 @@ color-shading-type='solid'
 picture-options='zoom'
 picture-uri='file:///home/bnsplit/.config/background'
 picture-uri-dark='file:///home/bnsplit/.config/background'
-primary-color='#000000000000'
-secondary-color='#000000000000'
+primary-color='#ff7800'
+secondary-color='#000000'
 
 [org/gnome/desktop/calendar]
 show-weekdate=true
+
+[org/gnome/desktop/datetime]
+automatic-timezone=true
 
 [org/gnome/desktop/input-sources]
 mru-sources=[('xkb', 'us')]
@@ -162,13 +250,20 @@ sources=[('xkb', 'us')]
 xkb-options=['terminate:ctrl_alt_bksp', 'caps:escape', 'lv3:ralt_switch']
 
 [org/gnome/desktop/interface]
-accent-color='yellow'
+accent-color='blue'
+clock-format='24h'
 clock-show-seconds=true
+clock-show-weekday=true
 color-scheme='prefer-dark'
 cursor-size=24
 cursor-theme='Bibata-Modern-Classic'
+enable-animations=true
+font-name='Noto Sans,  10'
 gtk-theme='custom-adw'
 icon-theme='Papirus-Dark'
+scaling-factor=uint32 1
+text-scaling-factor=1.0
+toolbar-style='text'
 
 [org/gnome/desktop/notifications]
 application-children=['gnome-power-panel', 'spotify-launcher', 'org-kde-kdeconnect-daemon', 'zen-beta', 'gnome-printers-panel', 'zen', 'org-gnome-extensions', 'org-gnome-evolution-alarm-notify', 'org-gnome-nautilus', 'org-gnome-settings']
@@ -208,15 +303,17 @@ application-id='zen.desktop'
 color-shading-type='solid'
 lock-delay=uint32 300
 picture-options='zoom'
-picture-uri='file:///home/bnsplit/.local/share/backgrounds/2025-01-19-21-19-18-54.jpg'
-primary-color='#000000000000'
-secondary-color='#000000000000'
+picture-uri='file:///home/bnsplit/.config/background'
+primary-color='#ff7800'
+secondary-color='#000000'
 
 [org/gnome/desktop/search-providers]
 sort-order=['org.gnome.Settings.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Nautilus.desktop']
 
 [org/gnome/desktop/sound]
 allow-volume-above-100-percent=true
+event-sounds=true
+theme-name='ocean'
 
 [org/gnome/desktop/wm/keybindings]
 activate-window-menu=['<Shift><Alt>space']
@@ -239,8 +336,12 @@ toggle-fullscreen=['<Super>f']
 unmaximize=@as []
 
 [org/gnome/desktop/wm/preferences]
-button-layout='appmenu:minimize,maximize,close'
+button-layout='icon:minimize,maximize,close'
 focus-mode='sloppy'
+
+[org/gnome/epiphany/state]
+is-maximized=false
+window-size=(1024, 768)
 
 [org/gnome/evince/default]
 continuous=true
@@ -249,11 +350,11 @@ dual-page-odd-left=true
 enable-spellchecking=true
 fullscreen=false
 inverted-colors=false
-show-sidebar=true
+show-sidebar=false
 sidebar-page='thumbnails'
 sidebar-size=148
 sizing-mode='free'
-window-ratio=(0.78431372549019607, 0.62119916381603957)
+window-ratio=(0.78431372549019607, 0.66035353535353536)
 zoom=0.51811397129194914
 
 [org/gnome/evolution-data-server]
@@ -326,6 +427,14 @@ maximized=true
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
+[org/gnome/nm-applet/eap/182ff326-2190-4723-ae01-baee4bd3df57]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/3cfb2f2c-12a2-44d7-87c6-02b6a4b93c66]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
 [org/gnome/nm-applet/eap/4902a54a-e3d4-455f-ae34-ab769e45bf38]
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
@@ -346,7 +455,15 @@ ignore-phase2-ca-cert=false
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
+[org/gnome/nm-applet/eap/929796f7-2ba0-42ec-86ea-c14bdf9c5c27]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
 [org/gnome/nm-applet/eap/afb04685-77cf-4be9-a4fa-c9780fd30ec4]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/c3d694cf-c8af-4bb4-9496-1c1cebbfbe39]
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
@@ -368,7 +485,7 @@ ignore-phase2-ca-cert=false
 
 [org/gnome/settings-daemon/plugins/color]
 night-light-enabled=false
-night-light-last-coordinates=(6.1059707941372618, 1.2101767999999999)
+night-light-last-coordinates=(6.14563236853862, 1.2101799)
 
 [org/gnome/settings-daemon/plugins/media-keys]
 custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
@@ -391,7 +508,7 @@ sleep-inactive-ac-timeout=1800
 app-picker-layout=[{'org.manjaro.pamac.manager.desktop': <{'position': <0>}>, 'org.gnome.Weather.desktop': <{'position': <1>}>, 'org.gnome.clocks.desktop': <{'position': <2>}>, 'appimagelaunchersettings.desktop': <{'position': <3>}>, 'bssh.desktop': <{'position': <4>}>, 'org.gnome.Totem.desktop': <{'position': <5>}>, 'org.gnome.Calculator.desktop': <{'position': <6>}>, 'bvnc.desktop': <{'position': <7>}>, 'byobu.desktop': <{'position': <8>}>, 'simple-scan.desktop': <{'position': <9>}>, 'org.gnome.SystemMonitor.desktop': <{'position': <10>}>, 'byobu_old.desktop': <{'position': <11>}>, 'avahi-discover.desktop': <{'position': <12>}>, 'org.gnome.Terminal.desktop': <{'position': <13>}>, 'ca.desrt.dconf-editor.desktop': <{'position': <14>}>, 'Utilities': <{'position': <15>}>, 'bitwarden.desktop': <{'position': <16>}>, 'eos-apps-info.desktop': <{'position': <17>}>, 'eos-log-tool.desktop': <{'position': <18>}>, 'eos-quickstart.desktop': <{'position': <19>}>, 'btop.desktop': <{'position': <20>}>, 'cmake-gui.desktop': <{'position': <21>}>}, {'electron32.desktop': <{'position': <0>}>, 'org.gnome.Extensions.desktop': <{'position': <1>}>, 'fish.desktop': <{'position': <2>}>, 'com.github.neithern.g4music.desktop': <{'position': <3>}>, 'google-chrome.desktop': <{'position': <4>}>, 'grub-customizer.desktop': <{'position': <5>}>, 'hplip.desktop': <{'position': <6>}>, 'hp-uiscan.desktop': <{'position': <7>}>, 'org.kde.kdeconnect.app.desktop': <{'position': <8>}>, 'org.kde.kdeconnect.nonplasma.desktop': <{'position': <9>}>, 'org.kde.kdeconnect-settings.desktop': <{'position': <10>}>, 'org.kde.kdeconnect.sms.desktop': <{'position': <11>}>, 'libreoffice-startcenter.desktop': <{'position': <12>}>, 'libreoffice-base.desktop': <{'position': <13>}>, 'libreoffice-calc.desktop': <{'position': <14>}>, 'libreoffice-draw.desktop': <{'position': <15>}>, 'libreoffice-impress.desktop': <{'position': <16>}>, 'libreoffice-math.desktop': <{'position': <17>}>, 'libreoffice-writer.desktop': <{'position': <18>}>, 'cups.desktop': <{'position': <19>}>, 'eos-update.desktop': <{'position': <20>}>, 'htop.desktop': <{'position': <21>}>, 'yad-icon-browser.desktop': <{'position': <22>}>}, {'nvim.desktop': <{'position': <0>}>, 'org.gnome.Meld.desktop': <{'position': <1>}>, 'org.kde.okular.desktop': <{'position': <2>}>, 'jconsole-java17-openjdk.desktop': <{'position': <3>}>, 'jshell-java17-openjdk.desktop': <{'position': <4>}>, 'qalculate-gtk.desktop': <{'position': <5>}>, 'assistant.desktop': <{'position': <6>}>, 'designer.desktop': <{'position': <7>}>, 'gnome-nettool.desktop': <{'position': <8>}>, 'linguist.desktop': <{'position': <9>}>, 'qdbusviewer.desktop': <{'position': <10>}>, 'qv4l2.desktop': <{'position': <11>}>, 'org.gnome.PowerStats.desktop': <{'position': <12>}>, 'qvidcap.desktop': <{'position': <13>}>, 'reflector-simple.desktop': <{'position': <14>}>, 'stoken-gui.desktop': <{'position': <15>}>, 'net.nokyan.Resources.desktop': <{'position': <16>}>, 'stoken-gui-small.desktop': <{'position': <17>}>, 'uxterm.desktop': <{'position': <18>}>}, {'org.gnome.TextEditor.desktop': <{'position': <0>}>, 'org.pulseaudio.pavucontrol.desktop': <{'position': <1>}>, 'welcome.desktop': <{'position': <2>}>, 'xterm.desktop': <{'position': <3>}>, 'vim.desktop': <{'position': <4>}>, 'vlc.desktop': <{'position': <5>}>, 'yad-settings.desktop': <{'position': <6>}>, 'gparted.desktop': <{'position': <7>}>, 'org.kde.gwenview.desktop': <{'position': <8>}>}]
 disable-user-extensions=false
 disabled-extensions=['azwallpaper@azwallpaper.gitlab.com', 'openbar@neuromorph']
-enabled-extensions=['caffeine@patapon.info', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'appindicatorsupport@rgcjonas.gmail.com', 'blur-my-shell@aunetx', 'unblank@sun.wxg@gmail.com', 'Vitals@CoreCoding.com', 'tiling-assistant@leleat-on-github', 'dash-to-dock@micxgx.gmail.com', 'gnome-ui-tune@itstime.tech']
+enabled-extensions=['caffeine@patapon.info', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'appindicatorsupport@rgcjonas.gmail.com', 'blur-my-shell@aunetx', 'unblank@sun.wxg@gmail.com', 'Vitals@CoreCoding.com', 'tiling-assistant@leleat-on-github', 'dash-to-dock@micxgx.gmail.com', 'gnome-ui-tune@itstime.tech', 'kimpanel@kde.org']
 favorite-apps=['zen.desktop', 'kitty.desktop', 'obsidian.desktop', 'org.gnome.Nautilus.desktop', 'spotify-launcher.desktop', 'com.mattjakeman.ExtensionManager.desktop', 'org.kde.kdenlive.desktop', 'onlyoffice-desktopeditors.desktop', 'org.kde.dolphin.desktop', 'virt-manager.desktop', 'code.desktop', 'firefox.desktop', 'com.obsproject.Studio.desktop', 'org.gnome.Settings.desktop']
 last-selected-power-profile='power-saver'
 welcome-dialog-last-shown-version='47.2'
@@ -437,7 +554,7 @@ brightness=0.59999999999999998
 sigma=30
 
 [org/gnome/shell/extensions/caffeine]
-indicator-position-max=1
+indicator-position-max=0
 toggle-shortcut=['<Super>i']
 
 [org/gnome/shell/extensions/dash-to-dock]
@@ -611,11 +728,14 @@ winbcolor=['0.804', '0.765', '0.455']
 
 [org/gnome/shell/extensions/tiling-assistant]
 focus-hint-color='rgb(58,148,74)'
-last-version-installed=49
+last-version-installed=50
 overridden-settings={'org.gnome.mutter.edge-tiling': <@mb nothing>, 'org.gnome.desktop.wm.keybindings.unmaximize': <@mb nothing>, 'org.gnome.mutter.keybindings.toggle-tiled-left': <@mb nothing>, 'org.gnome.mutter.keybindings.toggle-tiled-right': <@mb nothing>}
 
 [org/gnome/shell/extensions/unblank]
 time=300
+
+[org/gnome/shell/extensions/user-theme]
+name='default-pure'
 
 [org/gnome/shell/extensions/vitals]
 alphabetize=false
@@ -666,8 +786,8 @@ enabled=true
 show-extensions-notice=false
 
 [org/gtk/gtk4/settings/color-chooser]
-custom-colors=[(0.94117647409439087, 0.364705890417099, 0.12549020349979401, 1.0), (0.078000001609325409, 0.16899999976158142, 0.18799999356269836, 1.0), (0.60399997234344482, 0.59600001573562622, 0.24699999392032623, 1.0), (0.7839999794960022, 0.7369999885559082, 0.36100000143051147, 1.0)]
-selected-color=(true, 1.0, 1.0, 1.0, 1.0)
+custom-colors=[(0.15686275064945221, 0.15686275064945221, 0.15686275064945221, 1.0), (0.94117647409439087, 0.364705890417099, 0.12549020349979401, 1.0), (0.078000001609325409, 0.16899999976158142, 0.18799999356269836, 1.0), (0.60399997234344482, 0.59600001573562622, 0.24699999392032623, 1.0), (0.7839999794960022, 0.7369999885559082, 0.36100000143051147, 1.0)]
+selected-color=(true, 0.15686275064945221, 0.15686275064945221, 0.15686275064945221, 1.0)
 
 [org/gtk/gtk4/settings/file-chooser]
 date-format='regular'
@@ -686,6 +806,7 @@ custom-colors=[(0.0092555555555555516, 0.16333333333333333, 0.12909382716049381,
 selected-color=(true, 0.0092555555555555516, 0.16333333333333333, 0.12909382716049381, 1.0)
 
 [org/gtk/settings/file-chooser]
+clock-format='24h'
 date-format='regular'
 location-mode='path-bar'
 show-hidden=false
@@ -697,7 +818,7 @@ sort-directories-first=false
 sort-order='ascending'
 type-format='category'
 window-position=(0, 0)
-window-size=(958, 1031)
+window-size=(947, 986)
 
 [org/virt-manager/virt-manager]
 manager-window-height=1045
@@ -722,15 +843,19 @@ graphics-type='system'
 
 [org/virt-manager/virt-manager/paths]
 image-default='/home/bnsplit/Isos'
-media-default='/home/bnsplit/Isos'
+media-default='/home/bnsplit/bnos/bnos-2502/output'
 screenshot-default='/home/bnsplit/Obsidian/99 Assets'
 
 [org/virt-manager/virt-manager/urls]
-isos=['/home/bnsplit/Isos/Office_2016_64Bit_French_MLF_X20-42482.ISO', '/home/bnsplit/Isos/SW_DVD5_Office_2016_64Bit_French_MLF_X20-42482.ISO', '/home/bnsplit/Isos/Win10_22H2_French_x64v1.iso', '/home/bnsplit/Isos/linuxmint-22.1-cinnamon-64bit.iso', '/home/bnsplit/Isos/linuxmint-22-cinnamon-64bit.iso', '/home/bnsplit/Isos/Win11_24H2_French_x64.iso', '/home/bnsplit/Isos/archlinux-2025.01.01-x86_64.iso']
+isos=['/home/bnsplit/bnos/bnos-2502/output/bnos-2025.02.02-x86_64.iso', '/home/bnsplit/Isos/Office_2016_64Bit_French_MLF_X20-42482.ISO', '/home/bnsplit/Isos/SW_DVD5_Office_2016_64Bit_French_MLF_X20-42482.ISO', '/home/bnsplit/Isos/Win10_22H2_French_x64v1.iso', '/home/bnsplit/Isos/linuxmint-22.1-cinnamon-64bit.iso', '/home/bnsplit/Isos/linuxmint-22-cinnamon-64bit.iso', '/home/bnsplit/Isos/Win11_24H2_French_x64.iso', '/home/bnsplit/Isos/archlinux-2025.01.01-x86_64.iso']
 
 [org/virt-manager/virt-manager/vmlist-fields]
 disk-usage=false
 network-traffic=false
+
+[org/virt-manager/virt-manager/vms/06999b21d856418bb00a5fff96d547d9]
+autoconnect=1
+vm-window-size=(1918, 1045)
 
 [org/virt-manager/virt-manager/vms/1104e8e21c624a43820d638beaec676b]
 autoconnect=1
@@ -752,7 +877,7 @@ vm-window-size=(945, 1034)
 [org/virt-manager/virt-manager/vms/397f2e29ce054534be6caff60c37ab4b]
 autoconnect=1
 resize-guest=1
-vm-window-size=(1918, 1045)
+vm-window-size=(1918, 1078)
 
 [org/virt-manager/virt-manager/vms/4938118a359a4bca86a2499d402dd37a]
 autoconnect=1
@@ -808,6 +933,10 @@ vm-window-size=(1280, 842)
 autoconnect=1
 vm-window-size=(1280, 842)
 
+[org/virt-manager/virt-manager/vms/cf20b0ae2b6946bebe8ea61ebde9b36c]
+autoconnect=1
+vm-window-size=(1280, 842)
+
 [org/virt-manager/virt-manager/vms/d8cc7cb04b1243cd9c00a59b37720537]
 autoconnect=1
 resize-guest=1
@@ -832,6 +961,11 @@ autoconnect=1
 resize-guest=1
 vm-window-size=(1904, 1034)
 
+[org/virt-manager/virt-manager/vms/f83b26e9006e445eb6532655b3ffc4ef]
+autoconnect=1
+resize-guest=1
+vm-window-size=(1918, 1045)
+
 [org/virt-manager/virt-manager/vms/f93421101f29443d8dcb20904a99ce33]
 autoconnect=1
 vm-window-size=(1280, 842)
@@ -839,7 +973,7 @@ vm-window-size=(1280, 842)
 [org/virt-manager/virt-manager/vms/fdccee3841ea4c909ff4858c02357c95]
 autoconnect=1
 resize-guest=1
-vm-window-size=(1280, 842)
+vm-window-size=(958, 1045)
 
 [org/virt-manager/virt-manager/vms/fdccee3841ea4c999ff4858c02357c95]
 autoconnect=1
