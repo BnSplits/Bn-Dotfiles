@@ -324,8 +324,15 @@ G_special_installs() {
 papirus() {
   print_separator "Installation of papirus icon theme"
   if confirm "Do you want to install papirus icon theme?"; then
-    wget -qO- https://git.io/papirus-icon-theme-install | env DESTDIR="$HOME/.icons" sh
-    wget -qO- https://git.io/papirus-folders-install | env PREFIX="$HOME/.local" sh
+    if confirm "  On root directory?"; then
+      wget -qO- https://git.io/papirus-icon-theme-install | sh
+    fi
+    if confirm "  On HOME directory for GTK?"; then
+      wget -qO- https://git.io/papirus-icon-theme-install | env DESTDIR="$HOME/.icons" sh
+    fi
+    if confirm "  On HOME directory for KDE?"; then
+      wget -qO- https://git.io/papirus-icon-theme-install | env DESTDIR="$HOME/.local/share/icons" sh
+    fi
   fi
 }
 

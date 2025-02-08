@@ -90,7 +90,7 @@ items_to_backup=(
 
 # Check how many backups exist
 existing_backups=$(ls -1 "$BACKUPS_DIR" | wc -l)
-MAX_BACKUPS=$((5 + 1))
+MAX_BACKUPS=$((3 + 1))
 
 # If there are more than X backups, delete the oldest one
 if [ "$existing_backups" -ge "$MAX_BACKUPS" ]; then
