@@ -103,20 +103,20 @@
         {
           "label": "󱇙 ⁴",
           "type": "toggle",
-          "command": "sh -c '~/.config/bnsplit/scripts/toggle_gtk4_xray.sh'",
+          "command": "sh -c '~/.config/bnsplit/scripts/toggle_xray.sh gtk4'",
           "update_command": "sh -c 'sed -n 1p ~/.themes/custom-adw/gtk-4.0/colors.css | grep xray && echo true || echo false' "
         },
         {
           "label": "󱇙 ³",
           "type": "toggle",
-          "command": "sh -c '~/.config/bnsplit/scripts/toggle_gtk3_xray.sh'",
+          "command": "sh -c '~/.config/bnsplit/scripts/toggle_xray.sh gtk3'",
           "update_command": "sh -c 'sed -n 1p ~/.themes/custom-adw/gtk-3.0/colors.css | grep xray && echo true || echo false' "
         },
         {
           "label": "󱇙 ",
           "type": "toggle",
           "active": false,
-          "command": "sh -c '~/.config/bnsplit/scripts/toggle_all_xray.sh'",
+          "command": "sh -c '~/.config/bnsplit/scripts/toggle_xray.sh'",
           "update_command": "sh -c 'hyprctl getoption decoration:active_opacity | grep 1.00' && echo false || echo true'"
         },
         {

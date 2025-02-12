@@ -58,7 +58,6 @@ alias ccc='colorscript'
 alias cd..='cd ..'
 alias cd-='cd -'
 alias nz='nvim ~/.zshrc'
-alias nc='nvim ~/.config/'
 alias f='clear && fastfetch'
 alias grep='grep --color=always'
 alias yo='yay -Rns $(yay -Qdtq)'
@@ -89,6 +88,16 @@ AnimeDive() {
       source ~/dev/AnimeDive/launch-docker.sh
       ;;
   esac
+}
+nc() {
+  SWAP_DIR="$HOME/.local/state/nvim/swap"
+
+  if [[ -d "$SWAP_DIR" ]]; then
+    rm -r "$SWAP_DIR"
+    echo "Neovim swap directory removed: $SWAP_DIR"
+  else
+    echo "Neovim swap directory does not exist: $SWAP_DIR"
+  fi
 }
 # Yazi integration
 export EDITOR='nvim'

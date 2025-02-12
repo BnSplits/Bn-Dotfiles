@@ -1,0 +1,50 @@
+{{col.1.hex}}
+{{col.2.hex}}
+{{col.3.hex}}
+{{col.4.hex}}
+{{col.5.hex}}
+{{col.6.hex}}
+{{col.7.hex}}
+{{col.8.hex}}
+{{col.9.hex}}
+{{col.10.hex}}
+{{col.11.hex}}
+{{col.12.hex}}
+{{col.13.hex}}
+{{col.14.hex}}
+{{col.15.hex}}
+{{col.16.hex}}
+
+{{col.1.rgba | alpha: 0.8}}
+{{col.2.rgba | alpha: 0.8}}
+{{col.3.rgba | alpha: 0.8}}
+{{col.4.rgba | alpha: 0.8}}
+{{col.5.rgba | alpha: 0.8}}
+{{col.6.rgba | alpha: 0.8}}
+{{col.7.rgba | alpha: 0.8}}
+{{col.8.rgba | alpha: 0.8}}
+{{col.9.rgba | alpha: 0.8}}
+{{col.10.rgba | alpha: 0.8}}
+{{col.11.rgba | alpha: 0.8}}
+{{col.12.rgba | alpha: 0.8}}
+{{col.13.rgba | alpha: 0.8}}
+{{col.14.rgba | alpha: 0.8}}
+{{col.15.rgba | alpha: 0.8}}
+{{col.16.rgba | alpha: 0.8}}
+
+{{col.1.rgb}}
+{{col.2.rgb}}
+{{col.3.rgb}}
+{{col.4.rgb}}
+{{col.5.rgb}}
+{{col.6.rgb}}
+{{col.7.rgb}}
+{{col.8.rgb}}
+{{col.9.rgb}}
+{{col.10.rgb}}
+{{col.11.rgb}}
+{{col.12.rgb}}
+{{col.13.rgb}}
+{{col.14.rgb}}
+{{col.15.rgb}}
+{{col.16.rgb}}

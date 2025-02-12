@@ -27,7 +27,7 @@ if [[ -n "$updates_list" && "$updates_count" -gt 0 ]]; then
   if [[ $confirm == "y" || $confirm == "Y" || $confirm == "yes" || $confirm == "" ]]; then
     echo -e "\n${BOLD}${YELLOW}⏳ Starting the update...${RESET}"
 
-    if yay -Su --quiet --noconfirm; then
+    if sudo yay -Su --quiet --noconfirm; then
       echo -e "\n${BOLD}${GREEN}✔ Update completed successfully!${RESET}"
       notify-send -a "Updates" "Updates Completed" "<i><b>All updates installed successfully</b></i>" -i "$ICON" -t 10000
     else

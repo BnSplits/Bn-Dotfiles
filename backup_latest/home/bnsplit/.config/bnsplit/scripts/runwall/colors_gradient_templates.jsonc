@@ -1,0 +1,86 @@
+// bnsplit color templates configuration
+// JSONC format allows comments (like this one!)
+
+[
+  // --------------------------
+  // Base Color Files
+  // --------------------------
+  {
+    "name": "colors-hex",
+    "template": "~/.config/bnsplit/scripts/runwall/colorsTemplates/colors-hex",
+    "output": "~/.config/bnsplit/colors/colors-hex"
+  },
+  // {
+  //   "name": "colors-rgb",
+  //   "template": "~/.config/bnsplit/scripts/runwall/colorsTemplates/colors-rgb",
+  //   "output": "~/.config/bnsplit/colors/colors-rgb"
+  // },
+  // {
+  //   "name": "colors-rgba",
+  //   "template": "~/.config/bnsplit/scripts/runwall/colorsTemplates/colors-rgba",
+  //   "output": "~/.config/bnsplit/colors/colors-rgba"
+  // },
+  {
+    "name": "colors-source",
+    "template": "~/.config/bnsplit/scripts/runwall/colorsTemplates/colors-source",
+    "output": "~/.config/bnsplit/colors/colors-source"
+  },
+  {
+    "name": "colors-css",
+    "template": "~/.config/bnsplit/scripts/runwall/colorsTemplates/colors.css",
+    "output": "~/.config/bnsplit/colors/colors.css"
+  },
+  // {
+  //   "name": "colors-scss",
+  //   "template": "~/.config/bnsplit/scripts/runwall/colorsTemplates/colors.scss",
+  //   "output": "~/.config/bnsplit/colors/colors.scss"
+  // },
+
+  // --------------------------
+  // GTK3 Theme Files
+  // --------------------------
+  {
+    "name": "gtk3-solid",
+    "template": "~/.config/bnsplit/scripts/runwall/colorsTemplates/gtk3-solid.css",
+    "output": "~/.themes/custom-adw/gtk-3.0/colors-solid.css"
+  },
+  {
+    "name": "gtk3-xray",
+    "template": "~/.config/bnsplit/scripts/runwall/colorsTemplates/gtk3-xray.css",
+    "output": "~/.themes/custom-adw/gtk-3.0/colors-xray.css"
+  },
+
+  // --------------------------
+  // GTK4 Theme Files
+  // --------------------------
+  {
+    "name": "gtk4-solid",
+    "template": "~/.config/bnsplit/scripts/runwall/colorsTemplates/gtk4-solid.css",
+    "output": "~/.themes/custom-adw/gtk-4.0/colors-solid.css"
+  },
+  {
+    "name": "gtk4-xray",
+    "template": "~/.config/bnsplit/scripts/runwall/colorsTemplates/gtk4-xray.css",
+    "output": "~/.themes/custom-adw/gtk-4.0/colors-xray.css"
+  },
+
+  // --------------------------
+  // Application Configurations
+  // --------------------------
+  {
+    "name": "hyprland",
+    "template": "~/.config/bnsplit/scripts/runwall/colorsTemplates/colors-hypr.conf",
+    "output": "~/.config/bnsplit/colors/colors-hypr.conf"
+  },
+  {
+    "name": "kitty",
+    "template": "~/.config/bnsplit/scripts/runwall/colorsTemplates/colors-kitty.conf",
+    "output": "~/.config/bnsplit/colors/colors-kitty.conf",
+    "command": "pkill -SIGUSR1 kitty"
+  },
+  {
+    "name": "rofi",
+    "template": "~/.config/bnsplit/scripts/runwall/colorsTemplates/colors-rofi.rasi",
+    "output": "~/.config/bnsplit/colors/colors-rofi.rasi"
+  }
+]

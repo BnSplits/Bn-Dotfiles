@@ -12,12 +12,12 @@ header() {
 if [[ $(hyprctl getoption general:gaps_out | grep 0) ]]; then
   header >$filepath
   echo "general {
-    gaps_in = 4
+    gaps_in = 2
     gaps_out = 5
-    border_size = 2
+    border_size = 3
 }
 decoration {
-    rounding = 5
+    rounding = 8
 }
 " >>$filepath
 else

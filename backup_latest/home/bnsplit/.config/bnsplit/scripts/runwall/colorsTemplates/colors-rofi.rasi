@@ -1,0 +1,103 @@
+* {
+    /* Solid colors */
+    s-primary: {{col.9.hex}};
+    s-primary-fixed: {{col.10.hex}};
+    s-primary-fixed-dim: {{col.9.hex}};
+    s-on-primary: {{col.5.hex}};
+    s-on-primary-fixed: {{col.4.hex}};
+    s-on-primary-fixed-variant: {{col.6.hex}};
+    s-primary-container: {{col.6.hex}};
+    s-on-primary-container: {{col.10.hex}};
+    
+    s-secondary: {{col.9.rgb}};
+    s-secondary-fixed: {{col.10.rgb}};
+    s-secondary-fixed-dim: {{col.9.rgb}};
+    s-on-secondary: {{col.5.rgb}};
+    s-on-secondary-fixed: {{col.4.rgb}};
+    s-on-secondary-fixed-variant: {{col.6.rgb}};
+    s-secondary-container: {{col.6.rgb}};
+    s-on-secondary-container: {{col.10.rgb}};
+    
+    s-tertiary: {{col.11.hex}};
+    s-tertiary-fixed: {{col.11.hex}};
+    s-tertiary-fixed-dim: {{col.11.hex}};
+    s-on-tertiary: {{col.2.hex}};
+    s-on-tertiary-fixed: {{col.3.hex}};
+    s-on-tertiary-fixed-variant: {{col.7.hex}};
+    s-tertiary-container: {{col.7.hex}};
+    s-on-tertiary-container: {{col.11.hex}};
+    
+    s-error: {{col.14.hex}};
+    s-on-error: {{col.12.hex}};
+    s-error-container: {{col.13.hex}};
+    s-on-error-container: {{col.15.hex}};
+    
+    s-surface: {{col.1.hex}};
+    s-on-surface: {{col.15.hex}};
+    s-on-surface-variant: {{col.12.hex}};
+    s-outline: {{col.8.hex}};
+    s-outline-variant: {{col.7.hex}};
+    s-shadow: {{col.1.hex}};
+    s-scrim: {{col.1.hex}};
+    s-inverse-surface: {{col.15.hex}};
+    s-inverse-on-surface: {{col.3.hex}};
+    s-inverse-primary: {{col.6.hex}};
+    s-surface-dim: {{col.1.hex}};
+    s-surface-bright: {{col.3.hex}};
+    s-surface-container-lowest: {{col.1.hex}};
+    s-surface-container-low: {{col.1.hex}};
+    s-surface-container: {{col.2.hex}};
+    s-surface-container-high: {{col.3.hex}};
+    s-surface-container-highest: {{col.4.hex}};
+
+    /* Xray colors */
+    x-primary: {{col.9.rgba | alpha: 0.5}};
+    x-primary-fixed: {{col.10.rgba | alpha: 0.5}};
+    x-primary-fixed-dim: {{col.9.rgba | alpha: 0.5}};
+    x-on-primary: {{col.5.rgba | alpha: 0.5}};
+    x-on-primary-fixed: {{col.4.rgba | alpha: 0.5}};
+    x-on-primary-fixed-variant: {{col.6.rgba | alpha: 0.5}};
+    x-primary-container: {{col.6.rgba | alpha: 0.5}};
+    x-on-primary-container: {{col.10.rgba | alpha: 0.5}};
+    
+    x-secondary: {{col.9.rgba | alpha: 0.5}};
+    x-secondary-fixed: {{col.10.rgba | alpha: 0.5}};
+    x-secondary-fixed-dim: {{col.9.rgba | alpha: 0.5}};
+    x-on-secondary: {{col.5.rgba | alpha: 0.5}};
+    x-on-secondary-fixed: {{col.4.rgba | alpha: 0.5}};
+    x-on-secondary-fixed-variant: {{col.6.rgba | alpha: 0.5}};
+    x-secondary-container: {{col.6.rgba | alpha: 0.5}};
+    x-on-secondary-container: {{col.10.rgba | alpha: 0.5}};
+    
+    x-tertiary: {{col.11.rgba | alpha: 0.5}};
+    x-tertiary-fixed: {{col.11.rgba | alpha: 0.5}};
+    x-tertiary-fixed-dim: {{col.11.rgba | alpha: 0.5}};
+    x-on-tertiary: {{col.2.rgba | alpha: 0.5}};
+    x-on-tertiary-fixed: {{col.3.rgba | alpha: 0.5}};
+    x-on-tertiary-fixed-variant: {{col.7.rgba | alpha: 0.5}};
+    x-tertiary-container: {{col.7.rgba | alpha: 0.5}};
+    x-on-tertiary-container: {{col.11.rgba | alpha: 0.5}};
+    
+    x-error: {{col.14.rgba | alpha: 0.5}};
+    x-on-error: {{col.12.rgba | alpha: 0.5}};
+    x-error-container: {{col.13.rgba | alpha: 0.5}};
+    x-on-error-container: {{col.15.rgba | alpha: 0.5}};
+    
+    x-surface: {{col.1.rgba | alpha: 0.5}};
+    x-on-surface: {{col.15.rgba | alpha: 0.5}};
+    x-on-surface-variant: {{col.12.rgba | alpha: 0.5}};
+    x-outline: {{col.8.rgba | alpha: 0.5}};
+    x-outline-variant: {{col.7.rgba | alpha: 0.5}};
+    x-shadow: {{col.1.rgba | alpha: 0.5}};
+    x-scrim: {{col.1.rgba | alpha: 0.5}};
+    x-inverse-surface: {{col.15.rgba | alpha: 0.5}};
+    x-inverse-on-surface: {{col.3.rgba | alpha: 0.5}};
+    x-inverse-primary: {{col.6.rgba | alpha: 0.5}};
+    x-surface-dim: {{col.1.rgba | alpha: 0.5}};
+    x-surface-bright: {{col.3.rgba | alpha: 0.5}};
+    x-surface-container-lowest: {{col.1.rgba | alpha: 0.5}};
+    x-surface-container-low: {{col.1.rgba | alpha: 0.5}};
+    x-surface-container: {{col.2.rgba | alpha: 0.5}};
+    x-surface-container-high: {{col.3.rgba | alpha: 0.5}};
+    x-surface-container-highest: {{col.4.rgba | alpha: 0.5}};
+}

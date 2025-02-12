@@ -1,0 +1,146 @@
+/*
+* CSS solid colors
+*/
+
+@define-color s-background {{col.1.hex}};
+@define-color s-error {{col.14.hex}};
+@define-color s-error-container {{col.13.hex}};
+@define-color s-inverse-on-surface {{col.3.hex}};
+@define-color s-inverse-primary {{col.6.hex}};
+@define-color s-inverse-surface {{col.15.hex}};
+@define-color s-on-background {{col.15.hex}};
+@define-color s-on-error {{col.12.hex}};
+@define-color s-on-error-container {{col.15.hex}};
+@define-color s-on-primary {{col.5.hex}};
+@define-color s-on-primary-container {{col.10.hex}};
+@define-color s-on-primary-fixed {{col.4.hex}};
+@define-color s-on-primary-fixed-variant {{col.6.hex}};
+@define-color s-on-secondary {{col.5.hex}};
+@define-color s-on-secondary-container {{col.10.hex}};
+@define-color s-on-secondary-fixed {{col.4.hex}};
+@define-color s-on-secondary-fixed-variant {{col.6.hex}};
+@define-color s-on-surface {{col.15.hex}};
+@define-color s-on-surface-variant {{col.12.hex}};
+@define-color s-on-tertiary {{col.2.hex}};
+@define-color s-on-tertiary-container {{col.11.hex}};
+@define-color s-on-tertiary-fixed {{col.3.hex}};
+@define-color s-on-tertiary-fixed-variant {{col.7.hex}};
+@define-color s-outline {{col.8.hex}};
+@define-color s-outline-variant {{col.7.hex}};
+@define-color s-primary {{col.9.hex}};
+@define-color s-primary-container {{col.6.hex}};
+@define-color s-primary-fixed {{col.10.hex}};
+@define-color s-primary-fixed-dim {{col.9.hex}};
+@define-color s-scrim {{col.1.hex}};
+@define-color s-secondary {{col.9.hex}};
+@define-color s-secondary-container {{col.6.hex}};
+@define-color s-secondary-fixed {{col.10.hex}};
+@define-color s-secondary-fixed-dim {{col.9.hex}};
+@define-color s-shadow {{col.1.hex}};
+@define-color s-source-color {{col.9.hex}};
+@define-color s-surface {{col.1.hex}};
+@define-color s-surface-bright {{col.3.hex}};
+@define-color s-surface-container {{col.2.hex}};
+@define-color s-surface-container-high {{col.3.hex}};
+@define-color s-surface-container-highest {{col.4.hex}};
+@define-color s-surface-container-low {{col.1.hex}};
+@define-color s-surface-container-lowest {{col.1.hex}};
+@define-color s-surface-dim {{col.1.hex}};
+@define-color s-surface-tint {{col.9.hex}};
+@define-color s-surface-variant {{col.7.hex}};
+@define-color s-tertiary {{col.11.hex}};
+@define-color s-tertiary-container {{col.7.hex}};
+@define-color s-tertiary-fixed {{col.11.hex}};
+@define-color s-tertiary-fixed-dim {{col.11.hex}};
+
+/*
+* CSS xray colors
+*/
+
+@define-color x-background {{col.1.rgba | alpha: 0.8}};
+@define-color x-error {{col.14.rgba | alpha: 0.8}};
+@define-color x-error-container {{col.13.rgba | alpha: 0.8}};
+@define-color x-inverse-on-surface {{col.3.rgba | alpha: 0.8}};
+@define-color x-inverse-primary {{col.6.rgba | alpha: 0.8}};
+@define-color x-inverse-surface {{col.15.rgba | alpha: 0.8}};
+@define-color x-on-background {{col.15.rgba | alpha: 0.8}};
+@define-color x-on-error {{col.12.rgba | alpha: 0.8}};
+@define-color x-on-error-container {{col.15.rgba | alpha: 0.8}};
+@define-color x-on-primary {{col.5.rgba | alpha: 0.8}};
+@define-color x-on-primary-container {{col.10.rgba | alpha: 0.8}};
+@define-color x-on-primary-fixed {{col.4.rgba | alpha: 0.8}};
+@define-color x-on-primary-fixed-variant {{col.6.rgba | alpha: 0.8}};
+@define-color x-on-secondary {{col.5.rgba | alpha: 0.8}};
+@define-color x-on-secondary-container {{col.10.rgba | alpha: 0.8}};
+@define-color x-on-secondary-fixed {{col.4.rgba | alpha: 0.8}};
+@define-color x-on-secondary-fixed-variant {{col.6.rgba | alpha: 0.8}};
+@define-color x-on-surface {{col.15.rgba | alpha: 0.8}};
+@define-color x-on-surface-variant {{col.12.rgba | alpha: 0.8}};
+@define-color x-on-tertiary {{col.2.rgba | alpha: 0.8}};
+@define-color x-on-tertiary-container {{col.11.rgba | alpha: 0.8}};
+@define-color x-on-tertiary-fixed {{col.3.rgba | alpha: 0.8}};
+@define-color x-on-tertiary-fixed-variant {{col.7.rgba | alpha: 0.8}};
+@define-color x-outline {{col.8.rgba | alpha: 0.8}};
+@define-color x-outline-variant {{col.7.rgba | alpha: 0.8}};
+@define-color x-primary {{col.9.rgba | alpha: 0.8}};
+@define-color x-primary-container {{col.6.rgba | alpha: 0.8}};
+@define-color x-primary-fixed {{col.10.rgba | alpha: 0.8}};
+@define-color x-primary-fixed-dim {{col.9.rgba | alpha: 0.8}};
+@define-color x-scrim {{col.1.rgba | alpha: 0.8}};
+@define-color x-secondary {{col.9.rgba | alpha: 0.8}};
+@define-color x-secondary-container {{col.6.rgba | alpha: 0.8}};
+@define-color x-secondary-fixed {{col.10.rgba | alpha: 0.8}};
+@define-color x-secondary-fixed-dim {{col.9.rgba | alpha: 0.8}};
+@define-color x-shadow {{col.1.rgba | alpha: 0.8}};
+@define-color x-source-color {{col.9.rgba | alpha: 0.8}};
+@define-color x-surface {{col.1.rgba | alpha: 0.8}};
+@define-color x-surface-bright {{col.3.rgba | alpha: 0.8}};
+@define-color x-surface-container {{col.2.rgba | alpha: 0.8}};
+@define-color x-surface-container-high {{col.3.rgba | alpha: 0.8}};
+@define-color x-surface-container-highest {{col.4.rgba | alpha: 0.8}};
+@define-color x-surface-container-low {{col.1.rgba | alpha: 0.8}};
+@define-color x-surface-container-lowest {{col.1.rgba | alpha: 0.8}};
+@define-color x-surface-dim {{col.1.rgba | alpha: 0.8}};
+@define-color x-surface-tint {{col.9.rgba | alpha: 0.8}};
+@define-color x-surface-variant {{col.7.rgba | alpha: 0.8}};
+@define-color x-tertiary {{col.11.rgba | alpha: 0.8}};
+@define-color x-tertiary-container {{col.7.rgba | alpha: 0.8}};
+@define-color x-tertiary-fixed {{col.11.rgba | alpha: 0.8}};
+@define-color x-tertiary-fixed-dim {{col.11.rgba | alpha: 0.8}};
+
+/*
+* Colors
+*/
+@define-color s-col-1 {{col.1.hex}};
+@define-color s-col-2 {{col.2.hex}};
+@define-color s-col-3 {{col.3.hex}};
+@define-color s-col-4 {{col.4.hex}};
+@define-color s-col-5 {{col.5.hex}};
+@define-color s-col-6 {{col.6.hex}};
+@define-color s-col-7 {{col.7.hex}};
+@define-color s-col-8 {{col.8.hex}};
+@define-color s-col-9 {{col.9.hex}};
+@define-color s-col-10 {{col.10.hex}};
+@define-color s-col-11 {{col.11.hex}};
+@define-color s-col-12 {{col.12.hex}};
+@define-color s-col-13 {{col.13.hex}};
+@define-color s-col-14 {{col.14.hex}};
+@define-color s-col-15 {{col.15.hex}};
+@define-color s-col-16 {{col.16.hex}};
+
+@define-color x-col-1 {{col.1.rgba | alpha: 0.8}};
+@define-color x-col-2 {{col.2.rgba | alpha: 0.8}};
+@define-color x-col-3 {{col.3.rgba | alpha: 0.8}};
+@define-color x-col-4 {{col.4.rgba | alpha: 0.8}};
+@define-color x-col-5 {{col.5.rgba | alpha: 0.8}};
+@define-color x-col-6 {{col.6.rgba | alpha: 0.8}};
+@define-color x-col-7 {{col.7.rgba | alpha: 0.8}};
+@define-color x-col-8 {{col.8.rgba | alpha: 0.8}};
+@define-color x-col-9 {{col.9.rgba | alpha: 0.8}};
+@define-color x-col-10 {{col.10.rgba | alpha: 0.8}};
+@define-color x-col-11 {{col.11.rgba | alpha: 0.8}};
+@define-color x-col-12 {{col.12.rgba | alpha: 0.8}};
+@define-color x-col-13 {{col.13.rgba | alpha: 0.8}};
+@define-color x-col-14 {{col.14.rgba | alpha: 0.8}};
+@define-color x-col-15 {{col.15.rgba | alpha: 0.8}};
+@define-color x-col-16 {{col.16.rgba | alpha: 0.8}};

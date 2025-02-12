@@ -1,0 +1,48 @@
+/*
+* GTK4 solid Colors
+*/
+
+@define-color accent_bg_color {{col.3.hex}};
+@define-color accent_fg_color {{col.5.hex}};
+@define-color accent_color {{col.6.hex}};
+@define-color destructive_bg_color {{col.14.hex}};
+@define-color destructive_fg_color {{col.12.hex}};
+@define-color destructive_color {{col.13.hex}};
+@define-color error_bg_color {{col.14.hex}};
+@define-color error_fg_color {{col.12.hex}};
+@define-color error_color {{col.13.hex}};
+@define-color success_bg_color {{col.11.hex}};
+@define-color success_fg_color {{col.2.hex}};
+@define-color success_color {{col.7.hex}};
+@define-color warning_bg_color {{col.9.hex}};
+@define-color warning_fg_color {{col.5.hex}};
+@define-color warning_color {{col.6.hex}};
+@define-color window_bg_color {{col.1.hex}};
+@define-color window_fg_color {{col.15.hex}};
+@define-color view_bg_color {{col.1.hex}}; /* Nautilus main window */
+@define-color view_fg_color {{col.15.hex}};
+@define-color headerbar_bg_color {{col.3.hex}};
+@define-color headerbar_fg_color {{col.15.hex}};
+@define-color headerbar_border_color {{col.7.hex}};
+@define-color headerbar_backdrop_color {{col.1.hex}};
+@define-color headerbar_shade_color {{col.1.hex}};
+@define-color headerbar_darker_shade_color {{col.1.hex}};
+@define-color sidebar_bg_color {{col.1.hex}};
+@define-color sidebar_fg_color {{col.12.hex}};
+@define-color sidebar_backdrop_color {{col.1.hex}};
+@define-color sidebar_border_color {{col.1.hex}};
+@define-color sidebar_shade_color {{col.1.hex}};
+@define-color card_bg_color {{col.3.hex}};
+@define-color card_fg_color {{col.15.hex}};
+@define-color card_shade_color {{col.1.hex}};
+@define-color dialog_bg_color {{col.2.hex}};
+@define-color dialog_fg_color {{col.15.hex}};
+@define-color popover_bg_color {{col.3.hex}};
+@define-color popover_fg_color {{col.15.hex}};
+@define-color popover_shade_color {{col.1.hex}};
+@define-color thumbnail_bg_color {{col.6.hex}};
+@define-color thumbnail_fg_color {{col.10.hex}};
+@define-color incognito_bg_color {{col.1.hex}};
+@define-color new_title_bg_color {{col.3.hex}};
+@define-color shade_color {{col.1.hex}};
+@define-color scrollbar_outline_color {{col.8.hex}};

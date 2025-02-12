@@ -66,7 +66,7 @@
     // "title-len": 20,
     "dynamic-order": ["title", "artist"],
     "dynamic-separator": " / ",
-    "ignored-players": ["firefox", "vlc", "zen-beta","zen","plasma-browser-integration", "kdeconnect"],
+    "ignored-players": ["firefox", "vlc", "zen-beta","zen","plasma-browser-integration","chromium","kdeconnect"],
   },
   "tray": {
     "icon-size": 16,

@@ -1,19 +1,19 @@
 @import url("../bnsplit/colors/colors.css");
 
-/* Color Definitions */
-@define-color cc-bg @x-background;
-@define-color noti-border-color @s-primary;
-@define-color noti-bg @x-on-primary-fixed;
-@define-color noti-bg-opaque @s-on-primary-fixed;
-@define-color noti-bg-darker @x-on-primary-fixed;
-@define-color noti-bg-hover @s-on-primary;
-@define-color noti-bg-hover-opaque @s-on-primary;
-@define-color noti-bg-focus @s-inverse-on-surface;
-@define-color noti-close-bg @s-inverse-primary;
-@define-color noti-close-bg-hover @s-on-secondary;
+/* SwayNC Notification Center Styles */
+@define-color cc-bg @x-surface;
+@define-color noti-border-color @s-col-14;
+@define-color noti-bg @x-col-2;
+@define-color noti-bg-opaque @s-surface-container;
+@define-color noti-bg-darker @s-surface-dim;
+@define-color noti-bg-hover @x-surface-container-high;
+@define-color noti-bg-hover-opaque @s-surface-container-high;
+@define-color noti-bg-focus @s-primary-container;
+@define-color noti-close-bg transparent;
+@define-color noti-close-bg-hover transparent;
 @define-color text-color @s-on-surface;
 @define-color text-color-disabled @s-on-surface-variant;
-@define-color bg-selected @on-tertiary;
+@define-color bg-selected @s-primary;
 
 /* General Reset */
 * {
@@ -24,6 +24,7 @@
 .notification-row .notification-background .notification {
   border-radius: 11px;
   margin: 6px 0px;
+  /* border: 2px solid @noti-border-color; */
   border: 2px solid @noti-border-color;
   transition: background 0.15s ease-in-out;
 }
@@ -52,11 +53,6 @@
   .notification-content
   .inline-reply {
   margin: 6px;
-}
-
-.notification-row .notification-background .notification {
-  /* background: linear-gradient(40deg, @x-on-primary-fixed, @x-primary-container); */
-  background: linear-gradient(40deg, @x-primary-container, @x-on-primary-fixed);
 }
 
 .notification-row
@@ -88,7 +84,7 @@
 
 /* Control Center */
 .control-center {
-  border: 3px solid @noti-border-color;
+  border: 2px solid @noti-border-color;
   border-radius: 8px;
   margin: 12px;
 }
@@ -99,7 +95,7 @@
 }
 
 .widget-mpris .widget-mpris-player {
-  background-color: @mpris-album-art-overlay;
+  /* background-color: @mpris-album-art-overlay; */
   border-radius: 14px;
 }
 
@@ -123,6 +119,7 @@
 }
 
 .widget-title > button {
+  border: 1px solid @x-on-background;
   background: @s-on-primary;
   border-radius: 5px;
 }
@@ -141,6 +138,7 @@
 
 .widget-dnd > switch {
   border-radius: 5px;
+  border: 1px solid @x-on-background;
   background: @s-on-primary;
 }
 
@@ -149,7 +147,7 @@
 }
 
 .widget-dnd > switch slider {
-  background: @s-primary;
+  background: @s-primary-fixed;
   border-radius: 5px;
 }
 
@@ -180,12 +178,13 @@
 }
 
 .widget-buttons-grid > flowbox > flowboxchild > button.toggle:hover {
-  color: @noti-close-bg;
+  color: @s-inverse-primary;
   transition: color 0.15s ease-in-out;
 }
 
 .widget-buttons-grid > flowbox > flowboxchild > button.toggle:checked:hover {
-  color: @s-inverse-primary;
+  /* color: @s-inverse-primary; */
+  color: @s-primary;
   transition: color 0.15s ease-in-out;
 }
 
@@ -196,4 +195,5 @@
   font-size: 32px;
   border-radius: 5px;
   border: 2px solid @x-on-background;
+  color: @s-on-background;
 }

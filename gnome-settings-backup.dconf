@@ -128,7 +128,7 @@ window-width=1024
 window-properties=[536, 350, 0, 0]
 
 [org/blueman/plugins/recentconns]
-recent-connections=[{'adapter': '00:45:E2:87:76:4C', 'address': '68:23:A7:07:40:69', 'alias': 'JLab GO Air Sport', 'icon': 'audio-headset', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1738963064.1421027', 'device': '/org/bluez/hci0/dev_68_23_A7_07_40_69'}, {'adapter': '00:45:E2:87:76:4C', 'address': '90:61:AE:FF:14:D1', 'alias': 'EndeavourOs', 'icon': 'computer', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1736709520.9821274'}, {'adapter': '00:45:E2:87:76:4C', 'address': 'E4:A4:71:D9:8A:2C', 'alias': 'DESKTOP-SQEQEHN', 'icon': 'computer', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1737195356.7106144'}, {'adapter': '00:45:E2:87:76:4C', 'address': 'F4:8C:50:9C:08:96', 'alias': 'Dell', 'icon': 'computer', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1737195422.2176597', 'device': '/org/bluez/hci0/dev_F4_8C_50_9C_08_96'}]
+recent-connections=[{'adapter': '00:45:E2:87:76:4C', 'address': '68:23:A7:07:40:69', 'alias': 'JLab GO Air Sport', 'icon': 'audio-headset', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1739141883.1969597', 'device': '/org/bluez/hci0/dev_68_23_A7_07_40_69'}, {'adapter': '00:45:E2:87:76:4C', 'address': '90:61:AE:FF:14:D1', 'alias': 'EndeavourOs', 'icon': 'computer', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1736709520.9821274'}, {'adapter': '00:45:E2:87:76:4C', 'address': 'E4:A4:71:D9:8A:2C', 'alias': 'DESKTOP-SQEQEHN', 'icon': 'computer', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1737195356.7106144'}, {'adapter': '00:45:E2:87:76:4C', 'address': 'F4:8C:50:9C:08:96', 'alias': 'Dell', 'icon': 'computer', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1737195422.2176597', 'device': '/org/bluez/hci0/dev_F4_8C_50_9C_08_96'}]
 
 [org/erikreider/swaync]
 dnd-state=false
@@ -352,10 +352,10 @@ fullscreen=false
 inverted-colors=false
 show-sidebar=false
 sidebar-page='thumbnails'
-sidebar-size=148
+sidebar-size=164
 sizing-mode='free'
-window-ratio=(0.78431372549019607, 0.66035353535353536)
-zoom=0.51811397129194914
+window-ratio=(1.5686274509803921, 1.321969696969697)
+zoom=0.62173676555033874
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -378,7 +378,7 @@ window-size=(-1, -1)
 
 [org/gnome/file-roller/listing]
 list-mode='as-folder'
-name-column-width=1356
+name-column-width=68
 show-path=false
 sort-method='name'
 sort-type='ascending'
@@ -409,11 +409,13 @@ default-compression-format='tar.xz'
 default-zoom-level='large'
 
 [org/gnome/nautilus/list-view]
+default-zoom-level='large'
 use-tree-view=false
 
 [org/gnome/nautilus/preferences]
 default-folder-viewer='icon-view'
 migrated-gtk-settings=true
+recursive-search='always'
 search-filter-time-type='last_modified'
 show-create-link=true
 show-delete-permanently=true
@@ -792,7 +794,7 @@ selected-color=(true, 0.15686275064945221, 0.15686275064945221, 0.15686275064945
 [org/gtk/gtk4/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
-show-hidden=true
+show-hidden=false
 sidebar-width=140
 sort-column='name'
 sort-directories-first=false
@@ -802,8 +804,8 @@ view-type='list'
 window-size=(857, 372)
 
 [org/gtk/settings/color-chooser]
-custom-colors=[(0.0092555555555555516, 0.16333333333333333, 0.12909382716049381, 1.0), (0.0039215686274509803, 0.039215686274509803, 0.031372549019607843, 1.0), (0.0056000000000000008, 0.040000000000000001, 0.03270303030303031, 1.0), (0.60784313725490191, 0.34901960784313724, 0.71372549019607845, 1.0), (0.058823529411764705, 0.054901960784313725, 0.054901960784313725, 1.0), (0.20392156862745098, 0.59607843137254901, 0.85882352941176465, 1.0), (0.090196078431372548, 0.0078431372549019607, 0.035294117647058823, 1.0)]
-selected-color=(true, 0.0092555555555555516, 0.16333333333333333, 0.12909382716049381, 1.0)
+custom-colors=[(0.58431372549019611, 0.0, 0.23529411764705882, 1.0), (0.58431372549019611, 0.0, 0.23529411764705876, 1.0), (0.80784313725490198, 0.0, 0.14509803921568604, 1.0), (0.0092555555555555516, 0.16333333333333333, 0.12909382716049381, 1.0), (0.0039215686274509803, 0.039215686274509803, 0.031372549019607843, 1.0), (0.0056000000000000008, 0.040000000000000001, 0.03270303030303031, 1.0), (0.60784313725490191, 0.34901960784313724, 0.71372549019607845, 1.0), (0.058823529411764705, 0.054901960784313725, 0.054901960784313725, 1.0)]
+selected-color=(true, 0.0, 0.0, 0.0, 1.0)
 
 [org/gtk/settings/file-chooser]
 clock-format='24h'
@@ -877,7 +879,7 @@ vm-window-size=(945, 1034)
 [org/virt-manager/virt-manager/vms/397f2e29ce054534be6caff60c37ab4b]
 autoconnect=1
 resize-guest=1
-vm-window-size=(1918, 1078)
+vm-window-size=(1918, 1045)
 
 [org/virt-manager/virt-manager/vms/4938118a359a4bca86a2499d402dd37a]
 autoconnect=1
@@ -932,6 +934,10 @@ vm-window-size=(1280, 842)
 [org/virt-manager/virt-manager/vms/cca90ce06148471cb96c1a9c8a049561]
 autoconnect=1
 vm-window-size=(1280, 842)
+
+[org/virt-manager/virt-manager/vms/cef2adea8fff4a3ab5950f566b47ca6d]
+autoconnect=1
+vm-window-size=(1918, 1045)
 
 [org/virt-manager/virt-manager/vms/cf20b0ae2b6946bebe8ea61ebde9b36c]
 autoconnect=1

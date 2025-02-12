@@ -21,7 +21,7 @@ window#waybar {
 .group-other .module {
   background: transparent;
   border: none;
-  color: @s-on-primary-container;
+  color: @s-error;
 }
 
 .module {
@@ -29,7 +29,7 @@ window#waybar {
   margin: 0px;
   padding: 2px 3px;
   background: transparent;
-  color: @s-on-primary-container;
+  color: @s-error;
 }
 
 tooltip {
@@ -40,7 +40,7 @@ tooltip {
 }
 
 tooltip label {
-  color: @s-on-primary-container;
+  color: @s-on-background;
   font-style: normal;
 }
 
@@ -83,7 +83,7 @@ tooltip label {
 #workspaces button {
   margin: 0px;
   padding: 1px 10px;
-  color: @x-secondary;
+  color: @x-on-surface;
   border-radius: 3px;
   font-weight: 900;
   font-size: 13px;
@@ -114,7 +114,7 @@ tooltip label {
   padding-right: 4px;
   margin: 1px 1px;
   border-radius: 5px;
-  color: @s-on-primary-container;
+  /* color: @s-on-primary-container; */
 }
 
 #mpris {
