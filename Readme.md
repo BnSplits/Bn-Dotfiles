@@ -2,13 +2,15 @@
   <h1 align="center">🌀 BnSplit's Dotfiles</h1>
   <p align="center">Hyprland Habitat Where Wallpapers Wage War on Blandness</p>
 
-  ![License](https://img.shields.io/badge/Contains-100%25_Pure_Unixy_Goodness-important?style=for-the-badge&color=yellow)
-  [![Screenshot Party](./screenshots/1.png)](./screenshots)
+![License](https://img.shields.io/badge/Contains-100%25_Pure_Unixy_Goodness-important?style=for-the-badge&color=yellow)
+[![Screenshot Party](./screenshots/1.png)](./screenshots)
+
 </div>
 
 ---
 
 ## ✨ **Chromagic Engine**
+
 My wallpaper becomes the puppet master of your eyeballs:
 
 > "One wallpaper to rule them all,  
@@ -21,18 +23,20 @@ My wallpaper becomes the puppet master of your eyeballs:
 ---
 
 ## 🛠 **Toolbox of Tomorrow**
-| Weapon of Choice   | Murder Function          | 
-|---------------------|--------------------------|
-| `Hyprland`          | Your favorite compositor |
-| `Neovim`            | LazyVim++ with coffee    |
-| `Astal (AGS)`       | Widgets that widget      |
-| `Waybar`            | Pretty system gossip     |
-| `Kitty`             | Terminal go brrrrrr      |
-| `ZSH`               | Prompt witchcraft        |
+
+| Weapon of Choice | Murder Function          |
+| ---------------- | ------------------------ |
+| `Hyprland`       | Your favorite compositor |
+| `Neovim`         | LazyVim++ with coffee    |
+| `Astal (AGS)`    | Widgets that widget      |
+| `Waybar`         | Pretty system gossip     |
+| `Kitty`          | Terminal go brrrrrr      |
+| `ZSH`            | Prompt witchcraft        |
 
 ---
 
 ## 🎨 **Screenshot Circus**
+
 <div align="center" style="column-count: 2; column-gap: 20px;">
   <img src="./screenshots/1.png" width="400" alt="The ritual begins">
   <img src="./screenshots/2.png" width="400" alt="Colors go brrr">
@@ -45,6 +49,7 @@ My wallpaper becomes the puppet master of your eyeballs:
 ---
 
 ## ⚡ **For the Impatient**
+
 ```bash
 git clone --depth=1 https://github.com/BnSplits/Bn-Dotfiles.git
 cd Bn-Dotfiles/Scripts
@@ -54,6 +59,7 @@ cd Bn-Dotfiles/Scripts
 ---
 
 ## 🧠 **Color Mind Control Diagram**
+
 ```mermaid
 graph LR
   A[Pretty Picture] --> B(Color Goblin)
@@ -68,31 +74,36 @@ graph LR
 ---
 
 ## 📜 **License & Enlightenment**
+
 [MIT Licensed](./LICENSE) - But hear this, padawan:
 
 **🚨 Strong Recommendation**  
-*This configuration exists purely as inspiration -  
-you'll gain true Linux wizardry by:*  
+_This configuration exists purely as inspiration -  
+you'll gain true Linux wizardry by:_
+
 ```bash
 # Not cloning this directly
 # ├── Writing your own configs
 # └── Understanding each line
 ```
 
-**Permitted But Not Advised:**  
-- Clone-and-forget approach ❌  
-- Blind copy/paste without reading 🦇  
-- Using as final rather than template 📋  
+**Permitted But Not Advised:**
 
-**Credits Where Due:**  
-- Dynamic theming core: My own madness (`Somewhere/col_gen`)  
-- AGS Widget Magic: [Astal](https://github.com/Astal-Dev/ags)  
-- Neovim Foundation: [LazyVim](https://github.com/LazyVim/LazyVim)  
+- Clone-and-forget approach ❌
+- Blind copy/paste without reading 🦇
+- Using as final rather than template 📋
 
-**Wisdom Path:**  
-1. Fork this repo ⚔️  
-2. Read the code 🧐  
-3. Delete 90% ✂️  
-4. Build your own castle 🏰  
+**Credits Where Due:**
 
-*"The real dotfiles are the friends you make along the config journey."*
+- Dynamic theming core: My own madness (`Somewhere/col_gen`)
+- AGS Widget Magic: [Astal](https://aylur.github.io/astal/)
+- Neovim Foundation: [LazyVim](https://github.com/LazyVim/LazyVim)
+
+**Wisdom Path:**
+
+1. Fork this repo ⚔️
+2. Read the code 🧐
+3. Delete 90% ✂️
+4. Build your own castle 🏰
+
+_"The real dotfiles are the friends you make along the config journey."_
