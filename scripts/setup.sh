@@ -182,6 +182,7 @@ hypr_packages=(
   "hyprlock"
   "hyprpaper"
   "hyprpicker"
+  "hyprpolkitagent"
   "imagemagick"
   "kde-material-you-colors"
   "nautilus"
