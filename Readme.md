@@ -85,8 +85,7 @@ you'll gain true Linux wizardry by:*
 - Using as final rather than template 📋  
 
 **Credits Where Due:**  
-- Dynamic theming core: My own madness (`Scripts/colorgen`)  
-- GTK theme DNA: [Gradience](https://github.com/GradienceTeam/Gradience)  
+- Dynamic theming core: My own madness (`Somewhere/col_gen`)  
 - AGS Widget Magic: [Astal](https://github.com/Astal-Dev/ags)  
 - Neovim Foundation: [LazyVim](https://github.com/LazyVim/LazyVim)  
 
