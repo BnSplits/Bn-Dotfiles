@@ -1,82 +1,73 @@
 <div align="center">
-  <h1 align="center">🌀 BnSplit'ss Dotfiles</h1>
-  <p align="center">A self-made Hyprland environment with dynamic theming magic</p>
+  <h1 align="center">🌀 BnSplit's Dotfiles</h1>
+  <p align="center">Hyprland Habitat Where Wallpapers Wage War on Blandness</p>
 
-  <!-- ![Hyprland](https://img.shields.io/badge/HYPRLAND-REPLACE_HYPR_VER-blueviolet?style=flat&logo=linux&logoColor=white) -->
-  <!-- ![Neovim](https://img.shields.io/badge/Neovim-REPLACE_NVIM_VER-green?style=flat&logo=neovim) -->
-  ![License](https://img.shields.io/badge/License-MIT-yellow?style=flat)
-
-  [![Screenshot Gallery](./screenshots/1.png)](./screenshots)
+  ![License](https://img.shields.io/badge/Contains-100%25_Pure_Unixy_Goodness-important?style=for-the-badge&color=yellow)
+  [![Screenshot Party](./screenshots/1.png)](./screenshots)
 </div>
 
 ---
 
-## ✨ **Dynamic Chroma System**
-A bespoke theming engine that transforms your desktop based on wallpaper colors:
+## ✨ **Chromagic Engine**
+My wallpaper becomes the puppet master of your eyeballs:
 
-> "The system automatically generates matching themes for:
-> - GTK Applications
-> - Waybar
-> - Terminal color schemes
-> - Rofi menus
-> - AGS components"
-
----
-
-## 🛠 **Core Components**
-| Component          | Description                          | 
-|--------------------|--------------------------------------|
-| **Hyprland**       | You know what it is   |
-| **Neovim**         | Tweaked LazyVim          |
-| **Astal (AGS)**    | Modernized widget system             |
-| **Waybar**         | Dynamic status bar with theming      |
-| **Kitty**          | GPU-accelerated terminal emulator    |
-| **ZSH**            | Productivity-optimized shell         |
+> "One wallpaper to rule them all,  
+> One hue-picker to bind them,  
+> And to the darkness bind them  
+> (until you change wallpapers again)"
+>
+> - Not J.R.R. Tolkien
 
 ---
 
-## 🎨 **Screenshot Gallery**
+## 🛠 **Toolbox of Tomorrow**
+| Weapon of Choice   | Murder Function          | 
+|---------------------|--------------------------|
+| `Hyprland`          | Your favorite compositor |
+| `Neovim`            | LazyVim++ with coffee    |
+| `Astal (AGS)`       | Widgets that widget      |
+| `Waybar`            | Pretty system gossip     |
+| `Kitty`             | Terminal go brrrrrr      |
+| `ZSH`               | Prompt witchcraft        |
+
+---
+
+## 🎨 **Screenshot Circus (20 Acts)**
 <div align="center" style="column-count: 2; column-gap: 20px;">
-  <img src="./screenshots/1.png" width="400">
-  <img src="./screenshots/2.png" width="400">
-  <img src="./screenshots/3.png" width="400">
-  <img src="./screenshots/4.png" width="400">
-  <img src="./screenshots/5.png" width="400">
-  <img src="./screenshots/6.png" width="400">
-  <!-- Continue up to 20 screenshots -->
+  <img src="./screenshots/1.png" width="400" alt="The ritual begins">
+  <img src="./screenshots/2.png" width="400" alt="Colors go brrr">
+  <img src="./screenshots/3.png" width="400" alt="Neovim dark magic">
+  <img src="./screenshots/4.png" width="400" alt="Widget wonderland">
+  <!-- ... continue through 20 screenshots -->
+  <img src="./screenshots/20.png" width="400" alt="Final boss battle">
 </div>
 
 ---
 
-## ⚡ **Quick Start**
-### Requirements
-- **Fonts**: [Vina Sans](https://fonts.google.com/specimen/Vina+Sans), [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
-- **Compositor**: Hyprland (latest)
-
-### Installation
+## ⚡ **For the Impatient**
 ```bash
 git clone --depth=1 https://github.com/BnSplits/Bn-Dotfiles.git
-cd Bn-Dotfiles
-chmod +x Scripts/setup.sh
-./Scripts/setup.sh --install
+cd Bn-Dotfiles/Scripts
+./setup.sh  # Say yes to everything like in the movies
 ```
 
 ---
 
-## 🧩 **System Architecture**
+## 🧠 **Color Mind Control Diagram**
 ```mermaid
-graph TD
-  A[Wallpaper] --> B(Color Generator)
-  B --> C{Color Templates}
-  C --> D[GTK Apps]
-  C --> E[Hyprland Borders]
-  C --> F[Terminal Schemes]
-  C --> G[Widgets]
+graph LR
+  A[Pretty Picture] --> B(Color Goblin)
+  B --> C{Color Juice}
+  C --> D[GTK Stuff]
+  C --> E[Hyprland Drip]
+  C --> F[Terminal Sauce]
+  C --> G[Widget Flavor]
+  C --> H[Secret Sauce]
 ```
 
 ---
 
-## 📜 **License**
-Released under [MIT License](./LICENSE) - feel free to remix and redistribute!
+## 📜 **Legalese Boogaloo**
+[MIT Licensed](./LICENSE) - Take it, break it, fix it, just don't blame me!
 
-> *"A special thanks to all open-source projects that made this configuration possible. This setup evolves continuously - what you see today might transform tomorrow!"*
+*"This setup contains approximately 42% black magic. May cause spontaneous theming addiction and irrational hatred of static color schemes."*
