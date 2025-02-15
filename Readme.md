@@ -67,7 +67,33 @@ graph LR
 
 ---
 
-## 📜 **Legalese Boogaloo**
-[MIT Licensed](./LICENSE) - Take it, break it, fix it, just don't blame me!
+## 📜 **License & Enlightenment**
+[MIT Licensed](./LICENSE) - But hear this, padawan:
 
-*"This setup contains approximately 42% black magic. May cause spontaneous theming addiction and irrational hatred of static color schemes."*
+**🚨 Strong Recommendation**  
+*This configuration exists purely as inspiration -  
+you'll gain true Linux wizardry by:*  
+```bash
+# Not cloning this directly
+# ├── Writing your own configs
+# └── Understanding each line
+```
+
+**Permitted But Not Advised:**  
+- Clone-and-forget approach ❌  
+- Blind copy/paste without reading 🦇  
+- Using as final rather than template 📋  
+
+**Credits Where Due:**  
+- Dynamic theming core: My own madness (`Scripts/colorgen`)  
+- GTK theme DNA: [Gradience](https://github.com/GradienceTeam/Gradience)  
+- AGS Widget Magic: [Astal](https://github.com/Astal-Dev/ags)  
+- Neovim Foundation: [LazyVim](https://github.com/LazyVim/LazyVim)  
+
+**Wisdom Path:**  
+1. Fork this repo ⚔️  
+2. Read the code 🧐  
+3. Delete 90% ✂️  
+4. Build your own castle 🏰  
+
+*"The real dotfiles are the friends you make along the config journey."*

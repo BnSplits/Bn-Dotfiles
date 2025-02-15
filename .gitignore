@@ -19,3 +19,4 @@ backup_log.txt
 *.tar.gz
 *.knsv
 _Archives/
+gnome-settings-backup.dconf
