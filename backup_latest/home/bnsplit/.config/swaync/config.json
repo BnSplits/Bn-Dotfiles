@@ -90,42 +90,38 @@
           "label": " ",
           "type": "toggle",
           "active": true,
-          "command": "sh -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && nmcli radio wifi on || nmcli radio wifi off'",
+          "command": "sh -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && nmcli radio wifi off || nmcli radio wifi on'",
           "update_command": "sh -c '[[ $(nmcli radio wifi) == \"enabled\" ]] && echo true || echo false'"
         },
         {
           "label": "󰂯",
           "type": "toggle",
           "active": true,
-          "command": "sh -c '[ $SWAYNC_TOGGLE_STATE == true ] && bluetoothctl power on || bluetoothctl power off'",
-          "update_command": "sh -c 'bluetoothctl show | grep -q 'Powered: yes' && echo true || echo false'"
+          "command": "sh -c '[ $SWAYNC_TOGGLE_STATE == true ] && bluetoothctl power off || bluetoothctl power on'",
+          "update_command": "sh -c '~/.config/swaync/scripts/bluetooth_state.sh'"
         },
         {
-          "label": "󱇙 ⁴",
+          "label": "󰗌⁴",
           "type": "toggle",
           "command": "sh -c '~/.config/bnsplit/scripts/toggle_xray.sh gtk4'",
-          "update_command": "sh -c 'sed -n 1p ~/.themes/custom-adw/gtk-4.0/colors.css | grep xray && echo true || echo false' "
+          "update_command": "sh -c '~/.config/swaync/scripts/gtk4_xray_state.sh'"
         },
         {
-          "label": "󱇙 ³",
+          "label": "󰗌³",
           "type": "toggle",
           "command": "sh -c '~/.config/bnsplit/scripts/toggle_xray.sh gtk3'",
-          "update_command": "sh -c 'sed -n 1p ~/.themes/custom-adw/gtk-3.0/colors.css | grep xray && echo true || echo false' "
+          "update_command": "sh -c '~/.config/swaync/scripts/gtk3_xray_state.sh'"
         },
         {
-          "label": "󱇙 ",
+          "label": "󰗌",
           "type": "toggle",
           "active": false,
           "command": "sh -c '~/.config/bnsplit/scripts/toggle_xray.sh'",
-          "update_command": "sh -c 'hyprctl getoption decoration:active_opacity | grep 1.00' && echo false || echo true'"
+          "update_command": "sh -c '~/.config/swaync/scripts/all_xray_state.sh'"
         },
         {
-          "label": " ",
+          "label": "",
           "command": "sh -c 'swaync-client --close-panel && sleep 0.2 && $(hyprpicker -a)'"
-        },
-        {
-          "label": "",
-          "command": "sh -c wlogout"
         }
       ]
     }

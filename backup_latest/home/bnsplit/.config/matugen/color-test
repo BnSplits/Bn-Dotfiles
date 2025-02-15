@@ -1,0 +1,4 @@
+<* for name, value in colors *>
+@define-color x-{{name | replace: "_", "-"}} {{value.default.hex}};
+<* endfor *>
+

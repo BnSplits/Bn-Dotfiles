@@ -47,6 +47,7 @@ default_packages=(
   "bat"
   "bc"
   "bitwarden"
+  "bluez-utils"
   "btop"
   "cargo"
   "cava"
@@ -183,6 +184,10 @@ hypr_packages=(
   "hyprpicker"
   "imagemagick"
   "kde-material-you-colors"
+  "nautilus"
+  "nautilus-admin-gtk4"
+  "nautilus-image-converter"
+  "nautilus-open-any-terminal"
   "network-manager-applet"
   "networkmanager"
   "python-poetry"
@@ -322,6 +327,12 @@ G_special_installs() {
   if confirm "Do you want to install Spicetify?"; then
     echo_arrow "Installation of Spicetify..."
     curl -fsSL https://raw.githubusercontent.com/spicetify/cli/main/install.sh | sh
+  fi
+
+  # Hyprls (Hyprland LSP)
+  if confirm "Do you want to install Hyprls (Hyprland LSP)?"; then
+    git clone --recurse-submodules https://github.com/hyprland-community/hyprls /tmp/hyprls &&
+      (cd /tmp/hyprls && just install)
   fi
 
 }

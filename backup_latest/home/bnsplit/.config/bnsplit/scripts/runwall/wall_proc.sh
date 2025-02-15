@@ -10,22 +10,22 @@ file_type=$(file --mime-type -b "$WALL")
 WALL_HASH=$(sha256sum "$WALL" | awk '{print $1}')
 
 process_image() {
-  local img="$1"
+  local input_file="$1"
+  local enable_blur="$2"
 
   # PNG version
   if [[ ! -f "$WALL_PNG_DIR/$WALL_HASH" ]]; then
-    magick "$img" -strip -resize 1920x1080^ -gravity center -extent 1920x1080 \
+    magick "$input_file" -strip -resize 1920x1080^ -gravity center -extent 1920x1080 \
       PNG32:"$CACHE_WALLPAPER_PNG"
     cp "$CACHE_WALLPAPER_PNG" "$WALL_PNG_DIR/$WALL_HASH"
   else
     cp "$WALL_PNG_DIR/$WALL_HASH" "$CACHE_WALLPAPER_PNG"
   fi
 
-  if [[ -n "$2" ]]; then
-
+  if [[ "$2" = "BLUR" ]]; then
     # Blurred version
     if [[ ! -f "$BLUR_DIR/$WALL_HASH" ]]; then
-      magick "$img" -strip -resize 1920x1080^ -gravity center -extent 1920x1080 \
+      magick "$input_file" -strip -resize 1920x1080^ -gravity center -extent 1920x1080 \
         -blur 0x25 "$CACHE_WALLPAPER_BLUR"
       cp "$CACHE_WALLPAPER_BLUR" "$BLUR_DIR/$WALL_HASH"
     else
@@ -45,11 +45,9 @@ process_image() {
   fi
 }
 
+# Pass "enable_blur" as the second argument to trigger blur processing
 if [[ "$file_type" == "image/gif" ]]; then
-  process_image "${CACHE_WALLPAPER}[0]" &
+  process_image "${WALL}[0]" "$2" &
 else
-  process_image "$CACHE_WALLPAPER" &
+  process_image "$WALL" "$2" &
 fi
-
-wait
-exit 0

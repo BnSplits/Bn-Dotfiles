@@ -1,10 +1,14 @@
 [config.wallpaper]
 command = "true"
 
-
 [templates.colors]
-input_path = './templates/colors'
-output_path = '~/.config/bnsplit/colors/colors'
+input_path = './color-test'
+output_path = './out'
+
+
+# [templates.colors]
+# input_path = './templates/colors'
+# output_path = '~/.config/bnsplit/colors/colors'
 
 
 # [templates.colors-source]

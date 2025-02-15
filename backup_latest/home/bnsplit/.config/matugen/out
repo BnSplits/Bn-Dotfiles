@@ -1,0 +1,102 @@
+
+@define-color x-background #151218;
+
+@define-color x-error #ffb4ab;
+
+@define-color x-error-container #93000a;
+
+@define-color x-inverse-on-surface #322f35;
+
+@define-color x-inverse-primary #68548e;
+
+@define-color x-inverse-surface #e7e0e8;
+
+@define-color x-on-background #e7e0e8;
+
+@define-color x-on-error #690005;
+
+@define-color x-on-error-container #ffdad6;
+
+@define-color x-on-primary #38265c;
+
+@define-color x-on-primary-container #ebddff;
+
+@define-color x-on-primary-fixed #230f46;
+
+@define-color x-on-primary-fixed-variant #503d74;
+
+@define-color x-on-secondary #342d40;
+
+@define-color x-on-secondary-container #e9def8;
+
+@define-color x-on-secondary-fixed #1f182b;
+
+@define-color x-on-secondary-fixed-variant #4b4358;
+
+@define-color x-on-surface #e7e0e8;
+
+@define-color x-on-surface-variant #cbc4cf;
+
+@define-color x-on-tertiary #4a2530;
+
+@define-color x-on-tertiary-container #ffd9e1;
+
+@define-color x-on-tertiary-fixed #31101b;
+
+@define-color x-on-tertiary-fixed-variant #643b46;
+
+@define-color x-outline #948f99;
+
+@define-color x-outline-variant #49454e;
+
+@define-color x-primary #d3bcfd;
+
+@define-color x-primary-container #503d74;
+
+@define-color x-primary-fixed #ebddff;
+
+@define-color x-primary-fixed-dim #d3bcfd;
+
+@define-color x-scrim #000000;
+
+@define-color x-secondary #cdc2db;
+
+@define-color x-secondary-container #4b4358;
+
+@define-color x-secondary-fixed #e9def8;
+
+@define-color x-secondary-fixed-dim #cdc2db;
+
+@define-color x-shadow #000000;
+
+@define-color x-source-color #915eef;
+
+@define-color x-surface #151218;
+
+@define-color x-surface-bright #3b383e;
+
+@define-color x-surface-container #211f24;
+
+@define-color x-surface-container-high #2c292f;
+
+@define-color x-surface-container-highest #36343a;
+
+@define-color x-surface-container-low #1d1b20;
+
+@define-color x-surface-container-lowest #0f0d13;
+
+@define-color x-surface-dim #151218;
+
+@define-color x-surface-tint #d3bcfd;
+
+@define-color x-surface-variant #49454e;
+
+@define-color x-tertiary #f0b7c5;
+
+@define-color x-tertiary-container #643b46;
+
+@define-color x-tertiary-fixed #ffd9e1;
+
+@define-color x-tertiary-fixed-dim #f0b7c5;
+
+

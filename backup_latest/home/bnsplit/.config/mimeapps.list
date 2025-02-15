@@ -78,6 +78,7 @@ x-scheme-handler/chrome=zen-beta.desktop;zen.desktop;
 x-scheme-handler/http=zen-beta.desktop;zen.desktop;
 x-scheme-handler/https=zen-beta.desktop;zen.desktop;
 application/x-shellscript=nvim.desktop;
+video/mp4=vlc.desktop;
 
 [Default Applications]
 application/json=nvim.desktop
@@ -161,3 +162,4 @@ x-scheme-handler/chrome=zen.desktop
 x-scheme-handler/http=zen.desktop
 x-scheme-handler/https=zen.desktop
 application/x-shellscript=nvim.desktop
+video/mp4=vlc.desktop

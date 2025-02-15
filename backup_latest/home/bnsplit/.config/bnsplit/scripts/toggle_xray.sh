@@ -29,13 +29,15 @@ toggle_all_xray() {
   last_line=$(tail -n 1 "$filepath")
 
   if [[ "$last_line" =~ ^windowrule\ =\ opacity\ 0\.9,\ \.\*$ ]]; then
+  # if [[ $(grep opacity $HOME/.config/hypr/hyprland/_xray-windows.conf) ]]; then
     # Rule is active; remove it by writing only the header
     echo "$header" >"$filepath"
     notify "Xray deactivated for all windows!" "<i><b> </b></i>" "$iconpath"
   else
     # Rule is inactive; activate it by appending the rule
     echo "$header" >"$filepath"
-    echo "windowrule = opacity 0.9, .*" >>"$filepath"
+    echo -e "windowrule = opacity 0.9, .*" >>"$filepath"
+    # echo -e "decoration:active_opacity = 0.92\ndecoration:inactive_opacity = 0.8" >>"$filepath"
     notify "Xray activated for all windows!" "<i><b> </b></i>" "$iconpath"
   fi
 }
@@ -85,17 +87,17 @@ toggle_gtk_theme() {
 
 # Main: decide which toggle to run based on the argument
 case "${1:-}" in
-  gtk3)
-    toggle_gtk_theme 3
-    ;;
-  gtk4)
-    toggle_gtk_theme 4
-    ;;
-  gtk)
-    toggle_gtk_theme 3
-    toggle_gtk_theme 4
-    ;;
-  *)
-    toggle_all_xray
-    ;;
+gtk3)
+  toggle_gtk_theme 3
+  ;;
+gtk4)
+  toggle_gtk_theme 4
+  ;;
+gtk)
+  toggle_gtk_theme 3
+  toggle_gtk_theme 4
+  ;;
+*)
+  toggle_all_xray
+  ;;
 esac

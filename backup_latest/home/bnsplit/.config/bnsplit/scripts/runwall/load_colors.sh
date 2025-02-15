@@ -15,7 +15,7 @@ swaync-client -rs &
 # 3 : Reload optionals
 if [[ -n "$1" ]]; then
   export PATH="$HOME/.local/bin:$PATH"
-  papirus-folders -C "$("$PAPIRUS_SCRIPT")" --theme Papirus-Dark &
+  papirus-folders -C "$("$PAPIRUS_SCRIPT")" --theme Papirus-Dark
 fi
 
 if [[ -n "$2" ]]; then

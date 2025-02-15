@@ -16,6 +16,7 @@ updates_count=$(echo "$updates_list" | sed '/^\s*$/d' | wc -l)
 
 if [[ -n "$updates_list" && "$updates_count" -gt 0 ]]; then
   clear
+  notify-send -a "Updates" "Updates Available" "<i><b>$updates_count updates found</b></i>" -i "$ICON" -t 10000
   echo -e "${BOLD}${GREEN}✔ Updates Available: ($updates_count)${RESET}"
   echo -e "────────────────────────────────────────────────────────"
   echo "$updates_list"

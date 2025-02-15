@@ -7,10 +7,10 @@ window-width=960
 
 [com/github/neithern/g4music]
 height=1048
-leaflet-mode=1
+leaflet-mode=2
 maximized=true
 music-dir='file:///home/bnsplit/MEGA/Zics'
-recent-music='file:///home/bnsplit/MEGA/Zics/Make%20%E2%80%99Em%20Afraid%20-%20Mori%20Calliope.m4a'
+recent-music='file:///home/bnsplit/MEGA/Zics/My%20Ordinary%20Life%20-%20The%20Living%20Tombstone.m4a'
 volume=1.0
 width=960
 
@@ -125,10 +125,13 @@ window-height=900
 window-width=1024
 
 [org/blueman/general]
-window-properties=[536, 350, 0, 0]
+window-properties=[599, 362, 0, 0]
+
+[org/blueman/network]
+nap-enable=false
 
 [org/blueman/plugins/recentconns]
-recent-connections=[{'adapter': '00:45:E2:87:76:4C', 'address': '68:23:A7:07:40:69', 'alias': 'JLab GO Air Sport', 'icon': 'audio-headset', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1739141883.1969597', 'device': '/org/bluez/hci0/dev_68_23_A7_07_40_69'}, {'adapter': '00:45:E2:87:76:4C', 'address': '90:61:AE:FF:14:D1', 'alias': 'EndeavourOs', 'icon': 'computer', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1736709520.9821274'}, {'adapter': '00:45:E2:87:76:4C', 'address': 'E4:A4:71:D9:8A:2C', 'alias': 'DESKTOP-SQEQEHN', 'icon': 'computer', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1737195356.7106144'}, {'adapter': '00:45:E2:87:76:4C', 'address': 'F4:8C:50:9C:08:96', 'alias': 'Dell', 'icon': 'computer', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1737195422.2176597', 'device': '/org/bluez/hci0/dev_F4_8C_50_9C_08_96'}]
+recent-connections=[{'adapter': '00:45:E2:87:76:4C', 'address': '68:23:A7:07:40:69', 'alias': 'JLab GO Air Sport', 'icon': 'audio-headset', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1739607395.088366', 'device': '/org/bluez/hci0/dev_68_23_A7_07_40_69'}, {'adapter': '00:45:E2:87:76:4C', 'address': '90:61:AE:FF:14:D1', 'alias': 'EndeavourOs', 'icon': 'computer', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1736709520.9821274'}, {'adapter': '00:45:E2:87:76:4C', 'address': 'E4:A4:71:D9:8A:2C', 'alias': 'DESKTOP-SQEQEHN', 'icon': 'computer', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1737195356.7106144'}, {'adapter': '00:45:E2:87:76:4C', 'address': 'F4:8C:50:9C:08:96', 'alias': 'Dell', 'icon': 'computer', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1737195422.2176597', 'device': '/org/bluez/hci0/dev_F4_8C_50_9C_08_96'}]
 
 [org/erikreider/swaync]
 dnd-state=false
@@ -201,7 +204,7 @@ panel-id='stopwatch'
 size=(0, 0)
 
 [org/gnome/control-center]
-last-panel='system'
+last-panel='background'
 window-state=(980, 640, false)
 
 [org/gnome/desktop/a11y/applications]
@@ -250,7 +253,7 @@ sources=[('xkb', 'us')]
 xkb-options=['terminate:ctrl_alt_bksp', 'caps:escape', 'lv3:ralt_switch']
 
 [org/gnome/desktop/interface]
-accent-color='blue'
+accent-color='purple'
 clock-format='24h'
 clock-show-seconds=true
 clock-show-weekday=true
@@ -487,7 +490,7 @@ ignore-phase2-ca-cert=false
 
 [org/gnome/settings-daemon/plugins/color]
 night-light-enabled=false
-night-light-last-coordinates=(6.14563236853862, 1.2101799)
+night-light-last-coordinates=(6.2309440896471955, 1.2214389999999999)
 
 [org/gnome/settings-daemon/plugins/media-keys]
 custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
@@ -556,8 +559,10 @@ brightness=0.59999999999999998
 sigma=30
 
 [org/gnome/shell/extensions/caffeine]
-indicator-position-max=0
+indicator-position-max=3
 toggle-shortcut=['<Super>i']
+toggle-state=false
+user-enabled=false
 
 [org/gnome/shell/extensions/dash-to-dock]
 apply-custom-theme=false
@@ -777,7 +782,7 @@ save-directory='file:///home/bnsplit/'
 save-format='application/pdf'
 
 [org/gnome/software]
-check-timestamp=int64 1737321518
+check-timestamp=int64 1739481184
 first-run=false
 flatpak-purge-timestamp=int64 1736988145
 
@@ -794,7 +799,7 @@ selected-color=(true, 0.15686275064945221, 0.15686275064945221, 0.15686275064945
 [org/gtk/gtk4/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
-show-hidden=false
+show-hidden=true
 sidebar-width=140
 sort-column='name'
 sort-directories-first=false
@@ -820,7 +825,7 @@ sort-directories-first=false
 sort-order='ascending'
 type-format='category'
 window-position=(0, 0)
-window-size=(947, 986)
+window-size=(947, 716)
 
 [org/virt-manager/virt-manager]
 manager-window-height=1045
