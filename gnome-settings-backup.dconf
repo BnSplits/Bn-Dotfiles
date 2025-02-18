@@ -10,7 +10,7 @@ height=1048
 leaflet-mode=2
 maximized=true
 music-dir='file:///home/bnsplit/MEGA/Zics'
-recent-music='file:///home/bnsplit/MEGA/Zics/My%20Ordinary%20Life%20-%20The%20Living%20Tombstone.m4a'
+recent-music='file:///home/bnsplit/Downloads/DEMONDICE%20-%20Hazy%20Skyscraper.flac'
 volume=1.0
 width=960
 
@@ -131,7 +131,7 @@ window-properties=[599, 362, 0, 0]
 nap-enable=false
 
 [org/blueman/plugins/recentconns]
-recent-connections=[{'adapter': '00:45:E2:87:76:4C', 'address': '68:23:A7:07:40:69', 'alias': 'JLab GO Air Sport', 'icon': 'audio-headset', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1739607395.088366', 'device': '/org/bluez/hci0/dev_68_23_A7_07_40_69'}, {'adapter': '00:45:E2:87:76:4C', 'address': '90:61:AE:FF:14:D1', 'alias': 'EndeavourOs', 'icon': 'computer', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1736709520.9821274'}, {'adapter': '00:45:E2:87:76:4C', 'address': 'E4:A4:71:D9:8A:2C', 'alias': 'DESKTOP-SQEQEHN', 'icon': 'computer', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1737195356.7106144'}, {'adapter': '00:45:E2:87:76:4C', 'address': 'F4:8C:50:9C:08:96', 'alias': 'Dell', 'icon': 'computer', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1737195422.2176597', 'device': '/org/bluez/hci0/dev_F4_8C_50_9C_08_96'}]
+recent-connections=[{'adapter': '00:45:E2:87:76:4C', 'address': '68:23:A7:07:40:69', 'alias': 'JLab GO Air Sport', 'icon': 'audio-headset', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1739733717.1459656', 'device': '/org/bluez/hci0/dev_68_23_A7_07_40_69'}, {'adapter': '00:45:E2:87:76:4C', 'address': '90:61:AE:FF:14:D1', 'alias': 'EndeavourOs', 'icon': 'computer', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1736709520.9821274'}, {'adapter': '00:45:E2:87:76:4C', 'address': 'E4:A4:71:D9:8A:2C', 'alias': 'DESKTOP-SQEQEHN', 'icon': 'computer', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1737195356.7106144'}, {'adapter': '00:45:E2:87:76:4C', 'address': 'F4:8C:50:9C:08:96', 'alias': 'Dell', 'icon': 'computer', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1737195422.2176597', 'device': '/org/bluez/hci0/dev_F4_8C_50_9C_08_96'}]
 
 [org/erikreider/swaync]
 dnd-state=false
@@ -453,6 +453,10 @@ ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
 [org/gnome/nm-applet/eap/6c40a43b-1874-4b3c-9282-2fb93ff6a43f]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/79dfba86-fd5d-44b3-bc9f-89efd7971190]
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
@@ -825,7 +829,7 @@ sort-directories-first=false
 sort-order='ascending'
 type-format='category'
 window-position=(0, 0)
-window-size=(947, 716)
+window-size=(947, 984)
 
 [org/virt-manager/virt-manager]
 manager-window-height=1045

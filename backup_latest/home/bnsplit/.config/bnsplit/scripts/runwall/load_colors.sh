@@ -5,7 +5,8 @@ COLOR_NUMBER=$(awk 'NR == 1' "$CONFIG_DIR/scripts/runwall/color_number")
 MAIN_COL=$(awk "NR == $COLOR_NUMBER" "$CACHE_DIR/extractedColors/colors-hex")
 
 # 1 : Generate the colors gradients to the colors folder with ./colors_gradient/colors_gradient_generator.py
-python3 "$RUNWALL_DIR/colors_gradient_generator.py" "$MAIN_COL" "$RUNWALL_DIR/colors_gradient_templates.jsonc"
+# python3 "$RUNWALL_DIR/colors_gradient_generator.py" "$MAIN_COL" "$RUNWALL_DIR/colors_gradient_templates.jsonc"
+"$RUNWALL_DIR/col_gradient" "$MAIN_COL" "$RUNWALL_DIR/colors_gradient_templates.jsonc"
 
 # 2 : Reload essentials
 swaync-client -R &

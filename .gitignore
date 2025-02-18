@@ -13,6 +13,7 @@ backup_latest/home/bnsplit/.cache/
 backup_latest/home/bnsplit/.config/*.bak
 backup_latest/home/bnsplit/.config/ags/
 backup_latest/home/bnsplit/.config/bnsplit/libvirt-vms
+./backup_latest/home/bnsplit/.config/bnsplit/scripts/webcam_share.sh
 backup_latest/home/bnsplit/.config/kdeconnect/
 backup_latest/home/bnsplit/.themes/custom-adw/.git
 backup_log.txt

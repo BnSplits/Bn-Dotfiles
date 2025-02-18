@@ -63,6 +63,7 @@ return {
       button.opts.hl_shortcut = "Keyword"
     end
     dashboard.section.header.opts.hl = "Keyword"
+    dashboard.section.header.opts.position = "center"
     dashboard.section.buttons.opts.hl = "Error"
     dashboard.section.footer.opts.hl = "Constant"
     dashboard.opts.layout[1].val = 3

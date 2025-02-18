@@ -21,7 +21,7 @@ cp "$WALL" "$ZEN_TABLISS_WAL/1" &
 # Usage: "$CONFIG_DIR/scripts/runwall/load_colors.sh" <arg1> <arg2>
 # - If <arg1> is set, updates Papirus folder colors.
 # - If <arg2> is set, applies KDE Material You colors.
-"$CONFIG_DIR/scripts/runwall/load_colors.sh" Papirus & #KDE &
+"$CONFIG_DIR/scripts/runwall/load_colors.sh" Papirus & # KDE &
 
 # 4: Process the wallpaper (apply blur and other effects if needed)
 # Usage: "$CONFIG_DIR/scripts/runwall/wall_proc.sh" "$WALL" BLUR

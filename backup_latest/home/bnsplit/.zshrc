@@ -63,7 +63,8 @@ alias grep='grep --color=always'
 alias yo='yay -Rns $(yay -Qdtq)'
 alias yu='yay -Syu --noconfirm'
 alias rmdb='sudo rm /var/lib/pacman/db.lck'
-alias tk='tmux kill-session'
+alias tka='tmux kill-session'
+alias tkm='tmux kill-session -t main'
 alias tm='$HOME/.config/bnsplit/scripts/tmux_launch_main.sh'
 
 C() {

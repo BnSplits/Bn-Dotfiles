@@ -45,7 +45,6 @@ process_image() {
   fi
 }
 
-# Pass "enable_blur" as the second argument to trigger blur processing
 if [[ "$file_type" == "image/gif" ]]; then
   process_image "${WALL}[0]" "$2" &
 else
