@@ -1,10 +1,14 @@
-scripts/vdhcoapp-2.0.19/
+scripts/vdhcoapp*/
 scripts/git_config.sh
 scripts/google.provider
 grub-themes/
 plymouth-themes/
 backups/
+backup_latest/etc/
 backup_latest/home/bnsplit/.tmux/
+backup_latest/home/bnsplit/.config/bnsplit/cache/
+backup_latest/home/bnsplit/.config/bnsplit/colors/
+backup_latest/home/bnsplit/.config/bnsplit/scripts/wallhaven.sh
 backup_latest/home/bnsplit/.fonts/
 backup_latest/home/bnsplit/Obsidian/
 backup_latest/home/bnsplit/.zen/
@@ -13,8 +17,9 @@ backup_latest/home/bnsplit/.local/share/
 backup_latest/home/bnsplit/.cache/
 backup_latest/home/bnsplit/.config/*.bak
 backup_latest/home/bnsplit/.config/ags/
+backup_latest/home/bnsplit/.config/spicetify/
 backup_latest/home/bnsplit/.config/bnsplit/libvirt-vms
-./backup_latest/home/bnsplit/.config/bnsplit/scripts/webcam_share.sh
+backup_latest/home/bnsplit/.config/bnsplit/scripts/webcam_share.sh
 backup_latest/home/bnsplit/.config/kdeconnect/
 backup_latest/home/bnsplit/.themes/custom-adw/.git
 backup_log.txt

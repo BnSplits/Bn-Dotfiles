@@ -166,6 +166,7 @@ export HYPR_PKGS="
   nautilus-open-any-terminal
   network-manager-applet
   networkmanager
+  python-fabric-git
   python-poetry
   polkit-gnome
   python-pywal16

@@ -65,7 +65,7 @@ graph LR
   A[Pretty Picture] --> B(Color Goblin)
   B --> C{Color Juice}
   C --> D[GTK Stuff]
-  C --> E[Hyprland Drip]
+  C --> E[Hypr Drip]
   C --> F[Terminal Sauce]
   C --> G[Widget Flavor]
   C --> H[Secret Sauce]
