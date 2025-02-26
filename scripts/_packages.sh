@@ -8,6 +8,7 @@ export UNINSTALL_PKGS="
 
 # List of default packages to install
 export BASE_PKGS="
+  adwaita-fonts
   alsa-utils
   amd-ucode
   appimagelauncher
@@ -78,6 +79,7 @@ export BASE_PKGS="
   os-prober
   p7zip
   pavucontrol
+  pdfarranger
   pipes.sh
   poppler
   power-profiles-daemon
@@ -100,6 +102,7 @@ export BASE_PKGS="
   spotify-launcher
   sshfs
   starship
+  tenki
   tmux
   tree-sitter-cli
   tty-clock
@@ -135,6 +138,7 @@ export GNOME_PKGS="
   gnome-tweaks
   gnome-weather
   loupe
+  ptyxis
   resources
   simple-scan
 "

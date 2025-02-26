@@ -57,9 +57,11 @@ if confirm "Do you want to install and configure Plymouth?"; then
   theme_source="../plymouth-themes"
   if [[ -d "$theme_source" ]]; then
     sudo cp -r "$theme_source"/* /usr/share/plymouth/themes/
-    echo_success "Themes installed to: ${CYAN}/usr/share/plymouth/themes/${GREEN}"
+    echo_success "Theme files successfully installed to: ${CYAN}/usr/share/plymouth/themes/${GREEN}"
   else
     echo_error "Theme source directory not found: ${CYAN}$theme_source${RED}"
+    echo_error "Please ensure Plymouth theme files are placed in: ${CYAN}$theme_source${RED}"
+    echo_error "Download pre-made themes from: ${CYAN}https://github.com/adi1090x/plymouth-themes${RED}"
   fi
 
   # Theme Selection

@@ -1,7 +1,6 @@
 return {
   "goolord/alpha-nvim",
   event = "VimEnter",
-  enabled = true,
   init = false,
   opts = function()
     local dashboard = require("alpha.themes.dashboard")
@@ -43,6 +42,17 @@ return {
       [[   \ \_\ \_\ \____\ \____/\ \___/  \ \_\ \_\ \_\ \_\]],
       [[    \/_/\/_/\/____/\/___/  \/__/    \/_/\/_/\/_/\/_/]],
     }
+
+    local logo_4 = {
+      "███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗",
+      "████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║",
+      "██╔██╗ ██║█████╗  ██║   ██║██║   ██║██║██╔████╔██║",
+      "██║╚██╗██║██╔══╝  ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║",
+      "██║ ╚████║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║",
+      "╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝",
+    }
+
+    -- dashboard.section.header.val = logo_4
     -- dashboard.section.header.val = logo_3
     -- dashboard.section.header.val = logo_2
     dashboard.section.header.val = logo_1

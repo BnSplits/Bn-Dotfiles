@@ -1,31 +1,30 @@
 #!/bin/bash
 
 # ------------------------------
-# Variables (previously in variables.sh)
+# Variables
 # ------------------------------
+# Base Config Directory
 CONFIG_DIR="$HOME/.config/bnsplit"
 RUNWALL_DIR="$CONFIG_DIR/scripts/runwall"
 
+# Cache Directories
 CACHE_DIR="$CONFIG_DIR/cache"
 CACHE_WALLPAPER="$CACHE_DIR/wallpaper"
 CACHE_WALLPAPER_PNG="$CACHE_DIR/wallpaper-png"
-CACHE_WALLPAPER_BLUR="$CACHE_DIR/wallpaper-blur"
-CACHE_WALLPAPER_BLUR_PNG_SQUARE_600_X50Y50="$CACHE_DIR/wallpaper-blur-square-png-600-x50y50"
 
-BLUR_DIR="$HOME/.cache/blured-walls"
+# External Cache Directories
 WALL_PNG_DIR="$HOME/.cache/wall-png"
-BLUR_SQUARE_600_X50Y50_DIR="$HOME/.cache/blured-square-600-x50y50"
 
+# Wallpaper & Color Management
 ZEN_TABLISS_WAL="$HOME/.zen/cy6bohdq.Default (alpha)/storage/default/moz-extension+++e6c79793-47e0-4a4f-a4ca-a9ee6c771d63^userContextId=4294967295/idb/3647222921wleabcEoxlt-eengsairo.files"
-COLOR_SOURCE="$CONFIG_DIR/colors/colors-source"
 
+# Script Paths
 GTK_THEME_SCRIPT="$CONFIG_DIR/scripts/reload_gtk_theme.sh"
-PAPIRUS_SCRIPT="$RUNWALL_DIR/papirus_colors_name.sh"
+PAPIRUS_SCRIPT="$CONFIG_DIR/scripts/papirus_colors_name.sh"
 
 # ------------------------------
 # Functions
 # ------------------------------
-
 load_colors() {
   COLOR_NUMBER=$(awk 'NR == 1' "$CONFIG_DIR/scripts/runwall/color_number")
   MAIN_COL=$(awk "NR == $COLOR_NUMBER" "$CACHE_DIR/extractedColors/colors-hex")
@@ -59,12 +58,17 @@ wall_proc() {
     local input_file="$1"
 
     # PNG version
-    if [[ ! -f "$WALL_PNG_DIR/$WALL_HASH" ]]; then
-      magick "$input_file" -strip -resize 1920x1080^ -gravity center -extent 1920x1080 \
-        PNG32:"$CACHE_WALLPAPER_PNG"
-      cp "$CACHE_WALLPAPER_PNG" "$WALL_PNG_DIR/$WALL_HASH"
+    if [[ "$file_type" == "image/png" ]]; then
+      cp "$input_file" "$CACHE_WALLPAPER_PNG"
+      cp "$input_file" "$WALL_PNG_DIR/$WALL_HASH"
     else
-      cp "$WALL_PNG_DIR/$WALL_HASH" "$CACHE_WALLPAPER_PNG"
+      if [[ ! -f "$WALL_PNG_DIR/$WALL_HASH" ]]; then
+        magick "$input_file" -strip -resize 1920x1080^ -gravity center -extent 1920x1080 \
+          PNG32:"$CACHE_WALLPAPER_PNG"
+        cp "$CACHE_WALLPAPER_PNG" "$WALL_PNG_DIR/$WALL_HASH"
+      else
+        cp "$WALL_PNG_DIR/$WALL_HASH" "$CACHE_WALLPAPER_PNG"
+      fi
     fi
   }
 
@@ -83,6 +87,8 @@ wall_proc() {
 
 WALL="$1"
 
+killall waypaper &
+
 # 1. Cache wallpaper
 cp "$WALL" "$CACHE_WALLPAPER" &
 cp "$WALL" "$ZEN_TABLISS_WAL/1" &
@@ -91,9 +97,10 @@ cp "$WALL" "$ZEN_TABLISS_WAL/1" &
 "$RUNWALL_DIR/col_gen" "$WALL"
 
 # 3. Reload colors and apps
-load_colors "Papirus" & # Pass "Papirus" as $1, KDE slot $2 remains empty
+load_colors "Papirus"  & # Pass "Papirus" as $1, KDE slot $2 remains empty
+# load_colors & # Pass "Papirus" as $1, KDE slot $2 remains empty
 
 # 4. Process wallpaper
 wall_proc "$WALL"
 
-wait # Ensure background processes complete before exiting
+wait

@@ -22,8 +22,9 @@ return {
     },
     max = 100, -- maximum number of drops on the screen
     interval = 100, -- every 150ms we update the drops
-    screensaver = 1000 * 60 * 10, -- show after 5 minutes. Set to false, to disable
-    filetypes = { "dashboard", "alpha", "ministarter" }, -- will enable/disable automatically for the following filetypes
+    -- screensaver = 1000 * 60 * 10, -- show after 5 minutes. Set to false, to disable
+    screensaver = false,
+    filetypes = { "dashboard", "alpha", "ministarter", "snacks_dashboard" }, -- will enable/disable automatically for the following filetypes
     winblend = 100, -- winblend for the drop window
   },
 }

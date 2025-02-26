@@ -14,10 +14,42 @@ if [[ "$PWD" != "$SCRIPT_DIR" ]]; then
 fi
 cd "$SCRIPT_DIR" || exit 1
 
-# --- DEPENDENCY CHECKS ---
+# --- CHECKING FOR YAY ---
 if ! command -v yay &>/dev/null; then
   echo_error "yay is not installed. Install yay before continuing."
-  exit 1
+
+  if confirm "Do you want to install yay?"; then
+    YAY_DIR="/tmp/yay-$(date '+%Y-%m-%d_%H-%M-%S')"
+
+    echo_arrow "Installing required dependencies..."
+    sudo pacman -Syu --needed base-devel git || {
+      echo_error "Failed to install dependencies."
+      exit 1
+    }
+
+    echo_arrow "Cloning yay repository..."
+    git clone --depth=1 https://aur.archlinux.org/yay.git "$YAY_DIR" || {
+      echo_error "Failed to clone yay repository."
+      exit 1
+    }
+
+    cd "$YAY_DIR" || {
+      echo_error "Failed to enter directory: $YAY_DIR"
+      exit 1
+    }
+
+    echo_arrow "Building and installing yay..."
+    makepkg -si || {
+      echo_error "Failed to build and install yay."
+      exit 1
+    }
+
+    echo_success "yay has been successfully installed."
+  else
+    echo_error "Installation aborted by user."
+    exit 1
+  fi
+  clear
 fi
 
 # --- CONFIGURATION STEPS ---

@@ -15,9 +15,9 @@ volume=1.0
 width=960
 
 [com/mattjakeman/ExtensionManager]
-height=1045
-is-maximized=false
-width=960
+height=1035
+is-maximized=true
+width=1904
 
 [io/github/realmazharhussain/GdmSettings]
 donation-dialog-shown=true
@@ -119,19 +119,20 @@ window-size=(570, 570)
 
 [net/nokyan/Resources]
 is-maximized=true
-last-viewed-page='memory'
+last-viewed-page='cpu'
+processes-sort-by=uint32 4
 processes-sort-by-ascending=false
 window-height=900
 window-width=1024
 
 [org/blueman/general]
-window-properties=[599, 362, 0, 0]
+window-properties=[590, 328, 0, 0]
 
 [org/blueman/network]
 nap-enable=false
 
 [org/blueman/plugins/recentconns]
-recent-connections=[{'adapter': '00:45:E2:87:76:4C', 'address': '68:23:A7:07:40:69', 'alias': 'JLab GO Air Sport', 'icon': 'audio-headset', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1739733717.1459656', 'device': '/org/bluez/hci0/dev_68_23_A7_07_40_69'}, {'adapter': '00:45:E2:87:76:4C', 'address': '90:61:AE:FF:14:D1', 'alias': 'EndeavourOs', 'icon': 'computer', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1736709520.9821274'}, {'adapter': '00:45:E2:87:76:4C', 'address': 'E4:A4:71:D9:8A:2C', 'alias': 'DESKTOP-SQEQEHN', 'icon': 'computer', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1737195356.7106144'}, {'adapter': '00:45:E2:87:76:4C', 'address': 'F4:8C:50:9C:08:96', 'alias': 'Dell', 'icon': 'computer', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1737195422.2176597', 'device': '/org/bluez/hci0/dev_F4_8C_50_9C_08_96'}]
+recent-connections=[{'adapter': '00:45:E2:87:76:4C', 'address': '68:23:A7:07:40:69', 'alias': 'JLab GO Air Sport', 'icon': 'audio-headset', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1740567370.668204', 'device': '/org/bluez/hci0/dev_68_23_A7_07_40_69'}, {'adapter': '00:45:E2:87:76:4C', 'address': '90:61:AE:FF:14:D1', 'alias': 'EndeavourOs', 'icon': 'computer', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1736709520.9821274'}, {'adapter': '00:45:E2:87:76:4C', 'address': 'E4:A4:71:D9:8A:2C', 'alias': 'DESKTOP-SQEQEHN', 'icon': 'computer', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1737195356.7106144'}, {'adapter': '00:45:E2:87:76:4C', 'address': 'F4:8C:50:9C:08:96', 'alias': 'Dell', 'icon': 'computer', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1737195422.2176597', 'device': '/org/bluez/hci0/dev_F4_8C_50_9C_08_96'}]
 
 [org/erikreider/swaync]
 dnd-state=false
@@ -142,6 +143,24 @@ last-window-size=(652, 480)
 
 [org/gnome/GWeather4]
 temperature-unit='centigrade'
+
+[org/gnome/Ptyxis]
+audible-bell=false
+default-profile-uuid='8dc052736a14c7b1fda480e567bceb7c'
+font-name='AdwaitaMono Nerd Font Bold Italic 14'
+profile-uuids=['8dc052736a14c7b1fda480e567bceb7c']
+restore-session=false
+restore-window-size=true
+scrollbar-policy='never'
+use-system-font=false
+visual-bell=false
+window-size=(uint32 85, uint32 39)
+
+[org/gnome/Ptyxis/Profiles/8dc052736a14c7b1fda480e567bceb7c]
+bold-is-bright=true
+label='Main'
+login-shell=true
+palette='Gruvbox'
 
 [org/gnome/Snapshot]
 is-maximized=false
@@ -183,7 +202,7 @@ word-size=64
 
 [org/gnome/calendar]
 active-view='week'
-week-view-zoom-level=1.0483984375000002
+week-view-zoom-level=1.1537500000000003
 window-maximized=true
 window-size=(768, 600)
 
@@ -196,16 +215,16 @@ video-x-resolution=1280
 video-y-resolution=720
 
 [org/gnome/clocks]
-timers=[{'duration': <5700>, 'name': <''>}, {'duration': <3600>, 'name': <''>}]
+timers=[{'duration': <3600>, 'name': <''>}]
 
 [org/gnome/clocks/state/window]
 maximized=true
-panel-id='stopwatch'
+panel-id='timer'
 size=(0, 0)
 
 [org/gnome/control-center]
 last-panel='background'
-window-state=(980, 640, false)
+window-state=(1904, 339, false)
 
 [org/gnome/desktop/a11y/applications]
 screen-reader-enabled=false
@@ -235,10 +254,10 @@ exec='kitty'
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/bnsplit/.config/background'
-picture-uri-dark='file:///home/bnsplit/.config/background'
-primary-color='#ff7800'
-secondary-color='#000000'
+picture-uri='file:///home/bnsplit/.local/share/backgrounds/2025-02-20-11-27-14-96.jpg'
+picture-uri-dark='file:///home/bnsplit/.local/share/backgrounds/2025-02-20-11-27-14-96.jpg'
+primary-color='#000000000000'
+secondary-color='#000000000000'
 
 [org/gnome/desktop/calendar]
 show-weekdate=true
@@ -253,7 +272,7 @@ sources=[('xkb', 'us')]
 xkb-options=['terminate:ctrl_alt_bksp', 'caps:escape', 'lv3:ralt_switch']
 
 [org/gnome/desktop/interface]
-accent-color='purple'
+accent-color='pink'
 clock-format='24h'
 clock-show-seconds=true
 clock-show-weekday=true
@@ -264,12 +283,13 @@ enable-animations=true
 font-name='Noto Sans,  10'
 gtk-theme='custom-adw'
 icon-theme='Papirus-Dark'
+locate-pointer=true
 scaling-factor=uint32 1
 text-scaling-factor=1.0
 toolbar-style='text'
 
 [org/gnome/desktop/notifications]
-application-children=['gnome-power-panel', 'spotify-launcher', 'org-kde-kdeconnect-daemon', 'zen-beta', 'gnome-printers-panel', 'zen', 'org-gnome-extensions', 'org-gnome-evolution-alarm-notify', 'org-gnome-nautilus', 'org-gnome-settings']
+application-children=['gnome-power-panel', 'spotify-launcher', 'org-kde-kdeconnect-daemon', 'zen-beta', 'gnome-printers-panel', 'zen', 'org-gnome-extensions', 'org-gnome-evolution-alarm-notify', 'org-gnome-nautilus', 'org-gnome-settings', 'org-gnome-ptyxis', 'org-gnome-characters']
 show-banners=true
 
 [org/gnome/desktop/notifications/application/gnome-power-panel]
@@ -277,6 +297,9 @@ application-id='gnome-power-panel.desktop'
 
 [org/gnome/desktop/notifications/application/gnome-printers-panel]
 application-id='gnome-printers-panel.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-characters]
+application-id='org.gnome.Characters.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-evolution-alarm-notify]
 application-id='org.gnome.Evolution-alarm-notify.desktop'
@@ -286,6 +309,9 @@ application-id='org.gnome.Extensions.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-nautilus]
 application-id='org.gnome.Nautilus.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-ptyxis]
+application-id='org.gnome.Ptyxis.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-settings]
 application-id='org.gnome.Settings.desktop'
@@ -302,13 +328,16 @@ application-id='zen-beta.desktop'
 [org/gnome/desktop/notifications/application/zen]
 application-id='zen.desktop'
 
+[org/gnome/desktop/peripherals/touchpad]
+two-finger-scrolling-enabled=true
+
 [org/gnome/desktop/screensaver]
 color-shading-type='solid'
 lock-delay=uint32 300
 picture-options='zoom'
-picture-uri='file:///home/bnsplit/.config/background'
-primary-color='#ff7800'
-secondary-color='#000000'
+picture-uri='file:///home/bnsplit/.local/share/backgrounds/2025-02-20-11-27-14-96.jpg'
+primary-color='#000000000000'
+secondary-color='#000000000000'
 
 [org/gnome/desktop/search-providers]
 sort-order=['org.gnome.Settings.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Nautilus.desktop']
@@ -329,6 +358,8 @@ move-to-workspace-4=['<Shift><Super>4']
 move-to-workspace-left=['<Shift><Super>h']
 move-to-workspace-right=['<Shift><Super>l']
 show-desktop=['<Super>d']
+switch-input-source=@as []
+switch-input-source-backward=@as []
 switch-to-workspace-1=['<Super>1']
 switch-to-workspace-2=['<Super>2']
 switch-to-workspace-3=['<Super>3']
@@ -346,6 +377,9 @@ focus-mode='sloppy'
 is-maximized=false
 window-size=(1024, 768)
 
+[org/gnome/evince]
+document-directory=@ms 'file:///home/bnsplit/Obsidian/02%20IAI/SEM%201/Ressources'
+
 [org/gnome/evince/default]
 continuous=true
 dual-page=false
@@ -357,8 +391,8 @@ show-sidebar=false
 sidebar-page='thumbnails'
 sidebar-size=164
 sizing-mode='free'
-window-ratio=(1.5686274509803921, 1.321969696969697)
-zoom=0.62173676555033874
+window-ratio=(1.5739434253846671, 1.2127042949448879)
+zoom=0.54096477774578555
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -381,7 +415,7 @@ window-size=(-1, -1)
 
 [org/gnome/file-roller/listing]
 list-mode='as-folder'
-name-column-width=68
+name-column-width=65
 show-path=false
 sort-method='name'
 sort-type='ascending'
@@ -424,11 +458,15 @@ show-create-link=true
 show-delete-permanently=true
 
 [org/gnome/nautilus/window-state]
-initial-size=(960, 1048)
+initial-size=(1904, 1035)
 initial-size-file-chooser=(890, 550)
 maximized=true
 
 [org/gnome/nm-applet/eap/024daf95-c278-4ca7-a454-9a74b0ac8f9d]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/041a5104-53e9-4368-b269-8ba19d97a70e]
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
@@ -437,6 +475,10 @@ ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
 [org/gnome/nm-applet/eap/3cfb2f2c-12a2-44d7-87c6-02b6a4b93c66]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/44f210a2-0b38-4a9b-9ea4-51d99fb53529]
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
@@ -494,7 +536,7 @@ ignore-phase2-ca-cert=false
 
 [org/gnome/settings-daemon/plugins/color]
 night-light-enabled=false
-night-light-last-coordinates=(6.2309440896471955, 1.2214389999999999)
+night-light-last-coordinates=(6.2153252593821744, 1.2214624000000001)
 
 [org/gnome/settings-daemon/plugins/media-keys]
 custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
@@ -502,13 +544,13 @@ screensaver=['<Super>Delete']
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
 binding='<Super>Return'
-command='kitty'
-name='Launch Terminal'
+command='ptyxis -s'
+name='Launch Terminal (ptyxis)'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
 binding='<Shift><Super>Return'
-command='kitty "/home/bnsplit/.config/bnsplit/scripts/tmux_launch_main.sh"'
-name='Launch Kitty + Tmux'
+command='ptyxis -- "$HOME/.config/bnsplit/scripts/tmux_launch_main.sh"'
+name='Launch Ptyxis + Tmux'
 
 [org/gnome/settings-daemon/plugins/power]
 sleep-inactive-ac-timeout=1800
@@ -516,29 +558,33 @@ sleep-inactive-ac-timeout=1800
 [org/gnome/shell]
 app-picker-layout=[{'org.manjaro.pamac.manager.desktop': <{'position': <0>}>, 'org.gnome.Weather.desktop': <{'position': <1>}>, 'org.gnome.clocks.desktop': <{'position': <2>}>, 'appimagelaunchersettings.desktop': <{'position': <3>}>, 'bssh.desktop': <{'position': <4>}>, 'org.gnome.Totem.desktop': <{'position': <5>}>, 'org.gnome.Calculator.desktop': <{'position': <6>}>, 'bvnc.desktop': <{'position': <7>}>, 'byobu.desktop': <{'position': <8>}>, 'simple-scan.desktop': <{'position': <9>}>, 'org.gnome.SystemMonitor.desktop': <{'position': <10>}>, 'byobu_old.desktop': <{'position': <11>}>, 'avahi-discover.desktop': <{'position': <12>}>, 'org.gnome.Terminal.desktop': <{'position': <13>}>, 'ca.desrt.dconf-editor.desktop': <{'position': <14>}>, 'Utilities': <{'position': <15>}>, 'bitwarden.desktop': <{'position': <16>}>, 'eos-apps-info.desktop': <{'position': <17>}>, 'eos-log-tool.desktop': <{'position': <18>}>, 'eos-quickstart.desktop': <{'position': <19>}>, 'btop.desktop': <{'position': <20>}>, 'cmake-gui.desktop': <{'position': <21>}>}, {'electron32.desktop': <{'position': <0>}>, 'org.gnome.Extensions.desktop': <{'position': <1>}>, 'fish.desktop': <{'position': <2>}>, 'com.github.neithern.g4music.desktop': <{'position': <3>}>, 'google-chrome.desktop': <{'position': <4>}>, 'grub-customizer.desktop': <{'position': <5>}>, 'hplip.desktop': <{'position': <6>}>, 'hp-uiscan.desktop': <{'position': <7>}>, 'org.kde.kdeconnect.app.desktop': <{'position': <8>}>, 'org.kde.kdeconnect.nonplasma.desktop': <{'position': <9>}>, 'org.kde.kdeconnect-settings.desktop': <{'position': <10>}>, 'org.kde.kdeconnect.sms.desktop': <{'position': <11>}>, 'libreoffice-startcenter.desktop': <{'position': <12>}>, 'libreoffice-base.desktop': <{'position': <13>}>, 'libreoffice-calc.desktop': <{'position': <14>}>, 'libreoffice-draw.desktop': <{'position': <15>}>, 'libreoffice-impress.desktop': <{'position': <16>}>, 'libreoffice-math.desktop': <{'position': <17>}>, 'libreoffice-writer.desktop': <{'position': <18>}>, 'cups.desktop': <{'position': <19>}>, 'eos-update.desktop': <{'position': <20>}>, 'htop.desktop': <{'position': <21>}>, 'yad-icon-browser.desktop': <{'position': <22>}>}, {'nvim.desktop': <{'position': <0>}>, 'org.gnome.Meld.desktop': <{'position': <1>}>, 'org.kde.okular.desktop': <{'position': <2>}>, 'jconsole-java17-openjdk.desktop': <{'position': <3>}>, 'jshell-java17-openjdk.desktop': <{'position': <4>}>, 'qalculate-gtk.desktop': <{'position': <5>}>, 'assistant.desktop': <{'position': <6>}>, 'designer.desktop': <{'position': <7>}>, 'gnome-nettool.desktop': <{'position': <8>}>, 'linguist.desktop': <{'position': <9>}>, 'qdbusviewer.desktop': <{'position': <10>}>, 'qv4l2.desktop': <{'position': <11>}>, 'org.gnome.PowerStats.desktop': <{'position': <12>}>, 'qvidcap.desktop': <{'position': <13>}>, 'reflector-simple.desktop': <{'position': <14>}>, 'stoken-gui.desktop': <{'position': <15>}>, 'net.nokyan.Resources.desktop': <{'position': <16>}>, 'stoken-gui-small.desktop': <{'position': <17>}>, 'uxterm.desktop': <{'position': <18>}>}, {'org.gnome.TextEditor.desktop': <{'position': <0>}>, 'org.pulseaudio.pavucontrol.desktop': <{'position': <1>}>, 'welcome.desktop': <{'position': <2>}>, 'xterm.desktop': <{'position': <3>}>, 'vim.desktop': <{'position': <4>}>, 'vlc.desktop': <{'position': <5>}>, 'yad-settings.desktop': <{'position': <6>}>, 'gparted.desktop': <{'position': <7>}>, 'org.kde.gwenview.desktop': <{'position': <8>}>}]
 disable-user-extensions=false
-disabled-extensions=['azwallpaper@azwallpaper.gitlab.com', 'openbar@neuromorph']
-enabled-extensions=['caffeine@patapon.info', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'appindicatorsupport@rgcjonas.gmail.com', 'blur-my-shell@aunetx', 'unblank@sun.wxg@gmail.com', 'Vitals@CoreCoding.com', 'tiling-assistant@leleat-on-github', 'dash-to-dock@micxgx.gmail.com', 'gnome-ui-tune@itstime.tech', 'kimpanel@kde.org']
-favorite-apps=['zen.desktop', 'kitty.desktop', 'obsidian.desktop', 'org.gnome.Nautilus.desktop', 'spotify-launcher.desktop', 'com.mattjakeman.ExtensionManager.desktop', 'org.kde.kdenlive.desktop', 'onlyoffice-desktopeditors.desktop', 'org.kde.dolphin.desktop', 'virt-manager.desktop', 'code.desktop', 'firefox.desktop', 'com.obsproject.Studio.desktop', 'org.gnome.Settings.desktop']
+disabled-extensions=['openbar@neuromorph', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'system-monitor@gnome-shell-extensions.gcampax.github.com', 'status-icons@gnome-shell-extensions.gcampax.github.com', 'screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com', 'kimpanel@kde.org', 'forge@jmmaranan.com']
+enabled-extensions=['caffeine@patapon.info', 'appindicatorsupport@rgcjonas.gmail.com', 'unblank@sun.wxg@gmail.com', 'Vitals@CoreCoding.com', 'tiling-assistant@leleat-on-github', 'dash-to-dock@micxgx.gmail.com', 'search-light@icedman.github.com', 'gnome-ui-tune@itstime.tech', 'azwallpaper@azwallpaper.gitlab.com', 'blur-my-shell@aunetx', 'auto-adwaita-colors@celiopy', 'user-theme@gnome-shell-extensions.gcampax.github.com']
+favorite-apps=['zen.desktop', 'org.gnome.Ptyxis.desktop', 'kitty.desktop', 'obsidian.desktop', 'org.gnome.Nautilus.desktop', 'spotify-launcher.desktop', 'com.mattjakeman.ExtensionManager.desktop', 'org.kde.kdenlive.desktop', 'onlyoffice-desktopeditors.desktop', 'org.kde.dolphin.desktop', 'virt-manager.desktop', 'code.desktop', 'firefox.desktop', 'com.obsproject.Studio.desktop', 'libreoffice-startcenter.desktop', 'org.gnome.Settings.desktop']
 last-selected-power-profile='power-saver'
 welcome-dialog-last-shown-version='47.2'
 
 [org/gnome/shell/extensions/appindicator]
 legacy-tray-enabled=true
 
+[org/gnome/shell/extensions/auto-adwaita-colors]
+accent-color='pink'
+notify-about-releases=false
+
 [org/gnome/shell/extensions/azwallpaper]
 bing-download-directory='/home/bnsplit/Pictures/Bing Wallpapers'
-bing-last-data-fetch=uint64 1737321142685
+bing-last-data-fetch=uint64 1740510830147
 bing-wallpaper-delete-old=(true, 14)
 bing-wallpaper-download=true
 bing-wallpaper-download-count=1
 bing-wallpaper-resolution='1920x1080'
-bing-wallpapers-downloaded=['/home/bnsplit/Pictures/Bing Wallpapers/MountFieldNP-1920x1080.jpg', '/home/bnsplit/Pictures/Bing Wallpapers/VietnamFalls-1920x1080.jpg', '/home/bnsplit/Pictures/Bing Wallpapers/PlumParakeet-1920x1080.jpg', '/home/bnsplit/Pictures/Bing Wallpapers/GreatWallStairs-1920x1080.jpg', '/home/bnsplit/Pictures/Bing Wallpapers/PinnaclesPeaks-1920x1080.jpg', '/home/bnsplit/Pictures/Bing Wallpapers/NeptunesGrotto-1920x1080.jpg']
-slideshow-current-wallpapper='VietnamFalls-1920x1080.jpg'
-slideshow-directory='/home/bnsplit/Pictures/Bing Wallpapers'
-slideshow-slide-duration=(24, 0, 0)
-slideshow-time-of-slide-start=uint64 1737321492635
-slideshow-timer-remaining=59707
-slideshow-wallpaper-queue=['MouseholeXmas-UHD.jpg', 'GreatWallStairs-1920x1080.jpg', 'PlumParakeet-1920x1080.jpg']
+bing-wallpapers-downloaded=['/home/bnsplit/Pictures/Bing Wallpapers/MountFieldNP-1920x1080.jpg', '/home/bnsplit/Pictures/Bing Wallpapers/VietnamFalls-1920x1080.jpg', '/home/bnsplit/Pictures/Bing Wallpapers/PlumParakeet-1920x1080.jpg', '/home/bnsplit/Pictures/Bing Wallpapers/GreatWallStairs-1920x1080.jpg', '/home/bnsplit/Pictures/Bing Wallpapers/PinnaclesPeaks-1920x1080.jpg', '/home/bnsplit/Pictures/Bing Wallpapers/NeptunesGrotto-1920x1080.jpg', '/home/bnsplit/Pictures/Bing Wallpapers/GiantCuttlefish-1920x1080.jpg', '/home/bnsplit/Pictures/Bing Wallpapers/BryceHoodoos-1920x1080.jpg']
+slideshow-current-wallpapper='55.jpg'
+slideshow-directory='/home/bnsplit/Pictures/Wallpapers/walls'
+slideshow-slide-duration=(1, 0, 0)
+slideshow-time-of-slide-start=uint64 1740512267398
+slideshow-timer-remaining=2134
+slideshow-wallpaper-queue=['17.png', '07.jpg', '29.jpg', '51.gif', '94.jpg', '08.gif', '65.png', '90.jpg', '24.jpg', '85.png', '57.jpg', '70.png', '31.gif', '41.png', '63.png', '54.jpg', '92.jpg', '98.jpg', '68.png', '47.png', '79.jpg', '34.png', '16.png', '36.png', '27.gif', '18.png', '62.png', '52.png', '01.png', '46.gif', '13.jpg', '84.png', '97.jpg', '32.gif', '21.png', '10.gif', '19.png', '81.jpg', '42.png', '87.png', '72.jpg', '06.png', '99.jpg', '61.png', '49.gif', '38.gif', '02.png', '93.jpg', '09.jpg', '30.png', '26.png', '14.jpg', '28.png', '95.jpg', '23.png', '50.png', '59.png', '71.webp', '58.png', '76.jpeg', '40.gif', '35.gif', '83.jpg', '12.png', '77.png', '88.png', '86.png', '05.gif', '74.png', '04.png', '25.png', '73.png', '64.png', '44.png', '66.jpg', '67.png', '37.png', '48.jpg', '22.png', '20.jpg', '91.jpg', '96.jpg', '60.png', '82.png', '100.png', '03.png', '80.png', '78.png', '56.png', '89.jpg', '33.jpg', '69.png']
 
 [org/gnome/shell/extensions/blur-my-shell]
 settings-version=2
@@ -547,26 +593,46 @@ settings-version=2
 brightness=0.59999999999999998
 sigma=30
 
+[org/gnome/shell/extensions/blur-my-shell/applications]
+blur=false
+blur-on-overview=true
+brightness=1.0
+enable-all=true
+opacity=204
+whitelist=['kitty', 'tmux']
+
+[org/gnome/shell/extensions/blur-my-shell/coverflow-alt-tab]
+pipeline='pipeline_default'
+
 [org/gnome/shell/extensions/blur-my-shell/dash-to-dock]
 blur=true
 brightness=0.59999999999999998
+pipeline='pipeline_default_rounded'
 sigma=30
 static-blur=true
 style-dash-to-dock=0
 
+[org/gnome/shell/extensions/blur-my-shell/lockscreen]
+pipeline='pipeline_default'
+
+[org/gnome/shell/extensions/blur-my-shell/overview]
+pipeline='pipeline_default'
+
 [org/gnome/shell/extensions/blur-my-shell/panel]
 brightness=0.59999999999999998
+pipeline='pipeline_default'
 sigma=30
+
+[org/gnome/shell/extensions/blur-my-shell/screenshot]
+pipeline='pipeline_default'
 
 [org/gnome/shell/extensions/blur-my-shell/window-list]
 brightness=0.59999999999999998
 sigma=30
 
 [org/gnome/shell/extensions/caffeine]
-indicator-position-max=3
+indicator-position-max=1
 toggle-shortcut=['<Super>i']
-toggle-state=false
-user-enabled=false
 
 [org/gnome/shell/extensions/dash-to-dock]
 apply-custom-theme=false
@@ -588,6 +654,51 @@ show-running=true
 show-show-apps-button=false
 show-trash=false
 transparency-mode='FIXED'
+
+[org/gnome/shell/extensions/forge]
+css-last-update=uint32 37
+tiling-mode-enabled=true
+
+[org/gnome/shell/extensions/forge/keybindings]
+con-split-horizontal=['<Super>z']
+con-split-layout-toggle=['<Super>g']
+con-split-vertical=['<Super>v']
+con-stacked-layout-toggle=['<Shift><Super>s']
+con-tabbed-layout-toggle=['<Shift><Super>t']
+con-tabbed-showtab-decoration-toggle=['<Control><Alt>y']
+focus-border-toggle=['<Super>x']
+prefs-tiling-toggle=['<Super>w']
+window-focus-down=['<Super>j']
+window-focus-left=['<Super>h']
+window-focus-right=['<Super>l']
+window-focus-up=['<Super>k']
+window-gap-size-decrease=['<Control><Super>minus']
+window-gap-size-increase=['<Control><Super>plus']
+window-move-down=['<Shift><Super>j']
+window-move-left=['<Shift><Super>h']
+window-move-right=['<Shift><Super>l']
+window-move-up=['<Shift><Super>k']
+window-resize-bottom-decrease=['<Shift><Control><Super>i']
+window-resize-bottom-increase=['<Control><Super>u']
+window-resize-left-decrease=['<Shift><Control><Super>o']
+window-resize-left-increase=['<Control><Super>y']
+window-resize-right-decrease=['<Shift><Control><Super>y']
+window-resize-right-increase=['<Control><Super>o']
+window-resize-top-decrease=['<Shift><Control><Super>u']
+window-resize-top-increase=['<Control><Super>i']
+window-snap-center=['<Control><Alt>c']
+window-snap-one-third-left=['<Control><Alt>d']
+window-snap-one-third-right=['<Control><Alt>g']
+window-snap-two-third-left=['<Control><Alt>e']
+window-snap-two-third-right=['<Control><Alt>t']
+window-swap-down=['<Control><Super>j']
+window-swap-last-active=['<Super>Return']
+window-swap-left=['<Control><Super>h']
+window-swap-right=['<Control><Super>l']
+window-swap-up=['<Control><Super>k']
+window-toggle-always-float=['<Shift><Super>c']
+window-toggle-float=['<Super>c']
+workspace-active-tile-toggle=['<Shift><Super>w']
 
 [org/gnome/shell/extensions/gnome-ui-tune]
 hide-search=false
@@ -737,6 +848,21 @@ trigger-reload=true
 vw-color=['0.804', '0.765', '0.455']
 winbcolor=['0.804', '0.765', '0.455']
 
+[org/gnome/shell/extensions/search-light]
+animation-speed=89.0
+background-color=(0.23000000417232513, 0.23000000417232513, 0.23000000417232513, 1.0)
+blur-background=false
+blur-brightness=0.59999999999999998
+blur-sigma=30.0
+border-radius=4.9339207048458151
+entry-font-size=1
+monitor-count=1
+popup-at-cursor-monitor=false
+preferred-monitor=0
+scale-height=0.10000000000000001
+scale-width=0.10000000000000001
+shortcut-search=['<Super>space']
+
 [org/gnome/shell/extensions/tiling-assistant]
 focus-hint-color='rgb(58,148,74)'
 last-version-installed=50
@@ -746,7 +872,7 @@ overridden-settings={'org.gnome.mutter.edge-tiling': <@mb nothing>, 'org.gnome.d
 time=300
 
 [org/gnome/shell/extensions/user-theme]
-name='default-pure'
+name=''
 
 [org/gnome/shell/extensions/vitals]
 alphabetize=false
@@ -786,9 +912,9 @@ save-directory='file:///home/bnsplit/'
 save-format='application/pdf'
 
 [org/gnome/software]
-check-timestamp=int64 1739481184
+check-timestamp=int64 1740510880
 first-run=false
-flatpak-purge-timestamp=int64 1736988145
+flatpak-purge-timestamp=int64 1740440736
 
 [org/gnome/system/location]
 enabled=true
@@ -797,8 +923,8 @@ enabled=true
 show-extensions-notice=false
 
 [org/gtk/gtk4/settings/color-chooser]
-custom-colors=[(0.15686275064945221, 0.15686275064945221, 0.15686275064945221, 1.0), (0.94117647409439087, 0.364705890417099, 0.12549020349979401, 1.0), (0.078000001609325409, 0.16899999976158142, 0.18799999356269836, 1.0), (0.60399997234344482, 0.59600001573562622, 0.24699999392032623, 1.0), (0.7839999794960022, 0.7369999885559082, 0.36100000143051147, 1.0)]
-selected-color=(true, 0.15686275064945221, 0.15686275064945221, 0.15686275064945221, 1.0)
+custom-colors=[(0.23000000417232513, 0.23000000417232513, 0.23000000417232513, 1.0), (0.69999998807907104, 0.69999998807907104, 0.69999998807907104, 0.25), (0.0, 0.0, 0.0, 0.25), (0.15686275064945221, 0.15686275064945221, 0.15686275064945221, 1.0), (0.94117647409439087, 0.364705890417099, 0.12549020349979401, 1.0), (0.078000001609325409, 0.16899999976158142, 0.18799999356269836, 1.0), (0.60399997234344482, 0.59600001573562622, 0.24699999392032623, 1.0), (0.7839999794960022, 0.7369999885559082, 0.36100000143051147, 1.0)]
+selected-color=(true, 0.0, 0.0, 0.0, 1.0)
 
 [org/gtk/gtk4/settings/file-chooser]
 date-format='regular'
@@ -820,7 +946,7 @@ selected-color=(true, 0.0, 0.0, 0.0, 1.0)
 clock-format='24h'
 date-format='regular'
 location-mode='path-bar'
-show-hidden=false
+show-hidden=true
 show-size-column=true
 show-type-column=true
 sidebar-width=165
@@ -828,12 +954,12 @@ sort-column='name'
 sort-directories-first=false
 sort-order='ascending'
 type-format='category'
-window-position=(0, 0)
+window-position=(965, 64)
 window-size=(947, 984)
 
 [org/virt-manager/virt-manager]
-manager-window-height=1045
-manager-window-width=1918
+manager-window-height=1031
+manager-window-width=1904
 xmleditor-enabled=true
 
 [org/virt-manager/virt-manager/confirm]
@@ -854,11 +980,11 @@ graphics-type='system'
 
 [org/virt-manager/virt-manager/paths]
 image-default='/home/bnsplit/Isos'
-media-default='/home/bnsplit/bnos/bnos-2502/output'
+media-default='/home/bnsplit/Isos'
 screenshot-default='/home/bnsplit/Obsidian/99 Assets'
 
 [org/virt-manager/virt-manager/urls]
-isos=['/home/bnsplit/bnos/bnos-2502/output/bnos-2025.02.02-x86_64.iso', '/home/bnsplit/Isos/Office_2016_64Bit_French_MLF_X20-42482.ISO', '/home/bnsplit/Isos/SW_DVD5_Office_2016_64Bit_French_MLF_X20-42482.ISO', '/home/bnsplit/Isos/Win10_22H2_French_x64v1.iso', '/home/bnsplit/Isos/linuxmint-22.1-cinnamon-64bit.iso', '/home/bnsplit/Isos/linuxmint-22-cinnamon-64bit.iso', '/home/bnsplit/Isos/Win11_24H2_French_x64.iso', '/home/bnsplit/Isos/archlinux-2025.01.01-x86_64.iso']
+isos=['/home/bnsplit/Isos/EndeavourOS_Endeavour_neo-2024.09.22.iso', '/home/bnsplit/Isos/nixos-gnome-24.11.714614.c618e28f7025-x86_64-linux.iso', '/home/bnsplit/Isos/archlinux-2025.02.01-x86_64.iso', '/home/bnsplit/bnos/bnos-2502/output/bnos-2025.02.02-x86_64.iso', '/home/bnsplit/Isos/Office_2016_64Bit_French_MLF_X20-42482.ISO', '/home/bnsplit/Isos/SW_DVD5_Office_2016_64Bit_French_MLF_X20-42482.ISO', '/home/bnsplit/Isos/Win10_22H2_French_x64v1.iso', '/home/bnsplit/Isos/linuxmint-22.1-cinnamon-64bit.iso', '/home/bnsplit/Isos/linuxmint-22-cinnamon-64bit.iso', '/home/bnsplit/Isos/Win11_24H2_French_x64.iso']
 
 [org/virt-manager/virt-manager/vmlist-fields]
 disk-usage=false
@@ -889,6 +1015,10 @@ vm-window-size=(945, 1034)
 autoconnect=1
 resize-guest=1
 vm-window-size=(1918, 1045)
+
+[org/virt-manager/virt-manager/vms/3ecb7c632f774a5391eb98bea8a54ac7]
+autoconnect=1
+vm-window-size=(1904, 1031)
 
 [org/virt-manager/virt-manager/vms/4938118a359a4bca86a2499d402dd37a]
 autoconnect=1
@@ -928,6 +1058,11 @@ autoconnect=1
 resize-guest=1
 vm-window-size=(1904, 1034)
 
+[org/virt-manager/virt-manager/vms/8e3f8bac6bb443b6a31ad5381fdfb4a5]
+autoconnect=1
+resize-guest=1
+vm-window-size=(1904, 1031)
+
 [org/virt-manager/virt-manager/vms/9a54339497444796934955571ab8ae2a]
 autoconnect=1
 vm-window-size=(1280, 842)
@@ -935,6 +1070,10 @@ vm-window-size=(1280, 842)
 [org/virt-manager/virt-manager/vms/b701cdbc146e45538f8a7abfd289c642]
 autoconnect=1
 vm-window-size=(1280, 842)
+
+[org/virt-manager/virt-manager/vms/bc31eaaa01744050b717a990f7edc052]
+autoconnect=1
+vm-window-size=(1904, 1031)
 
 [org/virt-manager/virt-manager/vms/c4516e174d304c5c9a758957922ecf92]
 autoconnect=1
@@ -960,6 +1099,15 @@ vm-window-size=(1904, 1034)
 [org/virt-manager/virt-manager/vms/e10dc911bd104c58889ab2019103655f]
 autoconnect=1
 vm-window-size=(1280, 842)
+
+[org/virt-manager/virt-manager/vms/e1ce37051d1b45ed8e6dcbe111598a0f]
+autoconnect=1
+resize-guest=1
+vm-window-size=(1904, 1031)
+
+[org/virt-manager/virt-manager/vms/e571ff5132e74ce1bd363c58a923805c]
+autoconnect=1
+vm-window-size=(1918, 1045)
 
 [org/virt-manager/virt-manager/vms/e5ecd44c33e3408f818b23b38c1cf4c8]
 autoconnect=1

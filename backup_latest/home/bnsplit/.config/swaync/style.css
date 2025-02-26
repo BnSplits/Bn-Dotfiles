@@ -1,6 +1,8 @@
 @import url("../bnsplit/colors/colors.css");
 
-/* SwayNC Notification Center Styles */
+/********************
+ * Color Definitions *
+ ********************/
 @define-color cc-bg @x-surface;
 @define-color noti-border-color @s-col-14;
 @define-color noti-bg @x-col-2;
@@ -15,16 +17,18 @@
 @define-color text-color-disabled @s-on-surface-variant;
 @define-color bg-selected @s-primary;
 
-/* General Reset */
+/****************
+ * General Reset *
+ ****************/
 * {
   outline: none;
 }
 
-/* Notifications */
+/****************
+ * Notifications *
+ ****************/
 .notification-row .notification-background .notification {
-  border-radius: 11px;
   margin: 6px 0px;
-  /* border: 2px solid @noti-border-color; */
   border: 2px solid @noti-border-color;
   transition: background 0.15s ease-in-out;
 }
@@ -34,45 +38,29 @@
   .notification
   .notification-default-action
   .notification-content
-  .text-box
-  .body,
-.notification-row
-  .notification-background
-  .notification
-  .notification-default-action
-  .notification-content
-  .text-box
-  .summary {
+  .image {
+  border-radius: 6px;
+}
+
+/* Italic text in notifications */
+.notification-content .text-box .body,
+.notification-content .text-box .summary,
+.widget-mpris-player .widget-mpris-title,
+.widget-mpris-player .widget-mpris-subtitle {
   font-style: italic;
 }
 
-.notification-row
-  .notification-background
-  .notification
-  .notification-default-action
-  .notification-content
-  .inline-reply {
+/* Inline reply styling */
+.notification-content .inline-reply {
   margin: 6px;
 }
 
-.notification-row
-  .notification-background
-  .notification
-  .notification-default-action
-  .notification-content
-  .inline-reply
-  .inline-reply-entry,
-.notification-row
-  .notification-background
-  .notification
-  .notification-default-action
-  .notification-content
-  .inline-reply
-  .inline-reply-button {
+.inline-reply-entry,
+.inline-reply-button {
   border-radius: 5px;
 }
 
-.notification-row .notification-background .close-button {
+.notification-background .close-button {
   margin-top: 12px;
   margin-right: 4px;
 }
@@ -82,36 +70,55 @@
   margin: 0;
 }
 
-/* Control Center */
+/****************************
+ * Rounded Elements Cleanup *
+ ****************************/
+.notification-default-action,
+.notification-content,
+.inline-reply,
+.inline-reply-entry,
+.notification-default-action:not(:only-child),
+.inline-reply-button,
+.body-image,
+.notification {
+  border-radius: 6px;
+  -gtk-outline-radius: 5px;
+}
+.notification-action:last-child,
+.notification-action:first-child {
+  border-radius: 0px;
+}
+
+/****************
+ * Control Center *
+ ****************/
 .control-center {
   border: 2px solid @noti-border-color;
   border-radius: 8px;
   margin: 12px;
 }
 
-/* MPRIS Widget */
+/****************
+ * MPRIS Widget *
+ ****************/
 .widget-mpris > box > button {
   padding: 0;
 }
 
-.widget-mpris .widget-mpris-player {
-  /* background-color: @mpris-album-art-overlay; */
-  border-radius: 14px;
+.widget-mpris-player {
+  border-radius: 8px;
 }
 
-.widget-mpris .widget-mpris-player .widget-mpris-title,
-.widget-mpris .widget-mpris-player .widget-mpris-subtitle {
-  font-style: italic;
-}
-
-.widget-mpris .widget-mpris-player .widget-mpris-album-art {
-  border-radius: 14px;
+.widget-mpris-player .widget-mpris-album-art {
+  border-radius: 8px;
   box-shadow: none;
   padding: 0;
   margin: 0;
 }
 
-/* Title widget */
+/****************
+ * Title Widget *
+ ****************/
 .widget-title {
   font-weight: bold;
   font-style: italic;
@@ -128,7 +135,9 @@
   background: @s-inverse-primary;
 }
 
-/* DND widget */
+/****************
+ * DND Widget *
+ ****************/
 .widget-dnd {
   color: @s-on-background;
   font-size: 1.3rem;
@@ -151,7 +160,9 @@
   border-radius: 5px;
 }
 
-/* Buttons Grid Widget */
+/************************
+ * Buttons Grid Widget *
+ ************************/
 .widget-buttons-grid {
   font-size: 32px;
   border: 1px solid @on-background;
@@ -183,12 +194,13 @@
 }
 
 .widget-buttons-grid > flowbox > flowboxchild > button.toggle:checked:hover {
-  /* color: @s-inverse-primary; */
   color: @s-primary;
   transition: color 0.15s ease-in-out;
 }
 
-/* Volume and Backlight Widgets */
+/******************************
+ * Volume and Backlight Widgets *
+ ******************************/
 .widget-volume,
 .widget-backlight {
   background: @x-on-secondary-fixed;

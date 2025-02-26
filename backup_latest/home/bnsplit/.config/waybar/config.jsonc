@@ -12,11 +12,11 @@
     // "custom/power_mode",
     // "backlight",
     "tray",
-    "custom/swaync",
+    // "custom/swaync",
     // "group/tray",
     "custom/power_mode",
     "custom/inhibitor_state",
-    "pulseaudio",
+    // "pulseaudio",
     "battery",
     "clock"
     // "group/other"
@@ -73,6 +73,7 @@
     "spacing": 10,
     "show-passive-items": true,
     "reverse-direction": true,
+    "tooltip": false,
   },
   "custom/center": {
     "interval": 1,
@@ -85,6 +86,8 @@
     "format": "{:%d %b  %H:%M:%S}",
     "locale": "en_US.UTF-8",
     "tooltip": true,
+    // "on-click" : "ags toggle Calendar",
+    "on-click": "swaync-client -t -sw",
     "tooltip-format": "{:%a.  %d  %b.  %Y   /   %H : %M : %S}",
   },
 

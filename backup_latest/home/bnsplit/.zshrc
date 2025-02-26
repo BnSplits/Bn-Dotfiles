@@ -100,6 +100,9 @@ nc() {
     echo "Neovim swap directory does not exist: $SWAP_DIR"
   fi
 }
+wallhaven(){
+  "$HOME/.config/bnsplit/scripts/wallhaven.sh" categories=110 purity=110 ratios=landscape sorting=toplist topRange=1d max=24 "$@"
+}
 # Yazi integration
 export EDITOR='nvim'
 y() {

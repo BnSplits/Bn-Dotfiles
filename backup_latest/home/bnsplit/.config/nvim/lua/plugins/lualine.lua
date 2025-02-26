@@ -5,6 +5,12 @@ return {
     local lualine_require = require("lualine_require")
     lualine_require.require = require
 
+    local nvimbattery = {
+      function()
+        return require("battery").get_status_line()
+      end,
+    }
+
     local icons = LazyVim.config.icons
 
     vim.o.laststatus = vim.g.lualine_laststatus
@@ -17,6 +23,7 @@ return {
       },
       sections = {
         lualine_a = { "mode" },
+        -- lualine_a = ,
         lualine_b = { "branch" },
 
         lualine_c = {
@@ -86,6 +93,7 @@ return {
               return vim.api.nvim_buf_line_count(0) .. " "
             end,
           },
+          nvimbattery,
         },
         lualine_z = {
           function()

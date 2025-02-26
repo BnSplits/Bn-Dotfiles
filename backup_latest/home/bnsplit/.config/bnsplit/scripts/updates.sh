@@ -8,7 +8,7 @@ YELLOW="\e[33m"
 RED="\e[31m"
 RESET="\e[0m"
 
-echo -ne "\n${BOLD}${YELLOW} Searching for updates... ${RESET}"
+echo -ne "${BOLD}${YELLOW} Searching for updates... ${RESET}"
 sudo yay -Sy >/dev/null 2>&1
 
 updates_list=$(yay -Qu)
@@ -34,6 +34,8 @@ if [[ -n "$updates_list" && "$updates_count" -gt 0 ]]; then
     else
       echo -e "\n${BOLD}${RED}✖ Update failed! Check logs for errors.${RESET}"
       notify-send -a "Updates" "Update Failed" "<i><b>An error occurred during the update</b></i>" -i "$ICON" -t 10000
+      echo -n "Press Enter to exit... "
+      read c
     fi
   else
     echo -e "\n${BOLD}${YELLOW}⚠ Update canceled.${RESET}"

@@ -4,7 +4,11 @@
 
 vim.keymap.set("n", "<leader>e", "<CMD>Oil --float<CR>", { desc = "Open oil" })
 vim.keymap.set("n", "-", "<CMD>Oil --float<CR>", { desc = "Open oil" })
-vim.keymap.set("n", "<leader>;", "<CMD>Alpha<CR>", { desc = "Toggle Alpha" })
+vim.keymap.set("n", "<leader>;", function()
+  -- vim.cmd("lua Snacks.dashboard()")
+  -- vim.cmd("Alpha")
+  -- vim.cmd("Dashboard")
+end, { desc = "Toggle Alpha" })
 vim.keymap.set("n", "<leader>h", function()
   vim.cmd("nohlsearch")
   vim.cmd("echo 'Highlights clear'")
