@@ -1,0 +1,9 @@
+[13:04:42 2025-03-09] FETCHING Version 2.39.5
+[13:04:42 2025-03-09] CREATING /home/bnsplit/.spicetify
+[13:04:42 2025-03-09] DOWNLOADING https://github.com/spicetify/cli/releases/download/v2.39.5/spicetify-2.39.5-linux-amd64.tar.gz
+[13:05:04 2025-03-09] EXTRACTING /home/bnsplit/.spicetify/spicetify.tar.gz
+[13:05:04 2025-03-09] SETTING EXECUTABLE PERMISSIONS TO /home/bnsplit/.spicetify/spicetify
+[13:05:04 2025-03-09] REMOVING /home/bnsplit/.spicetify/spicetify.tar.gz
+[13:05:04 2025-03-09] APPENDING /home/bnsplit/.spicetify to PATH in /home/bnsplit/.bashrc
+[13:05:04 2025-03-09] spicetify v2.39.5 was installed successfully to /home/bnsplit/.spicetify
+[13:05:04 2025-03-09] Run 'spicetify --help' to get started

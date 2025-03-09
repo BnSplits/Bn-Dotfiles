@@ -113,16 +113,14 @@
           "update_command": "sh -c 'grep -qm1 xray ~/.themes/custom-adw/gtk-3.0/colors.css && echo true || echo false'"
         },
         {
-          "label": "󰗌",
-          "type": "toggle",
-          "active": false,
-          "command": "sh -c '~/.config/bnsplit/scripts/toggle_xray.sh'",
-          "update_command": "sh -c 'grep -q opacity $HOME/.config/hypr/hyprland/_xray-windows.conf && echo true || echo false'"
+          "label": "",
+          "command": "sh -c 'swaync-client --close-panel; sleep 0.2; ~/.config/bnsplit/scripts/colorpicker.sh'"
         },
         {
-          "label": "",
-          "command": "sh -c 'swaync-client --close-panel; sleep 0.2; hyprpicker -a'"
+          "label": "",
+          "command": "sh -c 'swaync-client --close-panel; ~/.config/bnsplit/scripts/sunset.sh'"
         },
+
         {
           "label": "",
           "command": "sh -c 'swaync-client --close-panel; ags toggle Logout'"

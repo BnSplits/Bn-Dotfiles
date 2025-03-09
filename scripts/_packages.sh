@@ -40,18 +40,23 @@ export BASE_PKGS="
   figlet-fonts-extra
   file-roller
   fish
+  flameshot
   flatpak
   fontforge
   fpc
   fzf
   gapless
+  ghostty
   git
+  glib2
+  go
   google-chrome
   gparted
   grub-customizer
   gwenview
   hollywood
   hplip
+  inetutils
   inkscape
   inxi
   imagemagick
@@ -68,6 +73,7 @@ export BASE_PKGS="
   lolcat
   ly
   matugen-bin
+  mjpg-streamer
   neovim
   nodejs-lts-iron
   npm
@@ -96,6 +102,7 @@ export BASE_PKGS="
   resources
   ripgrep
   rustc
+  sddm
   shell-color-scripts-git
   simple-scan
   speedtest-cli
@@ -138,7 +145,6 @@ export GNOME_PKGS="
   gnome-tweaks
   gnome-weather
   loupe
-  ptyxis
   resources
   simple-scan
 "
@@ -149,8 +155,14 @@ export HYPR_PKGS="
   breeze
   breeze5
   brightnessctl
+  cheese
   clipse
   dolphin
+  evince
+  gnome-disk-utility
+  gnome-text-editor
+  gnome-calendar
+  gnome-weather
   grim
   hypridle
   hyprland
@@ -158,8 +170,10 @@ export HYPR_PKGS="
   hyprpaper
   hyprpicker
   hyprpolkitagent
+  hyprsunset
   imagemagick
   kde-material-you-colors
+  loupe
   nautilus
   nautilus-admin-gtk4
   nautilus-image-converter
@@ -172,9 +186,11 @@ export HYPR_PKGS="
   python-pywal16
   qt6-wayland
   qt6ct-kde
+  resources
   rofi-wayland
   rofi-calc-git
   rofi-emoji-git
+  simple-scan
   slurp
   swaync
   swww

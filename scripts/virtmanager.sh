@@ -19,8 +19,10 @@ if confirm "Do you want to install and configure Virtmanager with KVM/QEMU?"; th
   echo 'Remove # at the following lines: unix_sock_group = "libvirt" and unix_sock_rw_perms = "0770"'
   read -p "Press any key to open libvirtd.conf: " c
   sudo vim /etc/libvirt/libvirtd.conf
-  sudo echo 'log_filters="3:qemu 1:libvirt"' >>/etc/libvirt/libvirtd.conf
-  sudo echo 'log_outputs="2:file:/var/log/libvirt/libvirtd.log"' >>/etc/libvirt/libvirtd.conf
+  # sudo echo 'log_filters="3:qemu 1:libvirt"' >>/etc/libvirt/libvirtd.conf
+  echo 'log_filters="3:qemu 1:libvirt"' | sudo tee -a /etc/libvirt/libvirtd.conf
+  # sudo echo 'log_outputs="2:file:/var/log/libvirt/libvirtd.log"' >>/etc/libvirt/libvirtd.conf
+  echo 'log_outputs="2:file:/var/log/libvirt/libvirtd.log"' | sudo tee -a /etc/libvirt/libvirtd.conf
 
   # ------------------------------------------------------
   # Add user to the group

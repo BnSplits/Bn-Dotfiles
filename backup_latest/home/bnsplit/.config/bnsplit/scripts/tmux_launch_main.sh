@@ -5,6 +5,7 @@ SESSION_NAME="main"
 tmux has-session -t $SESSION_NAME 2>/dev/null
 if [ $? != 0 ]; then
   tmux new-session -d -s $SESSION_NAME -n Zsh
+  tmux send-keys -t $SESSION_NAME:1 'f' C-m
 
   # tmux new-window -t $SESSION_NAME:2 -n config -c $HOME/.config/
   # tmux send-keys -t $SESSION_NAME:2 'nvim' C-m

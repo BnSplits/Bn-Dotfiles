@@ -1,14 +1,14 @@
 #!/bin/bash
 source ./_variables.sh
 
-print_separator "HP Printer"
 # HP printer setup
+print_separator "HP Printer"
 if confirm "Do you want to configure a printer with hp-setup -i?"; then
   sudo systemctl enable --now cups && sudo systemctl start cups && hp-setup -i || echo_error "Printer setup failed"
 fi
 
-print_separator "Bluetooth"
 # Bluetooth setup
+print_separator "Bluetooth"
 if confirm "Do you want to configure Bluetooth?"; then
   sudo systemctl enable --now bluetooth.service
   sudo systemctl start bluetooth.service

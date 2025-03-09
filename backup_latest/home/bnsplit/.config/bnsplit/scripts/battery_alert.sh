@@ -55,7 +55,11 @@ while true; do
         "Battery ABOVE 25% (currently at ${BATTERY_LEVEL}%)" \
         -i "$ICON" --urgency=critical
       echo "[TEST] Triggering power profile change at ${BATTERY_LEVEL}%"
-      ~/.config/bnsplit/scripts/power_profiles.sh power-saver
+      # Check current profile before changing (with whitespace removal)
+      current_profile=$(powerprofilesctl get | tr -d '[:space:]')
+      if [[ "$current_profile" != "power-saver" ]]; then
+        ~/.config/bnsplit/scripts/power_profiles.sh power-saver
+      fi
       send_to_devices
       NOTIFIED_25=true
     fi
@@ -68,11 +72,15 @@ while true; do
     if [[ "$STATUS" == "Discharging" ]]; then
       # 25% notification and actions
       if [[ "$BATTERY_LEVEL" -le 25 && "$NOTIFIED_25" == "false" ]]; then
-        NOTIFY_ID=$(notify-send -a "System" -r "$NOTIFY_ID" "Battery Alert" \
-          "Battery level at 25% - Switching to power-saver mode" \
-          -i "$ICON" --urgency=critical)
-        ~/.config/bnsplit/scripts/power_profiles.sh power-saver
-        send_to_devices
+        # Check current profile before changing (with whitespace removal)
+        current_profile=$(powerprofilesctl get | tr -d '[:space:]')
+        if [[ "$current_profile" != "power-saver" ]]; then
+          NOTIFY_ID=$(notify-send -a "System" -r "$NOTIFY_ID" "Battery Alert" \
+            "Battery level at 25% - Switching to power-saver mode" \
+            -i "$ICON" --urgency=critical)
+          ~/.config/bnsplit/scripts/power_profiles.sh power-saver
+          send_to_devices
+        fi
         NOTIFIED_25=true
       fi
 

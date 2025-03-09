@@ -37,6 +37,10 @@ load_colors() {
   swaync-client -rs
   "$GTK_THEME_SCRIPT"
 
+  # Flameshot
+  MID_COL=$(awk 'NR == 6' "$CONFIG_DIR/colors/colors-hex")
+  flameshot config --maincolor "$MID_COL"
+
   # Optional Papirus folders
   if [[ -n "$1" ]]; then
     export PATH="$HOME/.local/bin:$PATH"
@@ -97,7 +101,7 @@ cp "$WALL" "$ZEN_TABLISS_WAL/1" &
 "$RUNWALL_DIR/col_gen" "$WALL"
 
 # 3. Reload colors and apps
-load_colors "Papirus"  & # Pass "Papirus" as $1, KDE slot $2 remains empty
+load_colors "Papirus" & # Pass "Papirus" as $1, KDE slot $2 remains empty
 # load_colors & # Pass "Papirus" as $1, KDE slot $2 remains empty
 
 # 4. Process wallpaper

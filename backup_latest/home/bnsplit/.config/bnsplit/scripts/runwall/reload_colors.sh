@@ -25,6 +25,10 @@ swaync-client -R
 swaync-client -rs
 "$GTK_THEME_SCRIPT"
 
+# Flameshot
+MID_COL=$(awk 'NR == 6' "$CONFIG_DIR/colors/colors-hex")
+flameshot config --maincolor "$MID_COL"
+
 # Optional Papirus folders
 if [[ -n "$1" ]]; then
   export PATH="$HOME/.local/bin:$PATH"

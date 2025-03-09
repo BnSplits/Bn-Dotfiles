@@ -10,7 +10,7 @@
 
 window#waybar {
   background: @x-background;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 #window {
@@ -117,6 +117,12 @@ tooltip label {
   padding-right: 4px;
   margin: 1px 1px;
   border-radius: 5px;
+  color: red;
+}
+
+#tray > .active,
+#tray > .passive,
+#tray > .needs-attention {
   color: red;
 }
 

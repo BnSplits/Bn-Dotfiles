@@ -18,8 +18,7 @@ fi
 
 # Hyprls (Hyprland LSP)
 if confirm "Do you want to install Hyprls (Hyprland LSP)?"; then
-  git clone --recurse-submodules https://github.com/hyprland-community/hyprls /tmp/hyprls &&
-    (cd /tmp/hyprls && just install)
+  go install github.com/hyprland-community/hyprls/cmd/hyprls@latest
 fi
 
 # Papirus icons
@@ -33,4 +32,12 @@ if confirm "Do you want to install papirus icon theme?"; then
   if confirm "  On HOME directory for KDE?"; then
     wget -qO- https://git.io/papirus-icon-theme-install | env DESTDIR="$HOME/.local/share/icons" sh
   fi
+fi
+
+# Gruvbox factory
+if confirm "Do you want to install gruvbox-factory"; then
+  mkdir -p "$HOME/.config/bnsplit/scripts/gruvbox-factory/"
+  python -m venv "$HOME/.config/bnsplit/scripts/gruvbox-factory/venv"
+  (source "$HOME/.config/bnsplit/scripts/gruvbox-factory/venv/bin/activate" &&
+    pip3 install gruvbox-factory)
 fi

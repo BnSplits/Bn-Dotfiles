@@ -1,0 +1,31 @@
+theme = "GruvboxDarkHard"
+
+font-family = "JetBrains Mono Italic"
+font-family-italic = "JetBrains Mono Italic"
+font-family-bold = "JetBrains Mono Bold Italic"
+font-family-bold-italic = "JetBrains Mono Bold Italic"
+
+font-style = "Italic"
+font-size = 12
+
+# background-opacity = 0.8
+# background-blur = true
+
+quick-terminal-position="top"
+quick-terminal-screen="main"
+
+gtk-single-instance = true
+
+window-padding-x = 0
+window-padding-y = 0
+
+window-width = 140
+window-height = 40
+
+adw-toolbar-style = flat
+
+window-decoration = false
+
+window-theme = dark
+
+copy-on-select = true

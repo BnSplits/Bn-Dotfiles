@@ -43,6 +43,8 @@ if ! command -v yay &>/dev/null; then
       echo_error "Failed to build and install yay."
       exit 1
     }
+    
+    cd -
 
     echo_success "yay has been successfully installed."
   else
@@ -65,11 +67,13 @@ fi
 ./fstab.sh
 ./visudo.sh
 ./restore_backup.sh
-./services.sh
 ./git_config.sh
 ./virtmanager.sh
 ./hypr_config.sh
+./power_button.sh
+./services.sh
 ./grub.sh
+./sddm.sh
 ./plymouth.sh
 
 # --- FINAL PROMPT ---

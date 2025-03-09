@@ -46,3 +46,7 @@ if [ -d "$ARCHIVE_BACKUP" ]; then
 else
   echo_warning "No backup archive folder found. Proceeding to the next step."
 fi
+
+if confirm "Do you want to restore your libvirt Virtual Machines?"; then
+  "$HOME/.config/bnsplit/scripts/libvirt_vms.sh" define
+fi

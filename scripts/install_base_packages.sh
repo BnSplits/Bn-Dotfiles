@@ -8,6 +8,7 @@ BASE_PKGS=($BASE_PKGS)
 # Install base packages
 print_separator "Installing base packages"
 if confirm "Do you want to install base packages?"; then
+  yay -Sy
   for pkg in "${BASE_PKGS[@]}"; do
     echo_arrow "Checking $pkg..."
 

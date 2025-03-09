@@ -17,7 +17,7 @@ case "$requested_mode" in
   sed -i 's/decoration:blur:enabled = true/decoration:blur:enabled = false/' "$hyprland_file"
   sed -i 's/animations:enabled = true/animations:enabled = false/' "$hyprland_file"
   brightnessctl set 20%
-  hypridle &
+  "$HOME/.config/bnsplit/scripts/inhibitor.sh" off
 
   if [[ "$(xdg-mime query filetype "$wallpaper_cache")" == "image/gif" ]]; then
     non_gif_walls=$(find $HOME/Pictures/Wallpapers -type f -exec file --mime-type {} + | grep -v 'image/gif' | cut -d: -f1)
@@ -32,7 +32,7 @@ case "$requested_mode" in
   sed -i 's/decoration:blur:enabled = false/decoration:blur:enabled = true/' "$hyprland_file"
   sed -i 's/animations:enabled = false/animations:enabled = true/' "$hyprland_file"
   brightnessctl set 50%
-  hypridle &
+  "$HOME/.config/bnsplit/scripts/inhibitor.sh" on
 
   if [[ -f "$wallpaper_cache.tmp" ]]; then
     mv "$wallpaper_cache.tmp" "$wallpaper_cache"

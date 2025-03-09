@@ -1,26 +1,31 @@
 // Inspired by Catnap
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
-  "logo": "none",
+  "logo": {
+    "type": "small",
+    "padding": {
+      "top": 4,
+    },
+  },
   "display": {
     "separator": " ",
   },
   "modules": [
-    {
-      "key": "{#31}",
-      "text": "echo -e '\n' \"\\033[31m$(uname -n | figlet -f 'DOS Rebel')\\033[0m\"",
-      // Other fonts in /usr/share/figlet/fonts/
-      "type": "command",
-    },
+    // {
+    //   "key": "{#31}",
+    //   "text": "echo -e '\n' \"\\033[31m$(uname -n | figlet -f 'DOS Rebel')\\033[0m\"",
+    //   // Other fonts in /usr/share/figlet/fonts/
+    //   "type": "command",
+    // },
     {
       "key": "╭───────────╮",
       "type": "custom",
     },
-    {
-      "key": "│ {#31} user    {#keys}│",
-      "type": "title",
-      "format": "{user-name}",
-    },
+    // {
+    //   "key": "│ {#31} user    {#keys}│",
+    //   "type": "title",
+    //   "format": "{user-name}",
+    // },
     // {
     //    "key": "│ {#32}󰇅 hname   {#keys}│",
     //    "type": "title",
@@ -28,27 +33,33 @@
     // },
     {
       "type": "packages",
-      "key": "│ {#33}󰏖 packages{#keys}│",
+      "key": "│ {#31}󰏖 packages{#keys}│",
     },
-    // {
-    //    "key": "│ {#34}󰅐 uptime  {#keys}│",
-    //    "type": "uptime"
-    // },
     {
-      "key": "│ {#35}󰅐 age     {#keys}│",
+       "key": "│ {#32}󰅐 uptime  {#keys}│",
+       "type": "uptime"
+    },
+    {
+      "key": "│ {#33}󰅐 OS age  {#keys}│",
       "text": "~/.config/bnsplit/scripts/os_age.sh",
       "type": "command",
     },
     {
-      "key": "│ {#36}{icon} distro  {#keys}│",
+      "key": "│ {#34}󰅐 HW age  {#keys}│",
+      "text": "~/.config/bnsplit/scripts/os_age.sh home",
+      "type": "command",
+    },
+
+    {
+      "key": "│ {#35}{icon} distro  {#keys}│",
       "type": "os",
     },
     {
-      "key": "│ {#31} kernel  {#keys}│",
+      "key": "│ {#36} kernel  {#keys}│",
       "type": "kernel",
     },
     {
-      "key": "│ {#32}󰇄 desktop {#keys}│",
+      "key": "│ {#31}󰇄 desktop {#keys}│",
       "type": "de",
     },
     {
@@ -75,22 +86,22 @@
     //    // "folders": "/"
     // },
     {
-      "key": "│ {#31}󰉉 home    {#keys}│",
+      "key": "│ {#36}󰉉 home    {#keys}│",
       "type": "disk",
       "folders": "/home",
     },
     {
-      "key": "│ {#32} memory  {#keys}│",
+      "key": "│ {#31} memory  {#keys}│",
       "type": "memory",
     },
     // {
     //    "type": "swap",
     //    "key": "│ {#33}󰓡 swap    {#keys}│"
     // },
-    {
-      "type": "display",
-      "key": "│ {#34}󰍹 display {#keys}│",
-    },
+    // {
+    //   "type": "display",
+    //   "key": "│ {#34}󰍹 display {#keys}│",
+    // },
     // {
     //    "type": "sound",
     //    "key": "│ {#35} sound   {#keys}│"

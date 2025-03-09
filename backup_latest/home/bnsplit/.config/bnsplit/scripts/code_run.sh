@@ -32,9 +32,9 @@ declare -A EXTENSION_MAP=(
 # $DIR  - Directory containing the input file
 
 declare -a OPS_C=(
+  'gcc "$FILE" -o "$DIR/a.out" && "$DIR/a.out"'
   'gcc "$FILE" -o "$DIR/a.out"'
   '"$DIR/a.out"'
-  'gcc "$FILE" -o "$DIR/a.out" && "$DIR/a.out"'
   'gcc -lm "$FILE" -o "$DIR/a.out" && "$DIR/a.out"'
 )
 
@@ -55,9 +55,9 @@ declare -a OPS_Java=(
 )
 
 declare -a OPS_Pascal=(
+  'fpc "$FILE" -o"$DIR/a.out" && "$DIR/a.out"'
   'fpc "$FILE" -o"$DIR/a.out"'
   '"$DIR/a.out"'
-  'fpc "$FILE" -o"$DIR/a.out" && "$DIR/a.out"'
 )
 
 # --------------------------

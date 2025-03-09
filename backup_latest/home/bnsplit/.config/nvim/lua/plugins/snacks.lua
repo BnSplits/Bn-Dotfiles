@@ -98,10 +98,11 @@ return {
         -- },
         {
           section = "terminal",
-          cmd = "colorscript -e crunch | lolcat",
+          -- cmd = "colorscript -e boxes | lolcat",
+          cmd = "colorscript -e square | lolcat",
           -- cmd = "colorscript -e crunchbang-mini | lolcat",
           -- cmd = "colorscript -e crunchbang | lolcat",
-          height = 12,
+          height = 8,
           width = 60,
           row = 10,
           -- col = 10,
