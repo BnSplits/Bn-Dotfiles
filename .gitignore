@@ -3,11 +3,11 @@ scripts/git_config.sh
 scripts/google.provider
 grub-themes/
 plymouth-themes/
-1
-2
-3
-4
-5
+./1
+./2
+./3
+./4
+./5
 avatar
 backups/
 backup_latest/etc/

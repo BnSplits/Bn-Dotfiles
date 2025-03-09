@@ -42,8 +42,6 @@ My wallpaper becomes the puppet master of your eyeballs:
   <img src="./screenshots/2.png" width="400" alt="Colors go brrr">
   <img src="./screenshots/3.png" width="400" alt="Neovim dark magic">
   <img src="./screenshots/4.png" width="400" alt="Widget wonderland">
-  <!-- ... continue through 20 screenshots -->
-  <!-- <img src="./screenshots/20.png" width="400" alt="Final boss battle"> -->
 </div>
 
 ---
